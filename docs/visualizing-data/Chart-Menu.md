@@ -1,0 +1,32 @@
+# Chart Menu
+
+The more menu provides several actions related to the main chart.  To access it click the three dots **`⋮`** on the top right of the main chart.
+
+## Download Chart Data
+
+Downloading chart data allows you to download the aggregated data from a chart to a spreadsheet so you can export the data and use it in different applications.  To do this:
+
+1. Select the `[Chart Menu](Chart%20Menu%2086e789df929942d2ae8041dadf4677c4.md)` on the top right of the main chart
+2. Select Download Data option
+
+## View Underlying Data
+
+Glean differentiates between chart data and underlying data:
+
+- **Chart Data**: chart data is the aggregated data that results from running a database query or processing and aggregating spreadsheet data.
+- **Underlying Data**: underlying data is the raw data in a spreadsheet or database before it is aggregated or processed in anyway.
+
+To get to actionable insights, you usually need to get down to the underlying data: a specific patient, a specific order, or a specific ticket.
+
+## View SQL Query
+
+Every chart you generate with Glean is based on an underlying SQL Query.  You can view this underlying query by selecting the View SQL Query option.
+
+<aside>
+<img src="https://glean.io/img/icons/info-sign.svg" alt="https://glean.io/img/icons/info-sign.svg" width="40px" /> This option will be disabled for flatfile data models, since SQL is not how we process or aggregate data in flatfiles.
+
+</aside>
+
+## Edit Data Model
+
+Editing a data model allows you to modify the metrics and attributes that define how you visualize data.  You must have at least an `Editor` role - see `[Users and Permissions](Users%20and%20Permissions%20735ae7f2017c4bbcb197fda39bf2ba7f.md)`.
