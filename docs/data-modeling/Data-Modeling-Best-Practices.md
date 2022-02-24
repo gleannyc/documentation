@@ -10,11 +10,9 @@ In data warehousing terms, this is often referred to as [the grain or granularit
 
 If it's hard to describe what each row represents, it's possible you're not picking a good concept to model and that exploring this model in Glean won't be very intuitive.
 
-<aside>
-<img src="https://glean.io/img/icons/info-sign.svg" alt="https://glean.io/img/icons/info-sign.svg" width="40px" /> **Row count metric is required**
-You can't remove the row count metric from a data model in Glean (at least, not very easily).  It's good practice to rename the row count metric to describe what each row in the table represents (eg. Calls).  If each row really doesn't mean anything, you can name the metric "DO NOT USE" or something hacky like that.
+!!! info "Row count metric is required"
 
-</aside>
+    You can't remove the row count metric from a data model in Glean (at least, not very easily).  It's good practice to rename the row count metric to describe what each row in the table represents (eg. Calls).  If each row really doesn't mean anything, you can rename in a way that it won't accidentially get used " row count - dont use".
 
 ## Denormalize your Data
 
@@ -22,15 +20,16 @@ Once you pick which domain you want to model, it's a good idea to pull in releva
 
 If you're modeling calls in a call center, you might want to pull in information about each call center and pull in information about each employee.  In practice, denormalizing data just means joining in other relevant tables and columns.
 
-If your data isn't already denormalized in your data warehouse, you can build your data model on top of a SQL query  `[Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md)`
+If your data isn't already denormalized in your data warehouse, you can build your data model on top of a SQL query  [Add Data Model](./getting-started/Add%20Data%20Model)
 
-<aside>
-<img src="https://glean.io/img/icons/info-sign.svg" alt="https://glean.io/img/icons/info-sign.svg" width="40px" /> **Isn't denormalizing inefficient?**
-Normalization seems like an efficient process since it removes data duplication so you may be asking yourself why we recommend that you reverse this process.  Network and data processing would seem to be better when you split out data so you don't have to scan and retrieve unnecessary data.  It turns out, it's not that important for modern data warehouses because the data is stored by column.  This means that in a modern data warehouse:
-1.  Since data is stored by column - oftentimes data can be compressed efficiently and the data duplication isn't as big of a deal compared to if the data was stored by rows.
-2.  For each query, the database will only process and scan data in the columns necessary for your query.
+!!! info "Isn't denormalizing inefficient?"
 
-</aside>
+    Normalization seems like an efficient process since it removes data duplication so you may be asking yourself why we recommend that you reverse this process.  Network and data processing would seem to be better when you split out data so you don't have to scan and retrieve unnecessary data.  It turns out, it's not that important for modern data warehouses because the data is stored by column.  This means that in a modern data warehouse:
+
+
+    1.  Since data is stored by column - oftentimes data can be compressed efficiently and the data duplication isn't as big of a deal compared to if the data was stored by rows.
+    2.  For each query, the database will only process and scan data in the columns necessary for your query.
+
 
 ## Representing events versus entities
 
@@ -40,9 +39,9 @@ To summarize, it's easier to think of data models as representing events that ha
 
 ## Dealing with one-to-many relationships
 
-The experienced data modeler should be able to deftly navigate one-to-many relationships - this is where representing data as a flat, denormalized model can get tricky.
+The experienced data modeler should be able to deftly navigate one-to-many relationships (1) - this is where representing data as a flat, denormalized model can get tricky.
 
-- What is a one to many relationship?
+!!! info "What is a one to many relationship?"
     
     In a relational database, a one-to-many relationship is when one record in a table can be connected to one or more records in another table.  For example a single customer could have one or more orders in the orders table.
     

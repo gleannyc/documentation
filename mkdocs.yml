@@ -1,3 +1,16 @@
 site_name: Glean
 theme:
   name: material
+  custom_dir: overrides
+  features:
+    - navigation.tracking
+    - navigation.sections
+extra:
+  analytics:
+    provider: segment
+    api_key: 1234
+  generator: false
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
