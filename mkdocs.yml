@@ -5,6 +5,7 @@ theme:
   features:
     - navigation.tracking
     - navigation.sections
+    - navigation.tabs
 extra:
   analytics:
     provider: segment

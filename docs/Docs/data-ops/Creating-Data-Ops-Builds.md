@@ -1,5 +1,3 @@
-# Creating Data Ops Builds
-
 # Creating Builds
 
 ## Trigger a Build
@@ -11,10 +9,10 @@ A build will connect to your repository, detect all of the Glean [configuration 
 3. Configure your build and click Build.  If any fields are left empty, Glean will use the default values specified on the `Version Control` settings page.
 4. You can view the summary of errors, warnings and changes by clicking the build from the build list.
 
-<aside>
-<img src="https://glean.io/img/icons/warning-sign.svg" alt="https://glean.io/img/icons/warning-sign.svg" width="40px" /> We recommend always first creating a Preview Build to see which resources will be affected prior to running a Deploy.  The build process will automatically delete and create resources in Glean to leave your project in a consistent state.  For example, if you delete a column in a model configuration file, all saved views that refer to that column will be automatically deleted (as happens if you delete a column through the user interface).
+!!! warning 
 
-</aside>
+    We recommend always first creating a Preview Build to see which resources will be affected prior to running a Deploy.  The build process will automatically delete and create resources in Glean to leave your project in a consistent state.  For example, if you delete a column in a model configuration file, all saved views that refer to that column will be automatically deleted (as happens if you delete a column through the user interface).
+
 
 ## The build process
 
@@ -31,10 +29,10 @@ If there is an error while deploying a data model, the build process will revert
 
 Glean supports configuration files written in [yaml](https://en.wikipedia.org/wiki/YAML) or [JSON](https://en.wikipedia.org/wiki/JSON). A Glean Build will attempt to validate every file in the specified path with a `.yml` or `.json` extension. 
 
-<aside>
-<img src="https://glean.io/img/icons/warning-sign.svg" alt="https://glean.io/img/icons/warning-sign.svg" width="40px" /> While this feature is in beta, it is possible we may need to introduce breaking changes to the Glean configuration file format. In these cases we will give advanced warning and  assist beta partners with any necessary migrations.
+!!! warning
 
-</aside>
+    While this feature is in beta, it is possible we may need to introduce breaking changes to the Glean configuration file format. In these cases we will give advanced warning and  assist beta partners with any necessary migrations.
+
 
 ### Exporting configuration files
 
@@ -192,7 +190,3 @@ data:
       index: 1
       color: rgb(68, 78, 134)
 ```
-
-### Next, learn about [Using the Glean CLI](Using-the-Glean-CLI)
-
-[DataOps Configuration Schema](Creating-Data-Ops-Builds-e30b13c68425475293858e4b5229f267/DataOps-Configuration-Schema)
