@@ -24,7 +24,7 @@ Attribute filters are applied across the entire visualization - filtering every 
 To filter items in an attribute you need to put the attribute panel into the filter state:
 
 1. Hover over an attribute
-2. Select the [Filter](Filter%2064165e1b8f6e4b9986f926ed3c6d7aab.md)  button
+2. Select the [Filter](Filter)  button
 3. Now select any item to filter to it.  Filtered items will appear with a checkmark next to them `✓`
 
 <aside>
@@ -52,7 +52,7 @@ If you would like to start excluding items (instead of including them), you can 
 2. Choose the `☑ Filter All` button to select every item
 3. Now click items to start excluding them
 
-![Attributes%20tray%2066975888a79048c8b918c1f0d8a3c712/Screen_Shot_2020-08-20_at_11.43.11_AM.png](Attributes%20tray%2066975888a79048c8b918c1f0d8a3c712/Screen_Shot_2020-08-20_at_11.43.11_AM.png)
+![Attributes-tray-66975888a79048c8b918c1f0d8a3c712/Screen_Shot_2020-08-20_at_11.43.11_AM.png](Attributes-tray-66975888a79048c8b918c1f0d8a3c712/Screen_Shot_2020-08-20_at_11.43.11_AM.png)
 
 ## Attribute Breakout
 
@@ -61,7 +61,7 @@ Adding an attribute as a breakout allows you to layer the attribute onto the cur
 To add an attribute as a breakout:
 
 1. Hover over any attribute panel
-2. Select the breakout button on the bottom of the panel [Breakout](Breakout%20267495d8a8cf41e0a75c0341f5b62ba6.md)
+2. Select the breakout button on the bottom of the panel [Breakout](Breakout)
 3. To add and remove broken out items, just click on a row
 
 ## Sorting Attributes

@@ -47,7 +47,7 @@ You will likely want to adjust some values in the configuration files after expo
 
 ### Glean model configuration files
 
-Glean files are intended to map to the options available in the data model user interface (see [Data Models Overview](Data%20Models%20Overview%206502d101e06349ee9097db5d11c39243.md)). Full documentation of the model configuration file can be found [here](Creating%20Data%20Ops%20Builds%20e30b13c68425475293858e4b5229f267/DataOps%20Configuration%20Schema%202a42db2a387045fcbd665392197d39a0.md).
+Glean files are intended to map to the options available in the data model user interface (see [Data Models Overview](Data-Models-Overview)). Full documentation of the model configuration file can be found [here](Creating-Data-Ops-Builds-e30b13c68425475293858e4b5229f267/DataOps-Configuration-Schema).
 
 The following is an example of a data model `my_model.yml`:
 
@@ -94,7 +94,7 @@ cols:
 
 ### Glean saved view configuration files
 
-Full documentation of the saved view configuration files can be found [here](Creating%20Data%20Ops%20Builds%20e30b13c68425475293858e4b5229f267/DataOps%20Configuration%20Schema%202a42db2a387045fcbd665392197d39a0.md).
+Full documentation of the saved view configuration files can be found [here](Creating-Data-Ops-Builds-e30b13c68425475293858e4b5229f267/DataOps-Configuration-Schema).
 
 The following is an example of a saved view `my_saved_view.yml`
 
@@ -193,6 +193,6 @@ data:
       color: rgb(68, 78, 134)
 ```
 
-### Next, learn about [Using the Glean CLI](Using%20the%20Glean%20CLI%202dbf1434e03d45269c95b532093ea542.md)
+### Next, learn about [Using the Glean CLI](Using-the-Glean-CLI)
 
-[DataOps Configuration Schema](Creating%20Data%20Ops%20Builds%20e30b13c68425475293858e4b5229f267/DataOps%20Configuration%20Schema%202a42db2a387045fcbd665392197d39a0.md)
+[DataOps Configuration Schema](Creating-Data-Ops-Builds-e30b13c68425475293858e4b5229f267/DataOps-Configuration-Schema)

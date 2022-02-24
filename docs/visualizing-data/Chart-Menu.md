@@ -6,7 +6,7 @@ The more menu provides several actions related to the main chart.  To access it 
 
 Downloading chart data allows you to download the aggregated data from a chart to a spreadsheet so you can export the data and use it in different applications.  To do this:
 
-1. Select the [Chart Menu](Chart%20Menu%2086e789df929942d2ae8041dadf4677c4.md) on the top right of the main chart
+1. Select the [Chart Menu](Chart-Menu) on the top right of the main chart
 2. Select Download Data option
 
 ## View Underlying Data
@@ -29,4 +29,4 @@ Every chart you generate with Glean is based on an underlying SQL Query.  You ca
 
 ## Edit Data Model
 
-Editing a data model allows you to modify the metrics and attributes that define how you visualize data.  You must have at least an `Editor` role - see [Users and Permissions](Users%20and%20Permissions%20735ae7f2017c4bbcb197fda39bf2ba7f.md).
+Editing a data model allows you to modify the metrics and attributes that define how you visualize data.  You must have at least an `Editor` role - see [Users and Permissions](Users-and-Permissions).

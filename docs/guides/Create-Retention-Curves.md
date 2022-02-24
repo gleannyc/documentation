@@ -2,23 +2,23 @@
 
 [Retention curves](https://www.sequoiacap.com/article/retention) allow you to see how many users are still active at a given point in time and compare different cohorts of users to see how well your product retained engagement.  This article doesn't dedicate too much time to how to analyze retention curves since there is plenty of content available on this online.
 
-The approach is very similar to the general approach to data modeling: you'll prepare a set of metrics that define the percent of users that are still active in a month and add attributes that help you understand the variation.  See the article [Data Modeling Best Practices](Data%20Modeling%20Best%20Practices%20914e2700795d4c6c8df51563512ffb2a.md) 
+The approach is very similar to the general approach to data modeling: you'll prepare a set of metrics that define the percent of users that are still active in a month and add attributes that help you understand the variation.  See the article [Data Modeling Best Practices](Data-Modeling-Best-Practices) 
 
 For retention curves, it's oftentimes useful to add experiments as attributes: did you try something in the product to retain users more effectively?  Maybe a new onboarding flow, a new user flow?
 
-![Guide%20Create%20retention%20curves%20c50dbbd635994b04a44187c6c38faef6/Screen_Shot_2020-11-02_at_10.15.43_AM.png](Guide%20Create%20retention%20curves%20c50dbbd635994b04a44187c6c38faef6/Screen_Shot_2020-11-02_at_10.15.43_AM.png)
+![Guide-Create-retention-curves-c50dbbd635994b04a44187c6c38faef6/Screen_Shot_2020-11-02_at_10.15.43_AM.png](Guide-Create-retention-curves-c50dbbd635994b04a44187c6c38faef6/Screen_Shot_2020-11-02_at_10.15.43_AM.png)
 
 For this walk-through, we're going to look at the user engagement on the tech news aggregation website Hacker News.  The dataset is available on BigQuery's public datasets and is kept up to date.
 
 ## Prepare curves in your data warehouse
 
-As with all tools you build in Glean, retention curves will be as powerful as the data model you produce for them.  For large user tables, it probably makes sense to prepare this data in your data warehouse, but it's also possible to calculate retention curves on the fly using a SQL-based data model.  See [Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md) 
+As with all tools you build in Glean, retention curves will be as powerful as the data model you produce for them.  For large user tables, it probably makes sense to prepare this data in your data warehouse, but it's also possible to calculate retention curves on the fly using a SQL-based data model.  See [Add Data Model](Add-Data-Model) 
 
 To prepare our curves, we are going to track whether a user is active or not in any given month.  So that all of our users are being compared fairly, we'll also track the number of months since a user signed up - this will be the x-axis of our retention curve.
 
 You should be targeting a data model that looks something like the following table:
 
-[Retention curve underlying table](Guide%20Create%20retention%20curves%20c50dbbd635994b04a44187c6c38faef6/Retention%20curve%20underlying%20table%2089f9a9751b214065bfb23bea70c60bc0.csv)
+[Retention curve underlying table](Guide-Create-retention-curves-c50dbbd635994b04a44187c6c38faef6/Retention-curve-underlying-table-89f9a9751b214065bfb23bea70c60bc0.csv)
 
 For the Hacker News dataset the query looks something like this (using BigQuery syntax):
 
@@ -73,7 +73,7 @@ A few notes on the resulting columns:
 
 ## Create the model in Glean
 
-1. From the data exploration page, click [Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md)
+1. From the data exploration page, click [Add Data Model](Add-Data-Model)
 2. Either select your prepared retention table from your data warehouse or click `SQL Query` and enter a SQL query similar to the one above as the basis for your model.  Click `Create Model`
 3. Setup your data model in Glean:
     - Make sure that `month` is selected as your primary date, by selecting the gear next to it.
@@ -81,7 +81,7 @@ A few notes on the resulting columns:
     - Add two columns as metrics:
         - **Unbounded Active Retention** - is defined as the `average` of column `unbounded_active`
         - **Active Retention** - is defined as the `average` of column `active`
-        - **Active Users (Optional)** - if you want to create a [retention pivot](Guide%20Create%20retention%20curves%20c50dbbd635994b04a44187c6c38faef6.md), you should also add a metric for unique active users in a month:
+        - **Active Users (Optional)** - if you want to create a [retention pivot](Guide-Create-retention-curves), you should also add a metric for unique active users in a month:
         
         ```sql
         COUNT(DISTINCT IF(active = 1, userid, null))
@@ -110,4 +110,4 @@ A few notes on the resulting columns:
 5. Click into the `control` tab on the right-hand side and make sure you sort rows by `cohort` descending and sort the columns by `month_number` ascending
 6. As the metric, select `Active Users` as the calculation, select `Percentage of Row Max` and finally as the Color scale, select `Percentage Color Scale`
 
-![Guide%20Create%20retention%20curves%20c50dbbd635994b04a44187c6c38faef6/Screen_Shot_2021-03-22_at_3.45.47_PM.png](Guide%20Create%20retention%20curves%20c50dbbd635994b04a44187c6c38faef6/Screen_Shot_2021-03-22_at_3.45.47_PM.png)
+![Guide-Create-retention-curves-c50dbbd635994b04a44187c6c38faef6/Screen_Shot_2021-03-22_at_3.45.47_PM.png](Guide-Create-retention-curves-c50dbbd635994b04a44187c6c38faef6/Screen_Shot_2021-03-22_at_3.45.47_PM.png)

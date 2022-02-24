@@ -1,6 +1,6 @@
 # Users and Permissions
 
-You can invite members to your project in Glean to allow them to query and explore data.  You can use [roles](Users%20and%20Permissions%20735ae7f2017c4bbcb197fda39bf2ba7f.md) to limit the actions a user can take - it probably makes sense to start people with lower levels of permissions across the board and increase as you realize they need more advanced permissions.  All users in your project will be able to view data in your project, but only owners can add additional members and only editors can change data models.  It's a best practice to only allow analysts and analytically-inclined members of your team to edit data models.  See [Data Modeling Best Practices](Data%20Modeling%20Best%20Practices%20914e2700795d4c6c8df51563512ffb2a.md) 
+You can invite members to your project in Glean to allow them to query and explore data.  You can use [roles](Users-and-Permissions) to limit the actions a user can take - it probably makes sense to start people with lower levels of permissions across the board and increase as you realize they need more advanced permissions.  All users in your project will be able to view data in your project, but only owners can add additional members and only editors can change data models.  It's a best practice to only allow analysts and analytically-inclined members of your team to edit data models.  See [Data Modeling Best Practices](Data-Modeling-Best-Practices) 
 
 ## Add a user
 
@@ -30,7 +30,7 @@ You can invite members to your project in Glean to allow them to query and explo
 
 There are four roles in Glean with increasing levels of permissions.
 
-[Roles](Users%20and%20Permissions%20735ae7f2017c4bbcb197fda39bf2ba7f/Roles%205de6ba607c9f4acca60787ec9b141ab4.csv)
+[Roles](Users-and-Permissions-735ae7f2017c4bbcb197fda39bf2ba7f/Roles-5de6ba607c9f4acca60787ec9b141ab4.csv)
 
 ## Modifying roles
 

@@ -46,4 +46,4 @@ To configure your Git credentials:
 4. Click the `🗼Test` button to test your git credentials
 5. Click `Save Credentials`
 
-### Next, learn about [Creating Data Ops Builds](Creating%20Data%20Ops%20Builds%20e30b13c68425475293858e4b5229f267.md)
+### Next, learn about [Creating Data Ops Builds](Creating-Data-Ops-Builds)

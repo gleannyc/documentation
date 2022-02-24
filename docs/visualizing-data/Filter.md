@@ -4,11 +4,11 @@ Filtering data allows you to remove rows from your data results so you can drill
 
 ## Filtering an attribute panel
 
-The fastest way to filter data is by using [attribute panels](Attributes%20tray%2066975888a79048c8b918c1f0d8a3c712.md).  See the [Attributes tray](Attributes%20tray%2066975888a79048c8b918c1f0d8a3c712.md) page for lots of details on how to filter data from the attribute panels.
+The fastest way to filter data is by using [attribute panels](Attributes-tray).  See the [Attributes tray](Attributes-tray) page for lots of details on how to filter data from the attribute panels.
 
 ## Filtering from a chart
 
-Charts generally support two types of filtering: 1) filtering by dragging chart areas and 2) filtering by clicking items in a chart.  Both of these are described in the [Chart Interactions](Chart%20Interactions%20c6e3fbcf333c4d19a8283e954708fe12.md) section.
+Charts generally support two types of filtering: 1) filtering by dragging chart areas and 2) filtering by clicking items in a chart.  Both of these are described in the [Chart Interactions](Chart-Interactions) section.
 
 ## Date filter control
 
