@@ -6,7 +6,7 @@ Breaking out an attribute in Glean adds that attribute as a layer in the visuali
 
 ## Adding and removing a breakout
 
-- **From the Attribute Panel:** The easiest way to breakout an attribute is to select the `[Breakout](Breakout%20267495d8a8cf41e0a75c0341f5b62ba6.md)`  button from any attribute panel in the `[Attributes tray](Attributes%20tray%2066975888a79048c8b918c1f0d8a3c712.md)`.
+- **From the Attribute Panel:** The easiest way to breakout an attribute is to select the [Breakout](Breakout%20267495d8a8cf41e0a75c0341f5b62ba6.md)  button from any attribute panel in the [Attributes tray](Attributes%20tray%2066975888a79048c8b918c1f0d8a3c712.md).
 - **From the top Control Bar:** You can quickly view or remove a breakout from the top control bar just about your chart.
 - **From the configuration Panel:** As with another data configuration, you can always view and remove a breakout by clicking the `Configuration` tab on the right hand panel.
 

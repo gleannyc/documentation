@@ -4,7 +4,7 @@ You can invite members to your project in Glean to allow them to query and explo
 
 ## Add a user
 
-`[Direct link to your Glean user list](https://glean.io/project#/users)`
+[Direct link to your Glean user list](https://glean.io/project#/users)
 
 1. Go to the `People` page using the link on the navigation side bar
 2. Select `Users`

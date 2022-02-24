@@ -2,7 +2,7 @@
 
 [Retention curves](https://www.sequoiacap.com/article/retention) allow you to see how many users are still active at a given point in time and compare different cohorts of users to see how well your product retained engagement.  This article doesn't dedicate too much time to how to analyze retention curves since there is plenty of content available on this online.
 
-The approach is very similar to the general approach to data modeling: you'll prepare a set of metrics that define the percent of users that are still active in a month and add attributes that help you understand the variation.  See the article `[Data Modeling Best Practices](Data%20Modeling%20Best%20Practices%20914e2700795d4c6c8df51563512ffb2a.md)` 
+The approach is very similar to the general approach to data modeling: you'll prepare a set of metrics that define the percent of users that are still active in a month and add attributes that help you understand the variation.  See the article [Data Modeling Best Practices](Data%20Modeling%20Best%20Practices%20914e2700795d4c6c8df51563512ffb2a.md) 
 
 For retention curves, it's oftentimes useful to add experiments as attributes: did you try something in the product to retain users more effectively?  Maybe a new onboarding flow, a new user flow?
 
@@ -12,7 +12,7 @@ For this walk-through, we're going to look at the user engagement on the tech ne
 
 ## Prepare curves in your data warehouse
 
-As with all tools you build in Glean, retention curves will be as powerful as the data model you produce for them.  For large user tables, it probably makes sense to prepare this data in your data warehouse, but it's also possible to calculate retention curves on the fly using a SQL-based data model.  See `[Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md)` 
+As with all tools you build in Glean, retention curves will be as powerful as the data model you produce for them.  For large user tables, it probably makes sense to prepare this data in your data warehouse, but it's also possible to calculate retention curves on the fly using a SQL-based data model.  See [Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md) 
 
 To prepare our curves, we are going to track whether a user is active or not in any given month.  So that all of our users are being compared fairly, we'll also track the number of months since a user signed up - this will be the x-axis of our retention curve.
 
@@ -73,7 +73,7 @@ A few notes on the resulting columns:
 
 ## Create the model in Glean
 
-1. From the data exploration page, click `[Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md)`
+1. From the data exploration page, click [Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md)
 2. Either select your prepared retention table from your data warehouse or click `SQL Query` and enter a SQL query similar to the one above as the basis for your model.  Click `Create Model`
 3. Setup your data model in Glean:
     - Make sure that `month` is selected as your primary date, by selecting the gear next to it.

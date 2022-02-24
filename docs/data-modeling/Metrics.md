@@ -2,7 +2,7 @@
 
 Metrics are measurements that can go up and down over time.  Each metric should map to a measurement of a process or workflow in your organization.  Counts of events, revenues and cycle times are good examples of metrics you may want to add to your data model.
 
-You will setup and update metrics from the `[Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md)` workflow.
+You will setup and update metrics from the [Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md) workflow.
 
 [Types of Metrics](Metrics%20a3e540316d0040ea9787ef2c30cb7ab3/Types%20of%20Metrics%20d548877c029b4c37a82767a310f86c55.csv)
 
@@ -18,7 +18,7 @@ The simplest type of metric.  See table above for which functions you can run on
 
 To add a column aggregating metric:
 
-1. Goto the `[Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md)`  workflow by creating a new data model or editing an existing model
+1. Goto the [Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md)  workflow by creating a new data model or editing an existing model
 2. Click the column from the Source data on the left that you would like to aggregate
 3. From the dropdown menu, select `Metric` - the column is added to the data model in the `Metrics` section
 4. Select the type of aggregation from the dropdown, see aggregation types above
@@ -28,6 +28,6 @@ To add a column aggregating metric:
 
 Custom SQL metrics allow you to have more involved custom aggregations in Glean like weighted averages or proportions and other formulas.  You can define a custom metric as any [aggregating function](https://www.datacamp.com/community/tutorials/aggregate-functions-sql) that results in a numeric value.  To add a custom metric:
 
-1. Goto the `[Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md)`  workflow by creating a new data model or editing an existing model
+1. Goto the [Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md)  workflow by creating a new data model or editing an existing model
 2. Under the Metrics section click the `Add` button and select `Custom Metric`
 3. Click the pencil `✏️` to change the formula to any aggregating sql expression

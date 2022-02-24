@@ -1,6 +1,6 @@
 # Data Models Overview
 
-`[Direct link to your Glean Data Models](http://glean.io/app/p/data-models)`
+[Direct link to your Glean Data Models](http://glean.io/app/p/data-models)
 
 Data models in Glean allow you to define how your organization will measure, track and explore data.  Defining the logic for your analytics upfront allows your users to dig in and analyze data without writing code or worrying about whether they can trust their results.  This declarative workflow allows the analyst and data team to manage how you think about your business and Glean will build a user interface automatically that helps you explore that data.
 
@@ -29,11 +29,11 @@ There are two places where you will encounter and configure data models: when yo
 
 **Add a data model**
 
-See `[Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md)` to see how to setup your first data models.
+See [Add Data Model](Add%20Data%20Model%2063183114be7a4587946e274c0e90f1e5.md) to see how to setup your first data models.
 
 **Editing a data model**
 
-1. Select the `[More](Glossary%2011bd88f53c554f1aac6f05446f5d04ad/More%201058106442534b63a9396eefe65af286.md)` button on the top right hand of the chart.
+1. Select the [More](Glossary%2011bd88f53c554f1aac6f05446f5d04ad/More%201058106442534b63a9396eefe65af286.md) button on the top right hand of the chart.
 2. Select `Edit Data Model`
 
 ## Why use Data Models?

@@ -46,6 +46,6 @@ The experienced data modeler should be able to deftly navigate one-to-many relat
     In a relational database, a one-to-many relationship is when one record in a table can be connected to one or more records in another table.  For example a single customer could have one or more orders in the orders table.
     
 
-Let's say in our Call Center each call has a series of tags associated with it.  Tags can have values like `customer support`, `international` vs. `domestic` etc.  There can be many tags associated with each call.  Users may want to see call statistics grouped by tag as an `[Attributes](Attributes%20a077c564b4ac467c8794cbbcdc811f7b.md)`.  While other self-service tools may allow for realtime joining, Glean intentionally forces you to define joins upfront in your denormalized table.
+Let's say in our Call Center each call has a series of tags associated with it.  Tags can have values like `customer support`, `international` vs. `domestic` etc.  There can be many tags associated with each call.  Users may want to see call statistics grouped by tag as an [Attributes](Attributes%20a077c564b4ac467c8794cbbcdc811f7b.md).  While other self-service tools may allow for realtime joining, Glean intentionally forces you to define joins upfront in your denormalized table.
 
 In the case of tags, it may make sense to have two data models: one for exploring call tags and one for exploring calls.
