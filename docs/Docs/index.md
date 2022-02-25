@@ -19,6 +19,3 @@ What are the things your team is doing that you should be tracking over time?
 Every chart and analysis is based on a Glean data model. A data model is a table with at least one date and some attributes. Let's take an example data model that we'll create from a database query.
 
 This data model has one date and two attributes.
-
-
-## Explore your first data model
