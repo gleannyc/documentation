@@ -30,14 +30,19 @@ You can invite members to your project in Glean to allow them to query and explo
 
 There are four roles in Glean with increasing levels of permissions.
 
-[Roles](Users-and-Permissions-735ae7f2017c4bbcb197fda39bf2ba7f/Roles-5de6ba607c9f4acca60787ec9b141ab4.csv)
+|Role          |Description             |
+|--------------|------------------------|
+|Owner         |Owners can manage members in a project and manage data connections and manage data connection credentials.|
+|Editor        |Editors can manage data models, both creating and editing existing data models.|
+|Collaborator  |Collaborators can interact with shared views and share links, query data sources, explore data and even create new saved views and share links|
+|Viewer        |Viewers can interact with shared views and share links, query data sources, explore data and create share links|
+
 
 ## Modifying roles
 
-<aside>
-ℹ️ Roles are limited today in Glean to two main functions: 1) governing which actions can be taken such as creating saved views, editing dashboards 2) governing access to data models.  If you do not have access to read data from a data model, then saved views for that data model will not work.  Today, it is not possible to remove access from a specific view independently from a data model.
+!!! info "Limitations"
 
-</aside>
+    Roles are limited today in Glean to two main functions: 1) governing which actions can be taken such as creating saved views, editing dashboards 2) governing access to data models.  If you do not have access to read data from a data model, then saved views for that data model will not work.  Today, it is not possible to remove access from a specific view independently from a data model.
 
 Glean uses role based access control to allow users to do specific actions within Glean.  You can assign default roles, configure data access and limit which actions specific users can take inside of Glean.
 

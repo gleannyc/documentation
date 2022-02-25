@@ -2,10 +2,9 @@
 
 Once you add a database connection, it will be made available from the [Add Data Model](Add-Data-Model)  workflow and you'll be able to specify tables or SQL queries to start visualizing in Glean.
 
-<aside>
-ℹ️ Your database must be accessible from our systems at `18.210.29.198`
+!!! info "firewall configuration"
 
-</aside>
+    Your database must be accessible from our systems at `18.210.29.198`
 
 ## Create a database connection
 
@@ -17,11 +16,9 @@ Once you add a database connection, it will be made available from the [Add Data
 6. Click the antenna icon to test your connection  `🗼`
 7. Click `Add` to complete the process
 
-<aside>
-ℹ️ **Specifying schemas**
-For most database types, you can optionally specify a schema.  If you specify a schema in Glean, only tables from that schema will be made available in the [Add Data Model](Add-Data-Model)  workflow
+!!! Specifying schemas
 
-</aside>
+    For most database types, you can optionally specify a schema.  If you specify a schema in Glean, only tables from that schema will be made available in the [Add Data Model](Add-Data-Model)  workflow
 
 ## SQL Dialects
 

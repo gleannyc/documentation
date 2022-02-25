@@ -1,12 +1,12 @@
 # Guide: Create retention curves
 
-[Retention curves](https://www.sequoiacap.com/article/retention) allow you to see how many users are still active at a given point in time and compare different cohorts of users to see how well your product retained engagement.  This article doesn't dedicate too much time to how to analyze retention curves since there is plenty of content available on this online.
+[Retention curves](https://www.sequoiacap.com/article/retention) allow you to see how many users are still active at a given point in time and compare different cohorts of users to see how well your product retains engagement.  This article doesn't dedicate too much time to how to analyze retention curves since there is plenty of content dedicated to this out there.
 
-The approach is very similar to the general approach to data modeling: you'll prepare a set of metrics that define the percent of users that are still active in a month and add attributes that help you understand the variation.  See the article [Data Modeling Best Practices](Data-Modeling-Best-Practices) 
+The approach is very similar to the general approach to data modeling: you'll prepare a set of metrics that define the percent of users that are still active in a month and add attributes that help you understand the variation.  See the article [Data Modeling Best Practices](/Docs/data-modeling/Data-Modeling-Best-Practices/) 
 
 For retention curves, it's oftentimes useful to add experiments as attributes: did you try something in the product to retain users more effectively?  Maybe a new onboarding flow, a new user flow?
 
-![Guide-Create-retention-curves-c50dbbd635994b04a44187c6c38faef6/Screen_Shot_2020-11-02_at_10.15.43_AM.png](Guide-Create-retention-curves-c50dbbd635994b04a44187c6c38faef6/Screen_Shot_2020-11-02_at_10.15.43_AM.png)
+![Retention curves, explored in Glean](/assets/Screen_Shot_2020-11-02_at_10.15.43_AM.png)
 
 For this walk-through, we're going to look at the user engagement on the tech news aggregation website Hacker News.  The dataset is available on BigQuery's public datasets and is kept up to date.
 
@@ -18,7 +18,18 @@ To prepare our curves, we are going to track whether a user is active or not in 
 
 You should be targeting a data model that looks something like the following table:
 
-[Retention curve underlying table](Guide-Create-retention-curves-c50dbbd635994b04a44187c6c38faef6/Retention-curve-underlying-table-89f9a9751b214065bfb23bea70c60bc0.csv)
+|userid        |user signup month       |activity month   |months since signup|is_active|
+|--------------|------------------------|-----------------|-------------------|---------|
+|carlos@glean  |August 1, 2020          |August 1, 2020   |0                  |1        |
+|carlos@glean  |August 1, 2020          |September 1, 2020|1                  |1        |
+|carlos@glean  |August 1, 2020          |October 1, 2020  |2                  |0        |
+|carlos@glean  |August 1, 2020          |November 1, 2020 |3                  |0        |
+|nathaniel@glean|July 1, 2020            |July 1, 2020     |0                  |1        |
+|nathaniel@glean|July 1, 2020            |August 1, 2020   |1                  |1        |
+|nathaniel@glean|July 1, 2020            |September 1, 2020|2                  |1        |
+|nathaniel@glean|July 1, 2020            |October 1, 2020  |3                  |1        |
+|nathaniel@glean|July 1, 2020            |November 1, 2020 |4                  |1        |
+
 
 For the Hacker News dataset the query looks something like this (using BigQuery syntax):
 
@@ -96,10 +107,9 @@ A few notes on the resulting columns:
 3. Select `Unbounded Active Retention` as your metric
 4. Select some `cohort_month_str` as breakouts to see how different cohort months retain users in your product.  Alternatively, you can filter for a specific cohort month and breakout by an experimental variable
 
-<aside>
-<img src="https://glean.io/img/icons/info-sign.svg" alt="https://glean.io/img/icons/info-sign.svg" width="40px" /> Note that not breaking out (or filtering) by `cohort_month_str` has some implications for your analysis.  This is because not every cohort month has an equal number of future months.  To correct for this, it's possible to use a Kaplan-Meier estimator which will be left as a separate exercise.
+!!! info
 
-</aside>
+    Note that not breaking out (or filtering) by `cohort_month_str` has some implications for your analysis.  This is because not every cohort month has an equal number of future months.  To correct for this, it's possible to use a Kaplan-Meier estimator which will be left as a separate exercise.
 
 ## Create retention table
 
@@ -110,4 +120,4 @@ A few notes on the resulting columns:
 5. Click into the `control` tab on the right-hand side and make sure you sort rows by `cohort` descending and sort the columns by `month_number` ascending
 6. As the metric, select `Active Users` as the calculation, select `Percentage of Row Max` and finally as the Color scale, select `Percentage Color Scale`
 
-![Guide-Create-retention-curves-c50dbbd635994b04a44187c6c38faef6/Screen_Shot_2021-03-22_at_3.45.47_PM.png](Guide-Create-retention-curves-c50dbbd635994b04a44187c6c38faef6/Screen_Shot_2021-03-22_at_3.45.47_PM.png)
+![Retention table](/assets/Screen_Shot_2021-03-22_at_3.45.47_PM.png)

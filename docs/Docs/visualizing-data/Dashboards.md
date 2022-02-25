@@ -15,11 +15,10 @@ Once you have created all of the views that will make up your dashboard you can 
     - Use the `+ Row`  and `+ Column` to add rows and columns to your grid
 3. For each panel, click the dropdown to choose the chart that will be represented in that panel
     
-    <aside>
-    <img src="https://glean.io/img/icons/info-sign.svg" alt="https://glean.io/img/icons/info-sign.svg" width="40px" /> **Rendering a single number / metric**
-    You can set a panel to display the total metric for any saved view (instead of the visualization) by clicking the `⚙️ Configuration` button in the panel and selecting `Render as metric`
+!!! info "Rendering a single number / metric"
+
+You can set a panel to display the total metric for any saved view (instead of the visualization) by clicking the `⚙️ Configuration` button in the panel and selecting `Render as metric`
     
-    </aside>
     
 4. Click `Create Dashboard` to finish and view your dashboard
 

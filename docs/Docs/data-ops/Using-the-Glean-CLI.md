@@ -79,10 +79,9 @@ To create an Access Key:
     - Using the `--credentials-filepath` command-line option to use a different filepath
     - Setting the `GLEAN_PROJECT_ID`, `GLEAN_ACCESS_KEY_ID`, and `GLEAN_SECRET_ACCESS_KEY_TOKEN` environment variables to the respective values stored in your access key file.
 
-<aside>
-<img src="https://glean.io/img/icons/warning-sign.svg" alt="https://glean.io/img/icons/warning-sign.svg" width="40px" /> Once you navigate away from the page, you will not be able to re-download your Access Key. If you lose your Access Key, you will need to delete it and then create a new one.
+!!! warning
 
-</aside>
+    Once you navigate away from the page, you will not be able to re-download your Access Key. If you lose your Access Key, you will need to delete it and then create a new one.
 
 ## Using environment variables
 

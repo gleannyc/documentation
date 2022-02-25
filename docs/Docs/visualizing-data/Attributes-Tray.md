@@ -27,10 +27,9 @@ To filter items in an attribute you need to put the attribute panel into the fil
 2. Select the [Filter](Filter)  button
 3. Now select any item to filter to it.  Filtered items will appear with a checkmark next to them `✓`
 
-<aside>
-<img src="https://glean.io/img/icons/info-sign.svg" alt="https://glean.io/img/icons/info-sign.svg" width="40px" /> Note that when you first put the attribute into a filter state, nothing will be selected and a filter is only applied once you start adding items from the list.
+!!! info
 
-</aside>
+    Note that when you first put the attribute into a filter state, a filter is only applied once you start adding items from the list.
 
 ### Filter items directly
 
@@ -49,10 +48,10 @@ There are two ways to filter data in an attribute pane:
 If you would like to start excluding items (instead of including them), you can choose `Filter All` from the filter control:
 
 1. Put the attribute in a filtered state
-2. Choose the `☑ Filter All` button to select every item
+2. Choose the `Filter All` button to select every item
 3. Now click items to start excluding them
 
-![Attributes-tray-66975888a79048c8b918c1f0d8a3c712/Screen_Shot_2020-08-20_at_11.43.11_AM.png](Attributes-tray-66975888a79048c8b918c1f0d8a3c712/Screen_Shot_2020-08-20_at_11.43.11_AM.png)
+<img src="/assets/Screen_Shot_2020-08-20_at_11.43.11_AM.png" alt="Attributes Tray" width="400" />
 
 ## Attribute Breakout
 
@@ -81,7 +80,7 @@ Numeric attributes have a few distinct features and differences from the default
 
 ### Numeric Binning
 
-Attributes are grouped into numeric buckets if binning is turned on for the attribute - [ see binning ].  The beginning of the range is inclusive and the end value of the range is exclusive.  For example for a bucket that is `20 - 25` the bucket represents all items that are equal to or greater than twenty and less than twenty-five.  You can filter binned numeric data just like you would filter all other attributes and all values in buckets are filtered (or excluded) as you would expect.
+Attributes are grouped into numeric buckets if binning is turned on for the attribute.  The beginning of the range is inclusive and the end value of the range is exclusive.  For example for a bucket that is `20 - 25` the bucket represents all items that are equal to or greater than twenty and less than twenty-five.  You can filter binned numeric data just like you would filter all other attributes and all values in buckets are filtered (or excluded) as you would expect.
 
 ### Sorting
 
@@ -99,7 +98,6 @@ String attributes are alphanumeric attributes and can have very high cardinality
 
 To search for a specific item in a string attribute simply click the search icon on the top of a string attribute.
 
-<aside>
-<img src="https://glean.io/img/icons/error.svg" alt="https://glean.io/img/icons/error.svg" width="40px" /> While searching through a string field is supported, Glean is not optimized for full-text document search.  This means that searching through human written comments and long documents is probably not a good idea (mostly it will be slow and potentially costly depending on how those documents are stored in your database).
+!!! info
 
-</aside>
+    While searching through a string field is supported, Glean is not optimized for full-text document search.  This means that searching through human written comments and long documents is probably not a good idea (mostly it will be slow and potentially costly depending on how those documents are stored in your database).

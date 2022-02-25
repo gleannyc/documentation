@@ -19,10 +19,10 @@ While you can use a drag filter to drag to a time range eg. a specific month or 
 3. **Relative filters:** You can either select a relative time filter (eg. 6 months) which will filter for the last six months.
 4. **Exact time filter:** selecting exact dates in the calendar view will limit to a fixed timeframe.
 
-<aside>
-<img src="https://glean.io/img/icons/info-sign.svg" alt="https://glean.io/img/icons/info-sign.svg" width="40px" /> When data updates, relative time filters will slide over time while fixed time filters will be fixed in time.  So if you filter to September 1st through September 8th, you'll always be looking at that one week of data.  If you filter for 1 week, you'll always see the most recent one week.
+!!! info
 
-</aside>
+    When data updates, relative time filters will slide over time while fixed time filters will be fixed in time.  So if you filter to September 1st through September 8th, you'll always be looking at that one week of data.  If you filter for 1 week, you'll always see the most recent one week.
+
 
 ## Viewing all filters
 

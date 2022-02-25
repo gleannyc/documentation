@@ -22,10 +22,10 @@ To get to actionable insights, you usually need to get down to the underlying da
 
 Every chart you generate with Glean is based on an underlying SQL Query.  You can view this underlying query by selecting the View SQL Query option.
 
-<aside>
-<img src="https://glean.io/img/icons/info-sign.svg" alt="https://glean.io/img/icons/info-sign.svg" width="40px" /> This option will be disabled for flatfile data models, since SQL is not how we process or aggregate data in flatfiles.
+!!! info
 
-</aside>
+  This option will be disabled for flatfile data models, since SQL is not how we process or aggregate data in flatfiles.
+
 
 ## Edit Data Model
 
