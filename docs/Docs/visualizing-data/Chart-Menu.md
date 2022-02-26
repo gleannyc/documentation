@@ -1,5 +1,3 @@
-# Chart Menu
-
 The more menu provides several actions related to the main chart.  To access it click the three dots **`⋮`** on the top right of the main chart.
 
 ## Download Chart Data

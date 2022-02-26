@@ -1,5 +1,3 @@
-# Breakout
-
 Breaking out an attribute in Glean adds that attribute as a layer in the visualization.  In a timeseries bar chart for example, you would add that attribute as the color series in the attribute.
 
 ![Breaking out an attribute](/assets/breakout4.gif)

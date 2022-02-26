@@ -4,7 +4,6 @@
 
 - You can email support at [support@glean.io](mailto:support@glean.io)
 - Send inquiries about joining our closed beta at [beta@glean.io](mailto:beta@glean.io)
-- If you want to talk to a human, feel free to email carlos@glean.io
 
 **Slack support**
 

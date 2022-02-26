@@ -1,6 +1,3 @@
-# Using the Glean CLI
-
-# Using the CLI
 
 The Glean CLI is a [Data Ops](Data-Ops)  feature that allows you to create Preview and Deploy builds directly from your terminal or continuous integration system.
 

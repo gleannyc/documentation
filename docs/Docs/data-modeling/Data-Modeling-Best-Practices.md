@@ -1,5 +1,3 @@
-# Data Modeling Best Practices
-
 The goal of modeling data is to accurately measure a workflow or process in your organization.  If you are monitoring clinical trials patients, you might have a data model for patients.  If you are managing a call center, you may have a data model for calls.  Since a Glean data model is based on a single underlying table, you should denormalize and join in as much relevant data as possible.  Below are useful guidelines for how to think about and optimize your data models.
 
 ## What does each row represent?

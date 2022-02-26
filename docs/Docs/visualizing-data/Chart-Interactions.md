@@ -1,5 +1,3 @@
-# Chart Interactions
-
 Glean charts are designed to be interactive and allow you to dig deeper with simple chart interactions.  Clicking any item in a chart allows you to filter and hovering reveals the underlying chart data.
 
 ## Hover to reveal data

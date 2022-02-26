@@ -1,19 +1,17 @@
-# Data Models Overview
-
 [Direct link to your Glean Data Models](http://glean.io/app/p/data-models)
 
 Data models in Glean allow you to define how your organization will measure, track and explore data.  Defining the logic for your analytics upfront allows your users to dig in and analyze data without writing code or worrying about whether they can trust their results.  This declarative workflow allows the analyst and data team to manage how you think about your business and Glean will build a user interface automatically that helps you explore that data.
 
-# Glean workflow
+## Glean workflow
 
-## 1.  Define your Data Model
+### 1.  Define your Data Model
 Your data model defines your metrics and filters upfront so you don't need to code to analyze data later.
 
-## 2.  Analyze and Explore
+### 2.  Analyze and Explore
 Glean automatically sets up an intuitive data exploration dashboard for each data model.
 You should save views that are important to your organization.
 
-## 3.  Share
+### 3.  Share
 
 The whole team is now empowered to dig into the data and share hypotheses.
 When you find something interesting create a share link to let others dig in.
@@ -49,7 +47,7 @@ Data models have three components, there are brief descriptions below or you can
     
     Metrics are measurements that go up and down over time. They are numeric and aggregate your data (like a count or a sum).
     
-- [Dates](/Docs/data-modeling/Dates-9299ed61c0a54f338965eec6b56a9117)
+- [Dates](/Docs/data-modeling/Dates)
     
     Dates help you track your metrics over time. Select a primary date by clicking the gear next to the date column - this will act as the default for tracking all metrics.
     

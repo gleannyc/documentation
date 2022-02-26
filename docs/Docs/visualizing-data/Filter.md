@@ -1,5 +1,3 @@
-# Filter
-
 Filtering data allows you to remove rows from your data results so you can drill in on a subset of your data.  By design, you can click and filter-down into any data in Glean.  This means there are lots of ways to filter data and we'll walk you through all of those here.
 
 ## Filtering an attribute panel

@@ -15,7 +15,7 @@ Data Ops is under active development and currently has some limitations, includi
 - The Glean configuration files do not yet support every feature that is available in the Glean web application.
 - If you build resources from a Git repository, users are still able to edit those resources through the Glean UI.  When you re-deploy these resources with your DataOps configuration files, any changes made through the Glean UI will be overwritten.
 
-# Overview
+## Overview
 
 To use Data Ops, you define one or more of your Glean resources using **configuration files**. A configuration file contains a complete specification of a resource. For instance, a Model configuration file contains information about which database connection to use, the name of the underlying database table, a list of attributes and metrics, etc.
 
@@ -26,9 +26,9 @@ Using a set of configuration files, you create a **Build**. There are two differ
 
 You can create a Build using the Glean command-line interface (CLI), or through the Glean web application. Glean integrates with Git and can create Builds using specific Git branches or revisions that have been pushed to your repository.
 
-# Getting Started
+## Getting Started
 
-## Configuring Git credentials
+### Configuring Git credentials
 
 Glean needs to be granted access to your Git repository in order to create Builds from specific revisions.
 
@@ -45,5 +45,3 @@ To configure your Git credentials:
     - The default path describes the root of your Glean credentials directory within the repo
 4. Click the `🗼Test` button to test your git credentials
 5. Click `Save Credentials`
-
-### Next, learn about [Creating Data Ops Builds](Creating-Data-Ops-Builds)

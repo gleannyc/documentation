@@ -1,5 +1,3 @@
-# Creating Builds
-
 ## Trigger a Build
 
 A build will connect to your repository, detect all of the Glean [configuration files](https://www.notion.so/Data-Ops-16c76e0ef7b946579bdc4eb7baabbf42) in your repository and create, update, and delete resources to make glean consistent with the configuration:

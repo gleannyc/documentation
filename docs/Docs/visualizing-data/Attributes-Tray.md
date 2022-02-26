@@ -1,5 +1,3 @@
-# Attributes tray
-
 The attributes tray is the control panel for your chart.  By default, there is one panel for each attribute in your data model in your attributes tray.  You can scroll left and right to reveal all of the attributes.  The attributes tray immediately allows you to profile your data as well as filter and breakout data.  There are a few actions which every attribute panel allows you to do:
 
 1. Breakout an attribute as a series

@@ -1,9 +1,7 @@
-# Add Data Model
-
-Adding data allows you to create a new data model in Glean.  If possible, you should try to modify or extend an existing data model instead of adding new data models.  This section shows you how to quickly add data if you're getting started, you should also check out [Data Models Overview](Data-Models-Overview) and [Data Modeling Best Practices](Data-Modeling-Best-Practices)
+When possible, you should try to modify or extend an existing data model instead of adding new data models for each new analysis.  This section shows you how to quickly add data if you're getting started, you should also check out [Data Models Overview](Data-Models-Overview) and [Data Modeling Best Practices](Data-Modeling-Best-Practices)
 
 1. From your [project homepage](https://glean.io/app/), click `New Model`
-2. **Select a data source** 
+2. Select a data source
     
     Each Glean model is based on an underlying data table or spreadsheet.  The most automated and powerful way to add data to Glean is by using a SQL database. See [Database Connections](Database-Connections) 
     

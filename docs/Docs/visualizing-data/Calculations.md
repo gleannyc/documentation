@@ -1,5 +1,3 @@
-# Calculations
-
 Glean supports adding calculations such as rolling averages to your metrics.  You can add calculations when you are exploring any data model or saved view directly from the metrics dropdown.
 
 ## Add a calculation to a saved view

@@ -1,5 +1,3 @@
-# Dashboards
-
 Adding a custom dashboard allows Glean users to create a view with several different charts configured in a custom layout.
 
 Glean's core visualizations and saved views will replace 80% of the custom dashboards you would spend time building in other tools.  You should create a custom dashboard when the core views are not sufficient and you need more configurability.
