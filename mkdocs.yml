@@ -1,0 +1,26 @@
+# TODO:
+# 1. highlight selected section similar to tabbed sections 
+# 2. small caps / breadcrumb styling for headings
+site_name: Glean
+theme:
+  name: material
+  palette:
+    scheme: glean
+  logo: assets/glean-logo-white.png
+  favicon: assets/glean-logo.png
+  custom_dir: overrides
+  features:
+    - navigation.tracking
+    - navigation.sections
+    - navigation.tabs
+extra:
+  analytics:
+    provider: segment
+    api_key: 1234
+  generator: false
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+extra_css:
+  - stylesheets/extra.css
