@@ -12,7 +12,7 @@ For this walk-through, we're going to look at the user engagement on the tech ne
 
 ## Prepare curves in your data warehouse
 
-As with all tools you build in Glean, retention curves will be as powerful as the data model you produce for them.  For large user tables, it probably makes sense to prepare this data in your data warehouse, but it's also possible to calculate retention curves on the fly using a SQL-based data model.  See [Add Data Model](Add-Data-Model) 
+As with all tools you build in Glean, retention curves will be as powerful as the data model you produce for them.  For large user tables, it probably makes sense to prepare this data in your data warehouse, but it's also possible to calculate retention curves on the fly using a SQL-based data model.  See [Add Data Model](/Docs/getting-started/Add-Data-Model) 
 
 To prepare our curves, we are going to track whether a user is active or not in any given month.  So that all of our users are being compared fairly, we'll also track the number of months since a user signed up - this will be the x-axis of our retention curve.
 

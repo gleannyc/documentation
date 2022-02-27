@@ -5,14 +5,16 @@ Glean supports adding calculations such as rolling averages to your metrics.  Yo
 1. Go to a `saved view` or start exploring any `data model`
 2. Click the metrics dropdown - the `y` or `metric` dropdown depending on the chart type
 3. Click `Add Calculation`
-    
-!!! info
 
-  If a breakout is applied, the calculation will be applied to each individual breakout series, if no breakout is applied a second series will be added so you will see your metric side-by-side with the new calculation
+    !!! info
+
+        If a breakout is applied, the calculation will be applied to each individual breakout series, if no breakout is applied a second series will be added so you will see your metric side-by-side with the new calculation
     
 4. A new menu will open allowing you to name your calculation and edit the calculation's options.
 
 ## Calculation types
+
+# TODO(cga): fix this table
 
 | Calculation | Options |
 | --- | --- |

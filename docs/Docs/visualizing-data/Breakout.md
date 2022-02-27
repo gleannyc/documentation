@@ -4,13 +4,13 @@ Breaking out an attribute in Glean adds that attribute as a layer in the visuali
 
 ## Adding and removing a breakout
 
-- **From the Attribute Panel:** The easiest way to breakout an attribute is to select the [Breakout](Breakout)  button from any attribute panel in the [Attributes tray](Attributes-tray).
+- **From the Attribute Panel:** The easiest way to breakout an attribute is to select the Breakout button from any attribute panel in the [Attributes tray](Attributes-Tray.md).
 - **From the top Control Bar:** You can quickly view or remove a breakout from the top control bar just about your chart.
 - **From the configuration Panel:** As with another data configuration, you can always view and remove a breakout by clicking the `Configuration` tab on the right hand panel.
 
 ## Adding breakout items
 
-Glean visualizes the top six items in your attribute by default, the rest of the items are bucketed together into an `Other` category.  This allows you to visualize the distribution of very high-[cardinality](https://en.wikipedia.org/wiki/Cardinality) columns easily.  You can always add more groups if you want in the attribute panel, but generally, you shouldn't visualize too many items at a time - this is why we pick a low number as a default.  You can control the number of groups from the attribute panel, see the [Attributes tray](Attributes-tray) page for more details.
+Glean visualizes the top six items in your attribute by default, the rest of the items are bucketed together into an `Other` category.  This allows you to visualize the distribution of very high-[cardinality](https://en.wikipedia.org/wiki/Cardinality) columns easily.  You can always add more groups if you want in the attribute panel, but generally, you shouldn't visualize too many items at a time - this is why we pick a low number as a default.  You can control the number of groups from the attribute panel, see the [Attributes tray](Attributes-Tray.md) page for more details.
 
 ## Colors
 

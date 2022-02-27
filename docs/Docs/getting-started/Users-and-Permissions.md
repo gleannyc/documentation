@@ -1,8 +1,8 @@
-You can invite members to your project in Glean to allow them to query and explore data.  You can use [roles](Users-and-Permissions) to limit the actions a user can take - it probably makes sense to start people with lower levels of permissions across the board and increase as you realize they need more advanced permissions.  All users in your project will be able to view data in your project, but only owners can add additional members and only editors can change data models.  It's a best practice to only allow analysts and analytically-inclined members of your team to edit data models.  See [Data Modeling Best Practices](Data-Modeling-Best-Practices) 
+You can invite members to your project in Glean to allow them to query and explore data.  You can use [roles](Users-and-Permissions) to limit the actions a user can take - it probably makes sense to start people with lower levels of permissions across the board and increase as you realize they need more advanced permissions.  All users in your project will be able to view data in your project, but only owners can add additional members and only editors can change data models.  It's a best practice to only allow analysts and analytically-inclined members of your team to edit data models.  See [Data Modeling Best Practices](/Docs/data-modeling/Data-Modeling-Best-Practices) 
 
 ## Add a user
 
-[Direct link to your Glean user list](https://glean.io/project#/users)
+[Direct link to your Glean user list](https://glean.io/app/p/people)
 
 1. Go to the `People` page using the link on the navigation side bar
 2. Select `Users`
@@ -17,11 +17,7 @@ You can invite members to your project in Glean to allow them to query and explo
     
 5. The invited user will receive an email with an invite link.  The user can then either create a username and password or use Google authentication to login.
 
-- Troubleshooting
-    
-    Email addresses must match google account exactly: periods in the email address should match and don't use account aliases.  You can see your own user account email on your google account page: [https://myaccount.google.com/email](https://myaccount.google.com/email)
-    
-    Projects can be setup to only allow email addresses on your domain (eg. only emails ending in `@yourcompany.com`).  Contact [support](mailto:support@glean.io) to get this configured.
+    Projects can be setup to only allow email addresses on your domain (eg. only emails ending in `@yourcompany.com`).
     
 
 ## Default system roles

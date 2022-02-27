@@ -1,5 +1,5 @@
 
-The Glean CLI is a [Data Ops](Data-Ops)  feature that allows you to create Preview and Deploy builds directly from your terminal or continuous integration system.
+The Glean CLI is a [Data Ops](index.md)  feature that allows you to create Preview and Deploy builds directly from your terminal or continuous integration system.
 
 - Quickstart
     
@@ -25,7 +25,7 @@ To use the CLI, you must have Python version 3.7 or greater installed in your en
     
     To check if Python 3 is installed, run the following command in your terminal:
     
-    ```yaml
+    ```bash
     python3 --version
     ```
     
