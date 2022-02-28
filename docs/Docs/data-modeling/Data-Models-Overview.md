@@ -26,7 +26,7 @@ See [Add Data Model](/Docs/getting-started/Add-Data-Model) to see how to setup y
 
 **Editing a data model**
 
-1. Select the [More](Glossary-11bd88f53c554f1aac6f05446f5d04ad/More) button on the top right hand of the chart.
+1. Select the [More](/Docs/visualizing-data/Chart-Menu/) button on the top right hand of the chart.
 2. Select `Edit Data Model`
 
 ## Why use Data Models?

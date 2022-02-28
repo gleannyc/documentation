@@ -1,6 +1,6 @@
 ## Trigger a Build
 
-A build will connect to your repository, detect all of the Glean [configuration files](https://www.notion.so/Data-Ops-16c76e0ef7b946579bdc4eb7baabbf42) in your repository and create, update, and delete resources to make glean consistent with the configuration:
+A build will connect to your repository, detect all of the Glean [configuration files](index.md) in your repository and create, update, and delete resources to make glean consistent with the configuration:
 
 1. Navigate to the `Data Ops` page using the link on the navigation side bar
 2. Click the `Build` button on the top right to create a new build
@@ -25,7 +25,7 @@ If there is an error while deploying a data model, the build process will revert
 
 ## Glean Configuration Files
 
-Glean supports configuration files written in [yaml](https://en.wikipedia.org/wiki/YAML) or [JSON](https://en.wikipedia.org/wiki/JSON). A Glean Build will attempt to validate every file in the specified path with a `.yml` or `.json` extension. 
+Glean supports configuration files written in YAML or JSON. A Glean Build will attempt to validate every file in the specified path with a `.yml` or `.json` extension. 
 
 !!! warning
 
@@ -36,14 +36,14 @@ Glean supports configuration files written in [yaml](https://en.wikipedia.org/wi
 
 An easy way to get started building a configuration file is to export it from an existing Glean resource.
 
-- Data Models: Navigate to the [Data Models](https://glean.io/app/p/data-models) page, click the Edit icon for one of your Data Models, and then click the "View Data Ops Config File" button.
-- Saved Views: On any Explore page, click the three dots in the top-right corner of the chart area, and then click "Export Saved View Config File".
+- Data Models: Navigate to the [Data Models](https://glean.io/app/p/data-models) page, click the Edit icon for one of your Data Models, and then click the `View Data Ops Config File` button.
+- Saved Views: On any Explore page, click the three dots in the top-right corner of the chart area, and then click `Export Saved View Config File`.
 
 You will likely want to adjust some values in the configuration files after exporting to match your team's preferences and local environment, such as column names and paths to other resources.
 
 ### Glean model configuration files
 
-Glean files are intended to map to the options available in the data model user interface (see [Data Models Overview](Data-Models-Overview)). Full documentation of the model configuration file can be found [here](Creating-Data-Ops-Builds-e30b13c68425475293858e4b5229f267/DataOps-Configuration-Schema).
+Glean files are intended to map to the options available in the data model user interface (see [Data Models Overview](/Docs/data-modeling/Data-Models-Overview)). Full documentation of the model configuration file can be found [here](DataOps-Configuration-Schema.md).
 
 The following is an example of a data model `my_model.yml`:
 

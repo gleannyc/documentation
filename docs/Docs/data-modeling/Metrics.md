@@ -1,11 +1,11 @@
 Metrics are measurements that can go up and down over time.  Each metric should map to a measurement of a process or workflow in your organization.  Counts of events, revenues and cycle times are good examples of metrics you may want to add to your data model.
 
-You will setup and update metrics from the [Add Data Model](Add-Data-Model) workflow.
+You will setup and update metrics from the [Add Data Model](/Docs/getting-started/Add-Data-Model) workflow.
 
 ## Types of Metrics
 |Name          |Input Column Type       |Description                                                                    |
 |--------------|------------------------|-------------------------------------------------------------------------------|
-|row count     |No input column required|Count of rows*                                                                 |
+|row count     |No input column required|Count of rows                                                                  |
 |custom metric |No input column required|A SQL-based custom aggregation, see Custom SQL Metrics for more details        |
 |count         |String or Numeric       |SQL count() over a field - counts the number of times the field is not NULL    |
 |count distinct|String or Numeric       |SQL count(distinct ) - counts the number of unique, non-null values in a column|
