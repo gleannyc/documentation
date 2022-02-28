@@ -14,20 +14,8 @@ Glean supports adding calculations such as rolling averages to your metrics.  Yo
 
 ## Calculation types
 
-# TODO(cga): fix this table
-
 | Calculation | Options |
 | --- | --- |
-| Rolling Average
-Useful for helping smooth out noise in a dataset
-
-Rolling Sum
-For looking at the cumulative sum of a metric | Periods - the size of the moving window - the number of periods to include in the calculation.
-
-Minimum periods - the minimum number of observations required for the calculation to be defined for a certain point.  For example if you take a seven day moving average, but there are only five days of data before this date, then the calculation will not be defined for that day.  Defaults to the same as periods
-
-Anchor - Whether to set labels at the center of the window or at the edge. Values are Trailing Centered or Leading.  For a timeseries chart, you will usually want this this to be a trailing average or sum. |
-| Constant Value
-Useful for fixed goals or other fixed values for comparison
- | Value - numeric value to chart as a fixed line. |
+| Rolling Average<br>Useful for helping smooth out noise in a dataset<br><br>Rolling Sum<br>For looking at the cumulative sum of a metric | Periods - the size of the moving window - the number of periods to include in the calculation.<br><br>Minimum periods - the minimum number of observations required for the calculation to be defined for a certain point.  For example if you take a seven day moving average, but there are only five days of data before this date, then the calculation will not be defined for that day.  Defaults to the same as periods<br><br>Anchor - Whether to set labels at the center of the window or at the edge. Values are Trailing Centered or Leading.  For a timeseries chart, you will usually want this this to be a trailing average or sum. |
+| Constant Value<br>Useful for fixed goals or other fixed values for comparison| Value - numeric value to chart as a fixed line. |
 |  | More to come!  Contact us if you have special requests |
