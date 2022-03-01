@@ -42,9 +42,9 @@ jobs:
           from: site/
           to: s3://docs.glean.io
           arguments: --delete
-          aws-access-key-id: PROD_USER_AWS_KEY
-          aws-secret-access-key: PROD_USER_AWS_SECRET
-          aws-region: PROD_AWS_REGION
+          aws-access-key-id: USER_AWS_KEY
+          aws-secret-access-key: USER_AWS_SECRET
+          aws-region: AWS_REGION
 
   stage_deploy: 
     docker:
@@ -56,9 +56,9 @@ jobs:
       - aws-s3/sync:
           from: site/
           to: s3://docs.glean.io/${CIRCLE_BRANCH}
-          aws-access-key-id: PROD_USER_AWS_KEY
-          aws-secret-access-key: PROD_USER_AWS_SECRET
-          aws-region: PROD_AWS_REGION
+          aws-access-key-id: USER_AWS_KEY
+          aws-secret-access-key: USER_AWS_SECRET
+          aws-region: AWS_REGION
 
 experimental:
   notify:
