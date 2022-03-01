@@ -1,0 +1,67 @@
+# This config uses the `.circleci/extended/orb-test.yml` as its base, and then publishes the app to S3.
+# The workflow contained here demonstrates a practical application of `post-steps`
+# and using workspace persistence
+version: 2.1
+
+orbs:
+  node: circleci/node@4.1
+  # The S3 orb will setup the aws-cli and quickly copy or sync anything to s3.
+  # Orbs reduce the amount of configuration required for common tasks.
+  # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/aws-s3
+  # NOTE: Environment variables containing the necessary secrets can be setup in the CircleCI UI
+  # See here https://circleci.com/docs/2.0/env-vars/#setting-an-environment-variable-in-a-project
+  aws-s3: circleci/aws-s3@2.0
+
+workflows:
+  build-prod:
+    jobs:
+      - prod_deploy:
+          filters:
+            branches:
+              only:
+                - main
+  build-stage:
+    jobs:
+      - stage_deploy:
+          filters:
+            branches:
+              only:
+                - /rc-.*/
+
+jobs:
+  prod_deploy: 
+    docker:
+      - image: cimg/python:3.9.10
+    steps:
+      - checkout
+      - run: pip install -r requirements.txt
+      - run: SEGMENT_KEY=${PROD_SEGMENT_API_KEY} mkdocs build
+      # TODO(cga): this step keeps the documentation secret, remove once we're live
+      - run: mv site/index.html site/index-d41d8cd98f00b204e9800998ecf8427e.html
+      - aws-s3/sync:
+          from: site/
+          to: s3://docs.glean.io
+          arguments: --delete
+          aws-access-key-id: PROD_USER_AWS_KEY
+          aws-secret-access-key: PROD_USER_AWS_SECRET
+          aws-region: PROD_AWS_REGION
+
+  stage_deploy: 
+    docker:
+      - image: cimg/python:3.9.10
+    steps:
+      - checkout
+      - run: pip install -r requirements.txt
+      - run: SEGMENT_KEY=none mkdocs build
+      - aws-s3/sync:
+          from: site/
+          to: s3://docs.glean.io/${CIRCLE_BRANCH}
+          aws-access-key-id: PROD_USER_AWS_KEY
+          aws-secret-access-key: PROD_USER_AWS_SECRET
+          aws-region: PROD_AWS_REGION
+
+experimental:
+  notify:
+    branches:
+      only:
+        - main
