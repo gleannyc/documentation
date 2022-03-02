@@ -18,7 +18,7 @@ theme:
 extra:
   analytics:
     provider: segment
-    api_key: 1234
+    api_key: !ENV SEGMENT_KEY
   generator: false
 markdown_extensions:
   - admonition
