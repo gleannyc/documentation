@@ -21,6 +21,12 @@
 .md-content {
   margin-top: 1rem;
 }
+
+.md-content__inner {
+  margin-top: 1rem;
+  max-width: 40rem;
+}
+
 .md-sidebar.md-sidebar--secondary {
   margin-top: 1rem;
   padding-top: 1.5rem;
@@ -30,6 +36,7 @@
 .md-grid {
   margin-left: 1.5rem;
   margin-right: 0;
+  max-width: initial; 
 }
 .md-sidebar.md-sidebar--primary .md-sidebar__scrollwrap {
   border-right: 1px solid #cbcbcb;
