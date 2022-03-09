@@ -2,35 +2,35 @@
 The Glean CLI is a [Data Ops](index.md)  feature that allows you to create Preview and Deploy builds directly from your terminal or continuous integration system.
 
 - Quickstart
-    
+
     ```bash
     # 1. Create your access key file:  https://glean.io/app/p/access-keys
     mkdir ~/.glean
     mv ~/Downloads/glean_access_key.json ~/.glean/ # or wherever you downloaded the file
-    
+
     # 2. Create virtual env and install the Glean CLI
     python3 -m venv venv
     source venv/bin/activate
     pip3 install glean-cli
-    
+
     # 3. Explore data (can export any resource from glean into this repo):
     cd ~/code/my_project/
     glean preview .
     ```
-    
+
 
 To use the CLI, you must have Python version 3.7 or greater installed in your environment.
 
 - Checking your Python version
-    
+
     To check if Python 3 is installed, run the following command in your terminal:
-    
+
     ```bash
     python3 --version
     ```
-    
-    If the command fails or your version is less than 3.7, you can download and install by following the instructions here: [https://www.python.org/downloads/](https://www.python.org/downloads/) 
-    
+
+    If the command fails or your version is less than 3.7, you can download and install by following the instructions here: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
 
 To install the CLI, run the following command in your terminal:
 
@@ -119,7 +119,7 @@ The CLI allows you to integrate Glean into your existing development and deploym
 
 You can invoke the glean CLI in a continuous integration system to automatically generate previews or deploy your project.
 
-For example, if you use GitHub, the following GitHub action will generate a Build Preview of the local `glean`directory whenever you send a pull request:
+For example, if you use GitHub, the following GitHub action will generate a Build Preview of the local `glean` directory whenever you send a pull request:
 
 ```yaml
 name: glean-preview

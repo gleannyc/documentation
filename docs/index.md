@@ -1,21 +1,30 @@
-# Introduction to Glean
+# Welcome to Glean's documentation
 
-Glean allows you to quickly publish self-service data tools so your team can answer their own questions in realtime instead of asking someone to write a SQL query.
+Glean is an interactive data exploration tool for anyone in your organization to discover actionable insights.
 
-Click the New Model button above to get started, or click the right arrow to take a five minute tour.
+Glean allows you to quickly publish self-service data tools so your team can answer their own questions, instead of asking someone to write a SQL query.
 
-## Setup your project and team
+!!! info "Just signed up with Glean?"
 
-You are currently in a project, where your data analysis and visualization live. You can invite people, setup database connections and manage your project by clicking on your project name.
+    Take a look at the [Quickstart guide](guides/quickstart/)
 
-## What will you track?
+## Glean workflow
 
-Glean is good at helping your team track your operations and dig into what's going on.
+### 1.  Define your Data Models
 
-What are the things your team is doing that you should be tracking over time?
+Your data models define metrics and filters upfront so you can analyze data without writing writing code everytime.
 
-## Add your first data model
+### 2.  Analyze and Explore
 
-Every chart and analysis is based on a Glean data model. A data model is a table with at least one date and some attributes. Let's take an example data model that we'll create from a database query.
+Glean automatically sets up an intuitive data exploration dashboard for each data model.
 
-This data model has one date and two attributes.
+You can save views of the data that are important to your organization.
+
+### 3.  Share
+
+When you find something interesting, create a share link to let others dig in.
+
+The whole team is now empowered to dig into the data and share hypotheses.
+
+
+[^1]: This documentation is a work in progress, please [contact us](contact-us.md) if you have any questions or suggestions or feel free to comment on any of these pages.

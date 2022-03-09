@@ -15,7 +15,7 @@ You will setup and update metrics from the [Add Data Model](/Docs/getting-starte
 
 ## The row count metric
 
-The row count metric is added by default to a data model and can't be removed.  This is intentional - see the best practices for defining this metric in the [Data Modeling Best Practices](/Docs/getting-started/Data-Modeling-Best-Practices)
+The row count metric is added by default to a data model and can't be removed.  This is intentional - see the best practices for defining this metric in the [Data Modeling Best Practices](../../guides/data-modeling-best-practices.md)
 
 ## Column Aggregations
 
@@ -23,7 +23,7 @@ The simplest type of metric.  See table above for which functions you can run on
 
 To add a column aggregating metric:
 
-1. Goto the [Add Data Model](/Docs/getting-started/Add-Data-Model)  workflow by creating a new data model or editing an existing model
+1. Goto the [Add Data Model](add-data-model.md)  workflow by creating a new data model or editing an existing model
 2. Click the column from the Source data on the left that you would like to aggregate
 3. From the dropdown menu, select `Metric` - the column is added to the data model in the `Metrics` section
 4. Select the type of aggregation from the dropdown, see aggregation types above
@@ -33,6 +33,6 @@ To add a column aggregating metric:
 
 Custom SQL metrics allow you to have more involved custom aggregations in Glean like weighted averages or proportions and other formulas.  You can define a custom metric as any [aggregating function](https://www.datacamp.com/community/tutorials/aggregate-functions-sql) that results in a numeric value.  To add a custom metric:
 
-1. Goto the [Add Data Model](/Docs/getting-started/Add-Data-Model)  workflow by creating a new data model or editing an existing model
+1. Goto the [Add Data Model](add-data-model.md)  workflow by creating a new data model or editing an existing model
 2. Under the Metrics section click the `Add` button and select `Custom Metric`
 3. Click the pencil `✏️` to change the formula to any aggregating sql expression

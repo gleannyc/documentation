@@ -1,4 +1,6 @@
-You can invite members to your project in Glean to allow them to query and explore data.  You can use [roles](Users-and-Permissions) to limit the actions a user can take - it probably makes sense to start people with lower levels of permissions across the board and increase as you realize they need more advanced permissions.  All users in your project will be able to view data in your project, but only owners can add additional members and only editors can change data models.  It's a best practice to only allow analysts and analytically-inclined members of your team to edit data models.  See [Data Modeling Best Practices](/Docs/data-modeling/Data-Modeling-Best-Practices) 
+You are currently in a project, where your data analysis and visualization live. You can invite people, setup database connections and manage your project by clicking on your project name.
+
+You can invite members to your project in Glean to allow them to query and explore data.  You can use [roles](#default-system-roles) to limit the actions a user can take - it probably makes sense to start people with lower levels of permissions across the board and increase as you realize they need more advanced permissions.  All users in your project will be able to view data in your project, but only owners can add additional members and only editors can change data models.  It's a best practice to only allow analysts and analytically-inclined members of your team to edit data models.  See [Data Modeling Best Practices](../guides/data-modeling-best-practices.md) 
 
 ## Add a user
 

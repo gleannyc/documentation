@@ -43,7 +43,7 @@ You will likely want to adjust some values in the configuration files after expo
 
 ### Glean model configuration files
 
-Glean files are intended to map to the options available in the data model user interface (see [Data Models Overview](/Docs/data-modeling/Data-Models-Overview)). Full documentation of the model configuration file can be found [here](DataOps-Configuration-Schema.md).
+Glean files are intended to map to the options available in the data model user interface (see [Data Models Overview](../data-modeling/Data-Models-Overview.md)). Full documentation of the model configuration file can be found [here](DataOps-Configuration-Schema.md).
 
 The following is an example of a data model `my_model.yml`:
 
@@ -90,7 +90,7 @@ cols:
 
 ### Glean saved view configuration files
 
-Full documentation of the saved view configuration files can be found [here](Creating-Data-Ops-Builds-e30b13c68425475293858e4b5229f267/DataOps-Configuration-Schema).
+Full documentation of the saved view configuration files can be found [here](DataOps-Configuration-Schema.md).
 
 The following is an example of a saved view `my_saved_view.yml`
 

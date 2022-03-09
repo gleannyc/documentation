@@ -6,7 +6,6 @@ theme:
   name: material
   palette:
     scheme: glean
-    primary: black
   logo: assets/glean-logo-white.png
   favicon: assets/glean-logo.png
   custom_dir: overrides
@@ -14,44 +13,50 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.sections
+    - navigation.expand
     - navigation.tabs
 extra:
   analytics:
     provider: segment
+    property: 'YOUR_SEGMENT_KEY'
     api_key: !ENV SEGMENT_KEY
   generator: false
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
+  - footnotes
 extra_css:
   - assets/stylesheets/extra.css
 nav:
-  - Docs: 
-    - Overview:
-      - index.md
-      - Get in Touch: Docs/overview/Contact-Us.md
-    - Getting Started:
-      - Docs/getting-started/Database-Connections.md
-      - Docs/getting-started/Add-Data-Model.md
-      - Docs/getting-started/Users-and-Permissions.md
-    - Data Modeling:
-      - Docs/data-modeling/Data-Models-Overview.md
-      - Docs/data-modeling/Data-Modeling-Best-Practices.md
-      - Docs/data-modeling/Metrics.md
-    - Visualizing Data:
-      - Docs/visualizing-data/Attributes-Tray.md
-      - Docs/visualizing-data/Breakout.md
-      - Docs/visualizing-data/Calculations.md
-      - Docs/visualizing-data/Chart-Interactions.md
-      - Docs/visualizing-data/Chart-Menu.md
-      - Docs/visualizing-data/Filter.md
-      - Docs/visualizing-data/Dashboards.md
-    - Data Ops:
-      - Data Ops Overview: Docs/data-ops/index.md
-      - Docs/data-ops/Creating-Data-Ops-Builds.md
-      - Docs/data-ops/Using-the-Glean-CLI.md
-      - Docs/data-ops/DataOps-Configuration-Schema.md
-    - Guides:
-      - Docs/guides/Create-Retention-Curves.md
-  - Quickstart: Quickstart/index.md
+    - Docs:
+      - Glean:
+        - Overview: index.md
+      - Data Explorer:
+        - docs/visualizing-data/Attributes-Tray.md
+        - docs/visualizing-data/Breakout.md
+        - docs/visualizing-data/Calculations.md
+        - docs/visualizing-data/Chart-Interactions.md
+        - docs/visualizing-data/Chart-Menu.md
+        - docs/visualizing-data/Dashboards.md
+        - docs/visualizing-data/Filter.md
+      - Data Models:
+        - Overview: docs/data-modeling/Data-Models-Overview.md
+        - Add a Data Model: docs/data-modeling/add-data-model.md
+        - Calculating Metrics: docs/data-modeling/Metrics.md
+      - Data Ops:
+        - Overview: docs/data-ops/index.md
+        - docs/data-ops/Creating-Data-Ops-Builds.md
+        - docs/data-ops/DataOps-Configuration-Schema.md
+        - docs/data-ops/Using-the-Glean-CLI.md
+      - Guides:
+        - Create Retention Curves: guides/create-retention-curves/index.md
+        - Data Modeling Best Practices: guides/data-modeling-best-practices.md
+      - People:
+        - Users and Permissions: docs/users-and-permissions.md
+      - Settings: 
+        - Database Connections: docs/database-connections.md
+      - Support:
+        - Get in Touch: contact-us.md
+    - Quickstart: guides/quickstart/index.md

@@ -18,7 +18,7 @@ Once you pick which domain you want to model, it's a good idea to pull in releva
 
 If you're modeling calls in a call center, you might want to pull in information about each call center and pull in information about each employee.  In practice, denormalizing data just means joining in other relevant tables and columns.
 
-If your data isn't already denormalized in your data warehouse, you can build your data model on top of a SQL query  [Add Data Model](/Docs/getting-started/Add-Data-Model)
+If your data isn't already denormalized in your data warehouse, you can build your data model on top of a SQL query  [Add Data Model](../docs/data-modeling/add-data-model.md)
 
 !!! info "Isn't denormalizing inefficient?"
 
