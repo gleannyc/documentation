@@ -6,7 +6,7 @@ The approach is very similar to the general approach to data modeling: you'll pr
 
 For retention curves, it's oftentimes useful to add experiments as attributes: did you try something in the product to retain users more effectively?  Maybe a new onboarding flow, a new user flow?
 
-![Retention curves, explored in Glean](/assets/Screen_Shot_2020-11-02_at_10.15.43_AM.png)
+![Retention curves, explored in Glean](Screen_Shot_2020-11-02_at_10.15.43_AM.png)
 
 For this walk-through, we're going to look at the user engagement on the tech news aggregation website Hacker News.  The dataset is available on BigQuery's public datasets and is kept up to date.
 
@@ -92,7 +92,7 @@ A few notes on the resulting columns:
     - Add two columns as metrics:
         - **Unbounded Active Retention** - is defined as the `average` of column `unbounded_active`
         - **Active Retention** - is defined as the `average` of column `active`
-        - **Active Users (Optional)** - if you want to create a [retention pivot](Guide-Create-retention-curves), you should also add a metric for unique active users in a month:
+        - **Active Users (Optional)** - if you want to create a retention pivot, you should also add a metric for unique active users in a month:
         
         ```sql
         COUNT(DISTINCT IF(active = 1, userid, null))
@@ -120,4 +120,4 @@ A few notes on the resulting columns:
 5. Click into the `control` tab on the right-hand side and make sure you sort rows by `cohort` descending and sort the columns by `month_number` ascending
 6. As the metric, select `Active Users` as the calculation, select `Percentage of Row Max` and finally as the Color scale, select `Percentage Color Scale`
 
-![Retention table](/assets/Screen_Shot_2021-03-22_at_3.45.47_PM.png)
+![Retention table](Screen_Shot_2021-03-22_at_3.45.47_PM.png)
