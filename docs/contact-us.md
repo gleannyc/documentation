@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Contact Us
 
 **Email Support**
