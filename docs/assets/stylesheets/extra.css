@@ -35,6 +35,7 @@
 
 .md-content__inner {
     margin-top: 1rem;
+    /* limit content width */
     max-width: 40rem;
 }
 
@@ -50,6 +51,7 @@
     margin-left: 1.5rem;
     margin-right: 0;
     max-width: initial;
+    /* move toc to right */
 }
 
 .md-sidebar.md-sidebar--primary .md-sidebar__scrollwrap {
