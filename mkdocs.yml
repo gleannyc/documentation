@@ -1,12 +1,11 @@
 # TODO:
 # 1. highlight selected section similar to tabbed sections 
 # 2. small caps / breadcrumb styling for headings
-site_name: Glean Documentation
+site_name: Glean
 theme:
   name: material
   palette:
     scheme: glean
-    primary: black
   logo: assets/glean-logo-white.png
   favicon: assets/glean-logo.png
   custom_dir: overrides
@@ -14,45 +13,47 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.sections
+    - navigation.expand
     - navigation.tabs
 extra:
   analytics:
     provider: segment
+    property: 'YOUR_SEGMENT_KEY'
     api_key: !ENV SEGMENT_KEY
   generator: false
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
+  - footnotes
 extra_css:
   - assets/stylesheets/extra.css
 nav:
-  - Docs: 
-    - Overview:
-      - index.md
-      - Get in Touch: Docs/overview/Contact-Us.md
-    - Getting Started:
-      - Docs/getting-started/Database-Connections.md
-      - Docs/getting-started/Add-Data-Model.md
-      - Docs/getting-started/Users-and-Permissions.md
-    - Data Modeling:
-      - Docs/data-modeling/Data-Models-Overview.md
-      - Docs/data-modeling/Data-Modeling-Best-Practices.md
-      - Docs/data-modeling/Metrics.md
-    - Visualizing Data:
-      - Docs/visualizing-data/Attributes-Tray.md
-      - Docs/visualizing-data/Breakout.md
-      - Docs/visualizing-data/Calculations.md
-      - Docs/visualizing-data/Chart-Interactions.md
-      - Docs/visualizing-data/Chart-Menu.md
-      - Docs/visualizing-data/Filter.md
-      - Docs/visualizing-data/Dashboards.md
+  - Home: index.md
+  - Guides:
+    - Quickstart: guides/quickstart/index.md
+    - Create retention curves: guides/create-retension-curves/index.md
+    - Analyze conversion funnels: guides/create-funnel-analysis/index.md
     - Data Modeling Best Practices: guides/data-modeling-best-practices.md
+  - Reference: 
+    - Product Overview: reference/glean-overview.md
+    - Data Explorer:
+      - reference/visualizing-data/Attributes-Tray.md
+      - reference/visualizing-data/Breakout.md
+      - reference/visualizing-data/Calculations.md
+      - reference/visualizing-data/Chart-Interactions.md
+      - reference/visualizing-data/Chart-Menu.md
+      - reference/visualizing-data/Filter.md
+      - reference/visualizing-data/Dashboards.md
+    - Data Models:
+      - Overview: reference/data-modeling/Data-Models-Overview.md
+      - Calculating Metrics: reference/data-modeling/Metrics.md
     - Data Ops:
-      - Data Ops Overview: Docs/data-ops/index.md
-      - Docs/data-ops/Creating-Data-Ops-Builds.md
-      - Docs/data-ops/Using-the-Glean-CLI.md
-      - Docs/data-ops/DataOps-Configuration-Schema.md
-    - Guides:
-      - Docs/guides/Create-Retention-Curves.md
-  - Quickstart: Quickstart/index.md
+      - Overview: reference/data-ops/index.md
+      - reference/data-ops/Creating-Data-Ops-Builds.md
+      - reference/data-ops/Using-the-Glean-CLI.md
+      - reference/data-ops/DataOps-Configuration-Schema.md
+    - Database Connections: reference/database-connections.md
+    - Users and Permissions: reference/Users-and-Permissions.md
+  - Get in Touch: contact-us.md
