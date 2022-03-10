@@ -47,6 +47,7 @@ nav:
       - Docs/visualizing-data/Chart-Menu.md
       - Docs/visualizing-data/Filter.md
       - Docs/visualizing-data/Dashboards.md
+    - Data Modeling Best Practices: guides/data-modeling-best-practices.md
     - Data Ops:
       - Data Ops Overview: Docs/data-ops/index.md
       - Docs/data-ops/Creating-Data-Ops-Builds.md
