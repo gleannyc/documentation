@@ -6,7 +6,7 @@ The approach is very similar to the general approach to data modeling: you'll pr
 
 For retention curves, it's oftentimes useful to add experiments as attributes: did you try something in the product to retain users more effectively?  Maybe a new onboarding flow, a new user flow?
 
-![Retention curves, explored in Glean](Screen_Shot_2020-11-02_at_10.15.43_AM.png)
+![Retention curves, explored in Glean](retension-curve-lines.png)
 
 For this walk-through, we're going to look at the user engagement on the tech news aggregation website Hacker News.  The dataset is available on BigQuery's public datasets and is kept up to date.
 
@@ -100,7 +100,9 @@ A few notes on the resulting columns:
         
 4. Click `Publish`
 
-## Create curves
+## Create retension curves
+
+![Retention curves, explored in Glean](retension-curve-lines.png)
 
 1. Change the chart type to a `line`
 2. Select `month_number` as the x-axis variable
@@ -113,11 +115,11 @@ A few notes on the resulting columns:
 
 ## Create retention table
 
+![Retention table](retension-curve-pivot.png)
+
 1. Make sure you add the Active Users metric specified above.
 2. Select a `pivot table` as your visualization type from the chart dropdown on the top left.
 3. Select `cohort` as your rows
 4. Select `month_number` as your columns
 5. Click into the `control` tab on the right-hand side and make sure you sort rows by `cohort` descending and sort the columns by `month_number` ascending
 6. As the metric, select `Active Users` as the calculation, select `Percentage of Row Max` and finally as the Color scale, select `Percentage Color Scale`
-
-![Retention table](Screen_Shot_2021-03-22_at_3.45.47_PM.png)
