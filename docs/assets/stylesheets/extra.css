@@ -1,106 +1,113 @@
+[data-md-color-scheme="glean"] {
+    --md-accent-fg-color: #F0326E;
+    --md-default-bg-color: #FCF9F4;
+    --md-footer-bg-color: #3a3134;
+    --md-primary-fg-color--dark: #F7AA35;
+    --md-primary-fg-color: #134768;
+}
+
 [data-md-color-scheme="glean"] .md-header,
 [data-md-color-scheme="glean"] .md-tabs,
 [data-md-color-scheme="glean"] .md-footer {
-  background-color: #3a3134;
-  /*--md-primary-fg-color: #3a3134;*/
+    background-color: #3a3134;
 }
 
 .md-sidebar {
-  padding: 0;
+    padding: 0;
 }
+
 
 /* scrolling is pretty weird on the base theme so remove the top margin and apply 
  * it to all three columns in the layout */
+
 .md-main__inner {
-  margin-top: 0;
+    margin-top: 0;
 }
+
 .md-nav.md-nav--primary.md-nav--lifted {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
+
 .md-content {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 .md-content__inner {
-  margin-top: 1rem;
-  max-width: 40rem;
+    margin-top: 1rem;
+    max-width: 40rem;
 }
 
 .md-sidebar.md-sidebar--secondary {
-  margin-top: 1rem;
-  padding-top: 1.5rem;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
 }
 
+
 /* Moves the sidebar to the left and adds a boarder */
+
 .md-grid {
-  margin-left: 1.5rem;
-  margin-right: 0;
-  max-width: initial; 
+    margin-left: 1.5rem;
+    margin-right: 0;
+    max-width: initial;
 }
+
 .md-sidebar.md-sidebar--primary .md-sidebar__scrollwrap {
-  border-right: 1px solid #cbcbcb;
+    border-right: 1px solid #cbcbcb;
 }
 
 [data-md-color-scheme="glean"] label.md-nav__link {
-  color: var(--md-default-fg-color--light);
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 0 12px;
+    color: var(--md-default-fg-color--light);
+    text-transform: uppercase;
+    font-weight: 500;
+    /* padding: 0 12px; */
 }
 
 .md-nav__item.md-nav__item--section.md-nav__item--nested {
-  padding-bottom: 15px !important;
+    padding-bottom: 15px !important;
 }
 
 .md-sidebar.md-sidebar--primary .md-nav__item {
-  padding: 0;
+    padding: 0;
 }
 
 [for="__nav_1"] {
-  display: none;
+    display: none;
 }
 
-[data-md-color-scheme="glean"]
-  .md-nav__item--section
-  > .md-nav
-  > .md-nav__list
-  > .md-nav__item {
-  padding: 0 12px;
+[data-md-color-scheme="glean"] .md-nav__item--section>.md-nav>.md-nav__list>.md-nav__item {
+    padding: 0 12px;
 }
 
-[data-md-color-scheme="glean"]
-  .md-nav__item--section
-  > .md-nav
-  > .md-nav__list
-  > .md-nav__item.md-nav__item--active {
-  border-left: 3px solid black;
-  padding-left: 9px;
+[data-md-color-scheme="glean"] .md-nav__item--section>.md-nav>.md-nav__list>.md-nav__item.md-nav__item--active {
+    border-left: 3px solid black;
+    padding-left: 9px;
 }
 
 [data-md-color-scheme="glean"] .md-nav__item .md-nav__link--active {
-  color: inherit;
-  font-weight: 600;
+    color: inherit;
+    font-weight: 600;
 }
 
 @font-face {
-  font-family: "Sharp Sans";
-  color: #3a3134;
-  src: url("/assets/SharpSans-Medium.woff2") format("woff2");
+    font-family: "Sharp Sans";
+    color: #3a3134;
+    src: url("/assets/SharpSans-Medium.woff2") format("woff2");
 }
+
 .md-header__title,
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Sharp Sans";
+    font-family: "Sharp Sans";
 }
 
 .md-footer-meta {
-  display: none;
+    display: none;
 }
 
 .md-footer__link {
-  padding-bottom: 0.2rem;
-  padding-top: 1rem;
+    padding-bottom: 0.2rem;
+    padding-top: 1rem;
 }
