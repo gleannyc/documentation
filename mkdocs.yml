@@ -36,15 +36,16 @@ nav:
     - Create retention curves: guides/create-retention-curves/index.md
     - Data Modeling Best Practices: guides/data-modeling-best-practices.md
   - Reference: 
-    - Product Overview: reference/glean-overview.md
+    - Glean:
+      - Overview: reference/index.md
     - Data Explorer:
       - reference/visualizing-data/Attributes-Tray.md
       - reference/visualizing-data/Breakout.md
       - reference/visualizing-data/Calculations.md
       - reference/visualizing-data/Chart-Interactions.md
       - reference/visualizing-data/Chart-Menu.md
-      - reference/visualizing-data/Filter.md
       - reference/visualizing-data/Dashboards.md
+      - reference/visualizing-data/Filter.md
     - Data Models:
       - Overview: reference/data-modeling/Data-Models-Overview.md
       - Calculating Metrics: reference/data-modeling/Metrics.md
@@ -53,6 +54,8 @@ nav:
       - reference/data-ops/Creating-Data-Ops-Builds.md
       - reference/data-ops/Using-the-Glean-CLI.md
       - reference/data-ops/DataOps-Configuration-Schema.md
-    - Database Connections: reference/database-connections.md
-    - Users and Permissions: reference/Users-and-Permissions.md
+    - People:
+      - Users and Permissions: reference/users-and-permissions.md
+    - Settings: 
+      - Database Connections: reference/database-connections.md
   - Get in Touch: contact-us.md
