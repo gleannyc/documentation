@@ -22,4 +22,4 @@ The whole team is now empowered to dig into the data and share hypotheses.
 
 !!! info "Just signed up with Glean?"
 
-    Take a look at our [Quickstart guide](/guides/quickstart/)
+    Take a look at our [Quickstart guide](../guides/quickstart/index.md)

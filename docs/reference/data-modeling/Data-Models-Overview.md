@@ -8,11 +8,11 @@ There are two places where you will encounter and configure data models: when yo
 
 **Add a data model**
 
-See [Add Data Model](/Docs/getting-started/Add-Data-Model) to see how to setup your first data models.
+See [Add Data Model](add-data-model.md) to see how to setup your first data models.
 
 **Editing a data model**
 
-1. Select the [More](/Docs/visualizing-data/Chart-Menu/) button on the top right hand of the chart.
+1. Select the [More](../visualizing-data/Chart-Menu.md) button on the top right hand of the chart.
 2. Select `Edit Data Model`
 
 ## Why use Data Models?
@@ -29,14 +29,14 @@ More importantly, defining your data model will allow you to avoid having multip
 
 Data models have three components, there are brief descriptions below or you can click each component to read an entire page about these components.
 
-- [Metrics](/Docs/data-modeling/Metrics)
+- [Metrics](Metrics.md)
     
     Metrics are measurements that go up and down over time. They are numeric and aggregate your data (like a count or a sum).
     
-- [Dates](/Docs/data-modeling/Dates)
+- Dates
     
     Dates help you track your metrics over time. Select a primary date by clicking the gear next to the date column - this will act as the default for tracking all metrics.
     
-- [Attributes](/Docs/data-modeling/Attributes)
+- Attributes
     
     Attributes allow you to filter and group data in Glean. Grouping and filtering attributes helps you understand differences in metrics.

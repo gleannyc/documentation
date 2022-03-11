@@ -12,4 +12,4 @@ Glean allows you to quickly publish self-service data tools so your team can ans
 
 [Get started!](guides/quickstart/){ .md-button .md-button--primary }
 
-[^1]: This documentation is a work in progress, please [contact us](contact-us) if you have any questions or suggestions or feel free to comment on any of these pages.
+[^1]: This documentation is a work in progress, please [contact us](contact-us.md) if you have any questions or suggestions or feel free to comment on any of these pages.

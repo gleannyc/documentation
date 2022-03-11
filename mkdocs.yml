@@ -48,6 +48,7 @@ nav:
       - reference/visualizing-data/Filter.md
     - Data Models:
       - Overview: reference/data-modeling/Data-Models-Overview.md
+      - Add a Data Model: reference/data-modeling/add-data-model.md
       - Calculating Metrics: reference/data-modeling/Metrics.md
     - Data Ops:
       - Overview: reference/data-ops/index.md
