@@ -18,14 +18,14 @@ Once you add a database connection, you'll be able to specify tables, SQL querie
 
 ![modal to add database connection](../quickstart/db-conn-modal.png){: style="max-width:75%"}
 
-1. Go to the [Settings](https://glean.io/app/p/settings){:target="_blank"} page from the navigation side bar
+1. [Go to the `Settings` page](https://glean.io/app/p/settings){:target="_blank"}
 2. Click `+ New Database Connection`
 3. Select the type of database; either Athena, BigQuery, Snowflake, Postgres or Redshift
 4. Enter the credentials according to your type of database
 5. Click `Test` to test your connection
 6. Click `Add` to complete the process
 
-!!! info "Further Reading"
+!!! info
 
     [More about database connections](/reference/database-connections/)
 
@@ -35,7 +35,7 @@ Every chart and analysis is based on a Glean data model. A data model is a table
 
 ![modal to add data model](../quickstart/create-data-model.png){: style="max-width:75%"}
 
-1. From your [project homepage](https://glean.io/app/), click `New Data Model`
+1. [Go to your `project homepage`](https://glean.io/app/) and click `New Data Model`
 2. Select a database connection, table, and click `Create Model`
 
     !!! info "Using a SQL Query"
@@ -47,7 +47,8 @@ Every chart and analysis is based on a Glean data model. A data model is a table
     2. Click `>` to add a source column to the data model
        1. Add a dates to your data model
        2. Add attributes to your data model) 
-    3. Add metrics to your data model see [Metrics](/reference/data-modeling/Metrics)
+    3. Add metrics to your data model (see [`Metrics`](/reference/data-modeling/Metrics))
+
 4. Click `Publish >`
 
 
@@ -55,7 +56,7 @@ Every chart and analysis is based on a Glean data model. A data model is a table
 
 ![data explorer view](../quickstart/explore.png){: style="max-width:75%"}
 
-1. Go to the [Data Models page](https://stage.glean.io/app/p/data-models){:target="_blank"}
+1. [Go to the `Data Models` page](https://stage.glean.io/app/p/data-models){:target="_blank"}
 1. Click on the data model we just created
 
 !!! success "Congratulations"
