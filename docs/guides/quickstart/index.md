@@ -2,9 +2,7 @@ The objective of this quickstart is to have you begin interrogating your data an
 
 Once you sign up for Glean, you will be invited to login to a project. A project is where your data analysis and visualization live. You can invite people, setup database connections and manage your project by clicking on your project name.
 
-TODO more about projects
-
-First steps:
+Next steps:
 
 1. [Add a database connection](#1-add-a-database-connection) 
 2. [Define a data model](#2-data-model) 
