@@ -33,7 +33,7 @@ nav:
   - Home: index.md
   - Guides:
     - Quickstart: guides/quickstart/index.md
-    - Create retention curves: guides/create-retension-curves/index.md
+    - Create retention curves: guides/create-retention-curves/index.md
     - Data Modeling Best Practices: guides/data-modeling-best-practices.md
   - Reference: 
     - Product Overview: reference/glean-overview.md
