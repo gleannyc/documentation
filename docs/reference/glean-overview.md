@@ -1,3 +1,0 @@
-# Glean Overview
-
-asdf

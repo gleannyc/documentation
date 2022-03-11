@@ -2,20 +2,6 @@
 
 Data models in Glean allow you to define how your organization will measure, track and explore data.  Defining the logic for your analytics upfront allows your users to dig in and analyze data without writing code or worrying about whether they can trust their results.  This declarative workflow allows the analyst and data team to manage how you think about your business and Glean will build a user interface automatically that helps you explore that data.
 
-## Glean workflow
-
-### 1.  Define your Data Model
-Your data model defines your metrics and filters upfront so you don't need to code to analyze data later.
-
-### 2.  Analyze and Explore
-Glean automatically sets up an intuitive data exploration dashboard for each data model.
-You should save views that are important to your organization.
-
-### 3.  Share
-
-The whole team is now empowered to dig into the data and share hypotheses.
-When you find something interesting create a share link to let others dig in.
-
 ## Creating and Editing a Data Model
 
 There are two places where you will encounter and configure data models: when you first Add Data to the data model and by editing the data model.
