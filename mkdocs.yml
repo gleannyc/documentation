@@ -34,7 +34,6 @@ nav:
   - Guides:
     - Quickstart: guides/quickstart/index.md
     - Create retention curves: guides/create-retension-curves/index.md
-    - Analyze conversion funnels: guides/create-funnel-analysis/index.md
     - Data Modeling Best Practices: guides/data-modeling-best-practices.md
   - Reference: 
     - Product Overview: reference/glean-overview.md
