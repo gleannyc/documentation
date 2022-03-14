@@ -63,7 +63,4 @@ Every chart and analysis is based on a Glean data model. A data model is a table
 
     You're ready to begin interacting with your data
 
-    Further Reading:
-
-    - To learn more about how you can interact with your data
-    - to learn how to create specific types of analyses
+    Next, [learn how to use the `Attributes Tray`](../../docs/visualizing-data/Attributes-Tray.md) to filter and breakout your data
