@@ -56,10 +56,11 @@ nav:
           - docs/data-ops/Creating-Data-Ops-Builds.md
           - docs/data-ops/Using-the-Glean-CLI.md
           - Configuration Schemas:
-            - docs/data-ops/config-schema/Data-Model.md
-            - docs/data-ops/config-schema/Saved-View.md
-            - docs/data-ops/config-schema/Dashboard.md
+              - docs/data-ops/config-schema/Data-Model.md
+              - docs/data-ops/config-schema/Saved-View.md
+              - docs/data-ops/config-schema/Dashboard.md
       - Guides:
+          - Create Conversion Funnel: guides/create-funnel-visualization/index.md
           - Create Retention Curves: guides/create-retention-curves/index.md
       - Project Management:
           - Users and Permissions: docs/project-management/users-and-permissions.md
