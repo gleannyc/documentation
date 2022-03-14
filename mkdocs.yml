@@ -52,6 +52,7 @@ nav:
         - docs/data-ops/DataOps-Configuration-Schema.md
         - docs/data-ops/Using-the-Glean-CLI.md
       - Guides:
+        - Create Conversion Funnel: guides/create-funnel-visualization/index.md
         - Create Retention Curves: guides/create-retention-curves/index.md
       - Settings: 
         - Users and Permissions: docs/users-and-permissions.md
