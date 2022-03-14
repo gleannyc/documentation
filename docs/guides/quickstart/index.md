@@ -1,12 +1,12 @@
+---
+title: Quickstart
+hide:
+  - navigation
+---
+
 The objective of this quickstart is to have you begin interrogating your data and sharing results *today*.
 
 Once you sign up for Glean, you will be invited to login to a project. A project is where your data analysis and visualization live. You can invite people, setup database connections and manage your project by clicking on your project name.
-
-Next steps:
-
-1. [Add a database connection](#1-add-a-database-connection) 
-2. [Define a data model](#2-data-model) 
-3. [Start interacting with your data](#3-start-interacting-with-your-data)
 
 ## 1. Add a database connection
 
@@ -27,7 +27,7 @@ Once you add a database connection, you'll be able to specify tables, SQL querie
 
 !!! info
 
-    [More about database connections](../../reference/database-connections.md)
+    [More about database connections](../../docs/database-connections.md)
 
 ## 2. Define a data model
 
@@ -47,7 +47,7 @@ Every chart and analysis is based on a Glean data model. A data model is a table
     2. Click `>` to add a source column to the data model
        1. Add a dates to your data model
        2. Add attributes to your data model) 
-    3. Add metrics to your data model (see [`Metrics`](../../reference/data-modeling/Metrics))
+    3. Add metrics to your data model (see [`Metrics`](../../docs/data-modeling/Metrics))
 
 4. Click `Publish >`
 
@@ -57,7 +57,7 @@ Every chart and analysis is based on a Glean data model. A data model is a table
 ![data explorer view](../quickstart/explore.png){: style="max-width:75%"}
 
 1. [Go to the `Data Models` page](https://glean.io/app/p/data-models){:target="_blank"}
-2. Click on the data model we just created
+2. Click on the name of the data model we just created
 
 !!! success "Congratulations"
 
