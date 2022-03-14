@@ -6,7 +6,7 @@ Glean allows you to quickly publish self-service data tools so your team can ans
 
 !!! info "Just signed up with Glean?"
 
-    Checkout the [Quickstart guide](guides/quickstart/)
+    Take a look at the [Quickstart guide](guides/quickstart/)
 
 ## Glean workflow
 
