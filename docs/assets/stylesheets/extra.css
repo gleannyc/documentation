@@ -62,7 +62,6 @@
     color: var(--md-default-fg-color--light);
     text-transform: uppercase;
     font-weight: 500;
-    /* padding: 0 12px; */
 }
 
 .md-nav__item.md-nav__item--section.md-nav__item--nested {
