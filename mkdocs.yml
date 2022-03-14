@@ -48,15 +48,15 @@ nav:
       - Data Ops:
         - Overview: docs/data-ops/index.md
         - docs/data-ops/Creating-Data-Ops-Builds.md
-        - docs/data-ops/Using-the-Glean-CLI.md
         - docs/data-ops/DataOps-Configuration-Schema.md
+        - docs/data-ops/Using-the-Glean-CLI.md
+      - Guides:
+        - Create Retention Curves: guides/create-retention-curves/index.md
+        - Data Modeling Best Practices: guides/data-modeling-best-practices.md
       - People:
         - Users and Permissions: docs/users-and-permissions.md
       - Settings: 
         - Database Connections: docs/database-connections.md
       - Support:
         - Get in Touch: contact-us.md
-      - Guides:
-        - Create retention curves: guides/create-retention-curves/index.md
-        - Data Modeling Best Practices: guides/data-modeling-best-practices.md
     - Quickstart: guides/quickstart/index.md
