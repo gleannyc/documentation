@@ -113,3 +113,19 @@ h4 {
     padding-bottom: 0.2rem;
     padding-top: 1rem;
 }
+
+#request-access-button {
+    margin-right: 10px;
+    padding: 0.625em 2em;
+    border-radius: 0.1rem;
+    border: 0.1rem solid;
+    background-color: #F0326E;
+    border-color: #F0326E;
+    color: white;
+    font-weight: 700;
+}
+
+#request-access-button:hover {
+    background-color: hsl(341, 86%, 45%);
+    border-color: hsl(341, 86%, 45%);
+}
