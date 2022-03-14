@@ -1,6 +1,16 @@
 # Glean Overview
 
+!!! info "Just signed up with Glean?"
+
+    Take a look at our [Quickstart guide](../guides/quickstart/index.md)
+
+Glean allows you to quickly publish self-service data tools so your team can answer their own questions using interactive visualizations, instead of asking someone to write a SQL query.
+
 Glean is a highly interactive, data exploration tool for anyone in your organization discover actionable insights.
+
+<div>
+<p>hello</p>
+</div>
 
 ## Glean workflow
 
@@ -20,6 +30,3 @@ When you find something interesting, create a share link to let others dig in.
 
 The whole team is now empowered to dig into the data and share hypotheses.
 
-!!! info "Just signed up with Glean?"
-
-    Take a look at our [Quickstart guide](../guides/quickstart/index.md)

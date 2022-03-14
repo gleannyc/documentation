@@ -1,7 +1,7 @@
 # TODO:
 # 1. highlight selected section similar to tabbed sections 
 # 2. small caps / breadcrumb styling for headings
-site_name: Glean
+site_name: Glean Documentation
 theme:
   name: material
   palette:
@@ -30,33 +30,33 @@ markdown_extensions:
 extra_css:
   - assets/stylesheets/extra.css
 nav:
-  - Home: index.md
-  - Guides:
+    - Docs:
+      - Glean:
+        - Overview: index.md
+      - Data Explorer:
+        - docs/visualizing-data/Attributes-Tray.md
+        - docs/visualizing-data/Breakout.md
+        - docs/visualizing-data/Calculations.md
+        - docs/visualizing-data/Chart-Interactions.md
+        - docs/visualizing-data/Chart-Menu.md
+        - docs/visualizing-data/Dashboards.md
+        - docs/visualizing-data/Filter.md
+      - Data Models:
+        - Overview: docs/data-modeling/Data-Models-Overview.md
+        - Add a Data Model: docs/data-modeling/add-data-model.md
+        - Calculating Metrics: docs/data-modeling/Metrics.md
+      - Data Ops:
+        - Overview: docs/data-ops/index.md
+        - docs/data-ops/Creating-Data-Ops-Builds.md
+        - docs/data-ops/Using-the-Glean-CLI.md
+        - docs/data-ops/DataOps-Configuration-Schema.md
+      - People:
+        - Users and Permissions: docs/users-and-permissions.md
+      - Settings: 
+        - Database Connections: docs/database-connections.md
+      - Support:
+        - Get in Touch: contact-us.md
+      - Guides:
+        - Create retention curves: guides/create-retention-curves/index.md
+        - Data Modeling Best Practices: guides/data-modeling-best-practices.md
     - Quickstart: guides/quickstart/index.md
-    - Create retention curves: guides/create-retention-curves/index.md
-    - Data Modeling Best Practices: guides/data-modeling-best-practices.md
-  - Reference: 
-    - Glean:
-      - Overview: reference/index.md
-    - Data Explorer:
-      - reference/visualizing-data/Attributes-Tray.md
-      - reference/visualizing-data/Breakout.md
-      - reference/visualizing-data/Calculations.md
-      - reference/visualizing-data/Chart-Interactions.md
-      - reference/visualizing-data/Chart-Menu.md
-      - reference/visualizing-data/Dashboards.md
-      - reference/visualizing-data/Filter.md
-    - Data Models:
-      - Overview: reference/data-modeling/Data-Models-Overview.md
-      - Add a Data Model: reference/data-modeling/add-data-model.md
-      - Calculating Metrics: reference/data-modeling/Metrics.md
-    - Data Ops:
-      - Overview: reference/data-ops/index.md
-      - reference/data-ops/Creating-Data-Ops-Builds.md
-      - reference/data-ops/Using-the-Glean-CLI.md
-      - reference/data-ops/DataOps-Configuration-Schema.md
-    - People:
-      - Users and Permissions: reference/users-and-permissions.md
-    - Settings: 
-      - Database Connections: reference/database-connections.md
-  - Get in Touch: contact-us.md
