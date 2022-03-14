@@ -74,6 +74,8 @@
 }
 
 [for="__nav_1"] {
+[for="__nav_1"],
+.md-nav__title {
     display: none;
 }
 
