@@ -83,6 +83,12 @@
     /* Wait for html document to load */
     document.addEventListener("DOMContentLoaded", () => {
         let requestAccess = document.getElementById('request-access-button');
+
+        analytics.ready(() => {
+            let anonymousId = window.analytics.user().anonymousId();
+            requestAccess.href += "?uid=" + anonymousId;
+        })
+
         analytics.trackLink(requestAccess, "request access clicked");
     });
 </script>
