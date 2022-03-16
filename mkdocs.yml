@@ -18,7 +18,6 @@ theme:
 extra:
   analytics:
     provider: segment
-    property: 'YOUR_SEGMENT_KEY'
     api_key: !ENV SEGMENT_KEY
   generator: false
 markdown_extensions:

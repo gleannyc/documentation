@@ -52,7 +52,7 @@ jobs:
     steps:
       - checkout
       - run: pip install -r requirements.txt
-      - run: SEGMENT_KEY=none mkdocs build
+      - run: SEGMENT_KEY=${STAGE_SEGMENT_API_KEY} mkdocs build
       - aws-s3/sync:
           from: site/
           to: s3://docs.glean.io/${CIRCLE_BRANCH}
