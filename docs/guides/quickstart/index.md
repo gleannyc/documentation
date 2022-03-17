@@ -11,7 +11,7 @@ Once you get access to Glean, you will be invited to login to a project. Users c
 
 ## 1. Add a database connection
 
-Also see [database connections](../../docs/database-connections/) for configurations specific to different database types.
+Also see [database connections](../../docs/database-connections.md) for configurations specific to different database types.
 
 !!! warning "Firewall Configuration"
 

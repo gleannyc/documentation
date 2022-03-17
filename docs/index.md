@@ -4,13 +4,13 @@ Glean is an interactive data exploration tool that enables anyone in your organi
 
 !!! info "New to Glean?"
 
-    Take a look at the [quickstart guide](guides/quickstart/) or click the Get Access button at the top of the page to get access.
+    Take a look at the [quickstart guide](guides/quickstart/index.md) or click the Get Access button at the top of the page to get access.
 
 ## Glean workflow
 
 ### 1.  Define your Data Model
 
-Your data models define metrics and filters upfront so you can analyze data without writing writing code everytime. See the [Data Modeling Overview](docs/data-modeling/Data-Models-Overview/)
+Your data models define metrics and filters upfront so you can analyze data without writing writing code everytime. See the [Data Modeling Overview](docs/data-modeling/Data-Models-Overview.md)
 
 ### 2.  Analyze and Explore
 
