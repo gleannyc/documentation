@@ -2,15 +2,16 @@
 title: Quickstart
 hide:
   - navigation
+  - toc
 ---
 
-The objective of this quickstart is to have you begin interrogating your data and sharing results *today*.
+This guide will take you from defining data models to exploring data and sharing data with your team.
 
-Once you sign up for Glean, you will be invited to login to a project. A project is where your data analysis and visualization live. You can invite people, setup database connections and manage your project by clicking on your project name.
+Once you get access to Glean, you will be invited to login to a project. Users can belong to multiple projects, but data cannot be shared between projects.  So users, permissions, database connections, data models and every other resource is isolated in the context of a project.  Typically your entire organization can be managed in a single project.
 
 ## 1. Add a database connection
 
-Once you add a database connection, you'll be able to specify tables, SQL queries, and metrics to visualize in Glean.
+Also see [database connections](../../docs/database-connections/) for configurations specific to different database types.
 
 !!! warning "Firewall Configuration"
 
@@ -25,13 +26,9 @@ Once you add a database connection, you'll be able to specify tables, SQL querie
 5. Click `Test` to test your connection
 6. Click `Add` to complete the process
 
-!!! info
-
-    [More about database connections](../../docs/database-connections.md)
-
 ## 2. Define a data model
 
-Every chart and analysis is based on a Glean data model. A data model is a table with at least one date and some attributes.
+Every chart and analysis is based on a Glean data model. A data model is a table (or virtual table).
 
 ![modal to add data model](../quickstart/create-data-model.png){: style="max-width:75%"}
 
@@ -40,7 +37,7 @@ Every chart and analysis is based on a Glean data model. A data model is a table
 
     !!! info "Using a SQL Query"
 
-        Ideally, each Glean data model is based on an underlying data table. If the data in your database isn't quite in the right format, it's possible to specify an underlying query that will run as you explore data.
+        Each Glean data model is based on an underlying data table. If the data in your data isn't quite in the right format, it's possible to specify an underlying query as the basis for your data model.
         
 3. Define the data model
     1. Edit the name of the data model by clicking the edit button `✏️` next to the name
@@ -49,7 +46,7 @@ Every chart and analysis is based on a Glean data model. A data model is a table
        2. Add attributes to your data model) 
     3. Add metrics to your data model (see [`Metrics`](../../docs/data-modeling/Metrics))
 
-4. Click `Publish >`
+4. Click `Publish`.  Glean will send you into your data explorer
 
 
 ## 3. Start interacting with your data

@@ -1,30 +1,23 @@
-# Welcome to Glean's documentation
+# Glean Overview
 
-Glean is an interactive data exploration tool for anyone in your organization to discover actionable insights.
+Glean is an interactive data exploration tool that enables anyone in your organization to discover actionable insights.  If you have feedback about the product or this documentaiton, please reach out to [product@glean.io](mailto:product@glean.io).
 
-Glean allows you to quickly publish self-service data tools so your team can answer their own questions, instead of asking someone to write a SQL query.
+!!! info "New to Glean?"
 
-!!! info "Just signed up with Glean?"
-
-    Take a look at the [Quickstart guide](guides/quickstart/)
+    Take a look at the [quickstart guide](guides/quickstart/) or click the Get Access button at the top of the page to get access.
 
 ## Glean workflow
 
-### 1.  Define your Data Models
+### 1.  Define your Data Model
 
-Your data models define metrics and filters upfront so you can analyze data without writing writing code everytime.
+Your data models define metrics and filters upfront so you can analyze data without writing writing code everytime. See the [Data Modeling Overview](docs/data-modeling/Data-Models-Overview/)
 
 ### 2.  Analyze and Explore
 
-Glean automatically sets up an intuitive data exploration dashboard for each data model.
+Glean automatically sets up an intuitive data explorer for each data model.
 
 You can save views of the data that are important to your organization.
 
 ### 3.  Share
 
-When you find something interesting, create a share link to let others dig in.
-
-The whole team is now empowered to dig into the data and share hypotheses.
-
-
-[^1]: This documentation is a work in progress, please [contact us](contact-us.md) if you have any questions or suggestions or feel free to comment on any of these pages.
+When you find something interesting, create share links, saved views and dashboards to share insights with your team.
