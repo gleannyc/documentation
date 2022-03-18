@@ -32,6 +32,11 @@ nav:
     - Docs:
       - Glean:
         - Overview: index.md
+      - Data Models:
+        - Overview: docs/data-modeling/Data-Models-Overview.md
+        - Add a Data Model: docs/data-modeling/add-data-model.md
+        - Data Modeling Best Practices: guides/data-modeling-best-practices.md
+        - Calculating Metrics: docs/data-modeling/Metrics.md
       - Data Explorer:
         - docs/visualizing-data/Attributes-Tray.md
         - docs/visualizing-data/Breakout.md
@@ -40,10 +45,6 @@ nav:
         - docs/visualizing-data/Chart-Menu.md
         - docs/visualizing-data/Dashboards.md
         - docs/visualizing-data/Filter.md
-      - Data Models:
-        - Overview: docs/data-modeling/Data-Models-Overview.md
-        - Add a Data Model: docs/data-modeling/add-data-model.md
-        - Calculating Metrics: docs/data-modeling/Metrics.md
       - Data Ops:
         - Overview: docs/data-ops/index.md
         - docs/data-ops/Creating-Data-Ops-Builds.md
@@ -51,10 +52,8 @@ nav:
         - docs/data-ops/Using-the-Glean-CLI.md
       - Guides:
         - Create Retention Curves: guides/create-retention-curves/index.md
-        - Data Modeling Best Practices: guides/data-modeling-best-practices.md
-      - People:
-        - Users and Permissions: docs/users-and-permissions.md
       - Settings: 
+        - Users and Permissions: docs/users-and-permissions.md
         - Database Connections: docs/database-connections.md
       - Support:
         - Get in Touch: contact-us.md
