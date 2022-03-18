@@ -45,7 +45,7 @@ nav:
         - docs/visualizing-data/Chart-Menu.md
         - docs/visualizing-data/Dashboards.md
         - docs/visualizing-data/Filter.md
-      - Data Ops:
+      - DataOps:
         - Overview: docs/data-ops/index.md
         - docs/data-ops/Creating-Data-Ops-Builds.md
         - docs/data-ops/DataOps-Configuration-Schema.md

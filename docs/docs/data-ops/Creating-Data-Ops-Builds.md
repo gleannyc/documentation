@@ -2,7 +2,7 @@
 
 A build will connect to your repository, detect all of the Glean [configuration files](index.md) in your repository and create, update, and delete resources to make glean consistent with the configuration:
 
-1. Navigate to the `Data Ops` page using the link on the navigation side bar
+1. Navigate to the `DataOps` page using the link on the navigation side bar
 2. Click the `Build` button on the top right to create a new build
 3. Configure your build and click Build.  If any fields are left empty, Glean will use the default values specified on the `Version Control` settings page.
 4. You can view the summary of errors, warnings and changes by clicking the build from the build list.
@@ -36,7 +36,7 @@ Glean supports configuration files written in YAML or JSON. A Glean Build will a
 
 An easy way to get started building a configuration file is to export it from an existing Glean resource.
 
-- Data Models: Navigate to the [Data Models](https://glean.io/app/p/data-models) page, click the Edit icon for one of your Data Models, and then click the `View Data Ops Config File` button.
+- Data Models: Navigate to the [Data Models](https://glean.io/app/p/data-models) page, click the Edit icon for one of your Data Models, and then click the `View DataOps Config File` button.
 - Saved Views: On any Explore page, click the three dots in the top-right corner of the chart area, and then click `Export Saved View Config File`.
 
 You will likely want to adjust some values in the configuration files after exporting to match your team's preferences and local environment, such as column names and paths to other resources.
