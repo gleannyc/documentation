@@ -1,6 +1,6 @@
-# Data Ops
+# DataOps
 
-Data Ops in Glean allows you to represent your resources as configuration files, which can be stored in a Git repository and deployed to your Glean project as part of a change management workflow.
+DataOps in Glean allows you to represent your resources as configuration files, which can be stored in a Git repository and deployed to your Glean project as part of a change management workflow.
 
 Using DataOps, you can:
 
@@ -10,14 +10,14 @@ Using DataOps, you can:
 - 🧑‍💻  **Configure Glean** using the same tools that you use to develop your backend pipelines
 - 🚦  Use a **continuous integration** system to deploy updates to your Glean project
 
-Data Ops is under active development and currently has some limitations, including:
+DataOps is under active development and currently has some limitations, including:
 
 - The Glean configuration files do not yet support every feature that is available in the Glean web application.
 - If you build resources from a Git repository, users are still able to edit those resources through the Glean UI.  When you re-deploy these resources with your DataOps configuration files, any changes made through the Glean UI will be overwritten.
 
 ## Overview
 
-To use Data Ops, you define one or more of your Glean resources using **configuration files**. A configuration file contains a complete specification of a resource. For instance, a Model configuration file contains information about which database connection to use, the name of the underlying database table, a list of attributes and metrics, etc.
+To use DataOps, you define one or more of your Glean resources using **configuration files**. A configuration file contains a complete specification of a resource. For instance, a Model configuration file contains information about which database connection to use, the name of the underlying database table, a list of attributes and metrics, etc.
 
 Using a set of configuration files, you create a **Build**. There are two different kinds of Builds:
 
