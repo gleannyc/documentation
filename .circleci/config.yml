@@ -36,8 +36,6 @@ jobs:
       - checkout
       - run: pip install -r requirements.txt
       - run: SEGMENT_KEY=${PROD_SEGMENT_API_KEY} mkdocs build
-      # TODO(cga): this step keeps the documentation secret, remove once we're live
-      - run: mv site/index.html site/index-d41d8cd98f00b204e9800998ecf8427e.html
       - aws-s3/sync:
           from: site/
           to: s3://docs.glean.io
