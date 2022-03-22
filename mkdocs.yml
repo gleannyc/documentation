@@ -7,7 +7,7 @@ theme:
   palette:
     scheme: glean
   logo: assets/glean-logo-white.png
-  favicon: assets/glean-logo.png
+  favicon: assets/favicon.svg
   custom_dir: overrides
   features:
     - navigation.instant
