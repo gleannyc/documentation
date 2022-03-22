@@ -35,6 +35,7 @@ nav:
       - Data Models:
         - Overview: docs/data-modeling/Data-Models-Overview.md
         - Add a Data Model: docs/data-modeling/add-data-model.md
+        - Caching: docs/data-modeling/Caching.md
         - Data Modeling Best Practices: guides/data-modeling-best-practices.md
         - Calculating Metrics: docs/data-modeling/Metrics.md
       - Data Explorer:
