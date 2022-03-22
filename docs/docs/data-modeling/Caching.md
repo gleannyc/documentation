@@ -17,4 +17,4 @@ If you set this to 1, then the cache will effectively be disabled (data will onl
 
 ## Local cache
 
-Glean is able to keep a copy of cached data in your web browser while you are logged in so that exploring data feels incredibly fast.  The above caching rules also apply to this local browser cache.  If if you make make the caching Time To Live very short, it may make normal operations like filtering and removing a filter feel slow.
+Glean is able to keep a copy of cached data in your web browser while you are logged in so that exploring data feels incredibly fast.  The above caching rules also apply to this local browser cache.  If you make make the caching Time To Live very short, it may make normal operations like filtering and removing a filter feel slow.
