@@ -3,9 +3,8 @@
 ### Data Model
 
 - Example
-    
     ```yaml
-    glean: '0.1'
+  glean: "0.1"
     name: My Data Model
     source:
       connectionName: Production BigQuery
@@ -25,44 +24,43 @@
       physicalName: secondary_event_date
       primaryDate: true
     ```
-    
 - Properties
     - **`glean`** *(string)*: The Glean file format version.
     - **`id`** *(string)*: The persistent identifier for this data model.
     - **`name`** *(string)*: The user-facing name for this data model.
     - **`type`** *(string)*: The type of this resource, which in this case should always be `model`.
     - **`source`** *(object)*: The data source to read from. This object can be either of these formats:
-        - *Table source*: a source that fetches data from an existing table.
-            - **`connectionName`** *(string)***:** The name of a database connection, as displayed in the Glean UI. (Not required if `connectionId` is specified.)
+    - _Table source_: a source that fetches data from an existing table.
+      - **`connectionName`** \*(string)**\*:** The name of a database connection, as displayed in the Glean UI. (Not required if `connectionId` is specified.)
             - **`connectionId`** *(string)*: The connection ID of a database connection, as displayed in the Glean UI. (Not required if `connectionName` is specified.)
             - **`schema`** *(string)*: The name of the schema to use in the specified database.
             - **`physicalName`** *(string)*: The name of the table to use in the specified database.
-        - *SQL source*: A data source that fetches data using a custom SQL query.
-            - **`connectionName`** *(string)***:** The name of a database connection, as displayed in the Glean UI. (Not required if `connectionId` is specified.)
+    - _SQL source_: A data source that fetches data using a custom SQL query.
+      - **`connectionName`** \*(string)**\*:** The name of a database connection, as displayed in the Glean UI. (Not required if `connectionId` is specified.)
             - **`connectionId`** *(string)*: The connection ID of a database connection, as displayed in the Glean UI. (Not required if `connectionName` is specified.)
             - **`sql`** *(string)*: The SQL statement used to fetch data for this model.
     - **`cols`** *(array)*: The columns (metrics, attributes, dates) of the data model. Each item in the array is an object in one of the following formats:
-        - *Date column*: Specifies a date column.
+    - _Date column_: Specifies a date column.
             - **`id`** *(string)*: The persistent identifier for the column.
             - **`type`** *(string)*: The type of this column, which in this case should always be `'datetime'`.
             - **`physicalName`** *(string)*: The name of the column as it appears in the underlying data source.
             - **`primaryDate`** *(boolean)*: Flag indicating whether the column is the primary date. Exactly one datetime column should have this set to true.
-        - *Attribute column*: Specifies an attribute column.
+    - _Attribute column_: Specifies an attribute column.
             - **`id`** *(string)*: The persistent identifier for the column.
             - **`type`** *(string)*: The type of this column, which in this case should always be `'attribute'`.
             - **`physicalName`** *(string)*: The name of the column as it appears in the underlying data source.
-        - *Metric column*: Specifies a metric column that fetches data from a column in the underlying data source. Cannot contain additional properties.
+    - _Metric column_: Specifies a metric column that fetches data from a column in the underlying data source. Cannot contain additional properties.
             - **`id`** *(string)*: The persistent identifier for the column.
             - **`type`** *(string)*: The type of this column, which in this case should always be `'metric'`.
             - **`physicalName`** *(string)*: The name of the column as it appears in the underlying data source.
             - **`name`** *(string)*: The user-visible name for this column.
             - **`aggregate`** *(string)*: Specifies how to aggregate data from this column. Must be one of: `['row_count', 'count', 'count_distinct', 'sum', 'min', 'max', 'avg']`.
-        - *SQL metric column*: Specifies a metric column that fetches data using a custom SQL aggregation. Cannot contain additional properties.
+    - _SQL metric column_: Specifies a metric column that fetches data using a custom SQL aggregation. Cannot contain additional properties.
             - **`id`** *(string)*: The persistent identifier for the column.
             - **`type`** *(string)*: The type of this column, which in this case should always be `'metric'`.
             - **`name`** *(string)*: The user-visible name for this column.
             - **`sql`** *(string)*: SQL expression defining the column.
-        - *Row count column*: Specifies the 'row count' metric column.
+    - _Row count column_: Specifies the 'row count' metric column.
             - **`id`** *(string)*: The persistent identifier for this column.
             - **`type`** *(string)*: The type of this column, which in this case should always be `'metric'`.
             - **`name`** *(string)*: The user-visible name for this column.
@@ -71,9 +69,8 @@
 ### Saved View
 
 - Example
-    
     ```yaml
-    glean: '0.1'
+  glean: "0.1"
     id: my-saved-view
     type: saved_view
     name: My Saved View
@@ -89,8 +86,8 @@
       filters:
       - columnId: secondary_event_date
         range:
-        - '2014-01-01'
-        - '2017-01-01'
+          - "2014-01-01"
+          - "2017-01-01"
       breakout:
         columnId: location
         groups:
@@ -101,7 +98,6 @@
           index: 1
           color: rgb(68, 78, 134)
     ```
-    
 - Properties
     - **`glean`** *(string)*: The Glean file format version.
     - **`id`** *(string)*: The persistent identifier of this saved view.
@@ -128,21 +124,21 @@
                 - **`index`** *(number)*: The ordering to use when displaying this group (starting with 0).
                 - **`color`** *(string)*: The color of this breakout group, in the format 'rgb(number, number, number)'.
         - **`filters`** *(array)*: Specifies filters that are applied by default in this view. Each item in the array is an object with one of the following formats:
-            - *"Contains" filter*
+      - _"Contains" filter_
                 - **`columnId`** *(string)*: The column identifier of the column used for filtering.
                 - **`contains`** *(string)*: Applies a "contains" filter with the specified value.
-            - *"Values" filter*
+      - _"Values" filter_
                 - **`columnId`** *(string)*: The column identifier of the column used for filtering.
                 - **`values`** *(array)*: Filters on a list of values. The array should contain one or more `string` values.
-            - *"Exclude values" filter*
+      - _"Exclude values" filter_
                 - **`columnId`** *(string)*: The column identifier of the column used for filtering.
                 - **`values`** *(array)*: Filters to all data except the specified values. The array should contain one or more `string` values.
-            - *"Range" filter*
+      - _"Range" filter_
                 - **`columnId`** *(string)*: The column identifier of the column used for filtering.
                 - **`range`** *(array)*: Applies a "range" filter. This array should contain exactly 2 strings. The first value is used as the lower bound, and the second value is used as the upper bound.
-            - *"Inequality" filter*
+      - _"Inequality" filter_
                 - **`columnId`** *(string)*: The column identifier of the column used for filtering.
-                - **`gte`** , `**gt**`, `**lte**`, or `**lt**` (*string)*: Applies an inequality filter with the specified value.
+        - **`gte`** , `**gt**`, `**lte**`, or `**lt**` (_string)_: Applies an inequality filter with the specified value.
 
 ### Dashboard
 
