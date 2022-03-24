@@ -139,7 +139,3 @@
       - _"Inequality" filter_
         - **`columnId`** *(string)*: The column identifier of the column used for filtering.
         - **`gte`** , `**gt**`, `**lte**`, or `**lt**` (_string)_: Applies an inequality filter with the specified value.
-
-### Dashboard
-
-🚧 On the Roadmap 🚧
