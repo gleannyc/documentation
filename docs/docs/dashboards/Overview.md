@@ -7,6 +7,7 @@ custom dashboard when the core views are not sufficient and you need
 more configurability.
 
 ## Building Dashboards
+
 From the [dashboards page](https://glean.io/app/p/dashboards), click
 **New Dashboard**.
 
@@ -14,8 +15,8 @@ This will open a new, blank dashboard for editing. You can change the title by
 clicking into the name field, or mark the dashboard as private via the
 three dots menu.
 
-Dashboards are comprised of [saved views](../Saved-Views), [metrics](../Metrics), and
-[text](../Text) blocks. You can drag them into the dashboard using the toolbar.
+Dashboards are comprised of [saved views](Saved-Views.md), [metrics](Metrics.md), and
+[text](Text.md) blocks. You can drag them into the dashboard using the toolbar.
 The toolbar also allows you to undo/redo changes.
 
 Select any block to edit or delete it. You can drag blocks to move them around,
@@ -23,10 +24,11 @@ or resize them by dragging on the handles near their edges. Glean places some
 restrictions on the sizes and layout of blocks to ensure that your dashboard
 looks good on all devices, from small mobile screens to large monitors or TVs.
 
-[Dashboard filters](../Filters) can be used to filter multiple charts
+[Dashboard filters](Filters.md) can be used to filter multiple charts
 or metrics at once.
 
 ## Viewing a dashboard
+
 Dashboards have unique URLs that can be shared with other team members, or
 they can find them listed on the [dashboards page](https://glean.io/app/p/dashboards).
 

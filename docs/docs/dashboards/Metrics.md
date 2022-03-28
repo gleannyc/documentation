@@ -6,17 +6,21 @@ to the dashboard. Click the cog icon to edit it.
 ## Configuration
 
 #### Label
+
 The label shown under the value of this metric.
 
 #### Data Model & Metric
-Choose a [data model](/docs/data-modeling/Data-Models-Overview/) to select a metric from, then a metric within that data
+
+Choose a [data model](../data-modeling/Data-Models-Overview.md) to select a metric from, then a metric within that data
 model to display the result of.
 
 #### Filters
+
 You can add filters to the metric here. These filters will only apply
 to this metric, and not be editable by viewers.
 
 #### Ignore Dashboard Filters
+
 Check this box if you want this metric to ignore
 [dashboard filters](Filters.md). When this is set, only the filters specified
 on the metric will be used.
