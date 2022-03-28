@@ -16,7 +16,7 @@
   padding: 0;
 }
 
-/* scrolling is pretty weird on the base theme so remove the top margin and apply 
+/* scrolling is pretty weird on the base theme so remove the top margin and apply
  * it to all three columns in the layout */
 
 .md-main__inner {
@@ -133,4 +133,9 @@ h4 {
 #request-access-button:hover {
   background-color: hsl(341, 86%, 45%);
   border-color: hsl(341, 86%, 45%);
+}
+
+.md-content img {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
 }
