@@ -141,16 +141,7 @@ jobs:
 Not sure where to start? If you already have a database connection set up, you can quickly generate a data model and Preview Build for a table in your database: 
 
 ``` bash 
-glean explore database_connection_name table_name 
+$ glean explore database_connection_name table_name
 ``` 
 
 Since this creates a Preview only, the data model won't be persisted. However, a model configuration file will be saved in your local directory, so that you can later `glean deploy` that file. 
-
-You can play around with this command by passing in a SQL query instead of a table name, and/or passing in a list of columns to exclude or include. 
-``` bash 
-glean explore database_connection_name "SELECT * FROM table_name"  --exclude column1,column2,column3
-``` 
-You can also filter column names with a regular expression. For example, to create a model with only column names not ending in 'date', while including the 'important_date' column and excluding the 'extra_info' column, run: 
-``` bash 
-glean explore [database connection name] [table name] --regex "[^date]$" --include important_date --exclude extra_info
-``` 
