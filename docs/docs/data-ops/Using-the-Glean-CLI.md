@@ -1,36 +1,33 @@
-
-The Glean CLI is a [DataOps](index.md)  feature that allows you to create Preview and Deploy Builds directly from your terminal or continuous integration system.
+The Glean CLI is a [DataOps](index.md) feature that allows you to create Preview and Deploy Builds directly from your terminal or continuous integration system.
 
 - Quickstart
 
-    ```bash
-    # 1. Create your access key file:  https://glean.io/app/p/access-keys
-    mkdir ~/.glean
-    mv ~/Downloads/glean_access_key.json ~/.glean/ # or wherever you downloaded the file
+  ```bash
+  # 1. Create your access key file:  https://glean.io/app/p/access-keys
+  mkdir ~/.glean
+  mv ~/Downloads/glean_access_key.json ~/.glean/ # or wherever you downloaded the file
 
-    # 2. Create virtual env and install the Glean CLI
-    python3 -m venv venv
-    source venv/bin/activate
-    pip3 install glean-cli
+  # 2. Create virtual env and install the Glean CLI
+  python3 -m venv venv
+  source venv/bin/activate
+  pip3 install glean-cli
 
-    # 3. Preview your configuration files (you can export a configuration file for any glean resource into this folder):
-    cd ~/code/my_project/
-    glean preview .
-    ```
-
+  # 3. Preview your configuration files (you can export a configuration file for any glean resource into this folder):
+  cd ~/code/my_project/
+  glean preview .
+  ```
 
 To use the CLI, you must have Python version 3.7 or greater installed in your environment.
 
 - Checking your Python version
 
-    To check if Python 3 is installed, run the following command in your terminal:
+  To check if Python 3 is installed, run the following command in your terminal:
 
-    ```bash
-    python3 --version
-    ```
+  ```bash
+  python3 --version
+  ```
 
-    If the command fails or your version is less than 3.7, you can download and install by following the instructions here: [https://www.python.org/downloads/](https://www.python.org/downloads/)
-
+  If the command fails or your version is less than 3.7, you can download and install by following the instructions here: [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
 To install the CLI, run the following command in your terminal:
 
@@ -72,9 +69,9 @@ To create an Access Key:
 2. Click on `Access Keys`
 3. Click `+ Create Access Key` in the top right and follow the instructions. Your Access Key file will be downloaded automatically.
 4. After downloading, move your Access Key file to a permanent and secure location on your workstation. By default, the CLI expects your access key to be located at `~/.glean/glean_access_key.json`. You can override this by:
-    - Setting the `GLEAN_CREDENTIALS_FILEPATH` environment variable to a different filepath
-    - Using the `--credentials-filepath` command-line option to use a different filepath
-    - Setting the `GLEAN_PROJECT_ID`, `GLEAN_ACCESS_KEY_ID`, and `GLEAN_SECRET_ACCESS_KEY_TOKEN` environment variables to the respective values stored in your access key file.
+   - Setting the `GLEAN_CREDENTIALS_FILEPATH` environment variable to a different filepath
+   - Using the `--credentials-filepath` command-line option to use a different filepath
+   - Setting the `GLEAN_PROJECT_ID`, `GLEAN_ACCESS_KEY_ID`, and `GLEAN_SECRET_ACCESS_KEY_TOKEN` environment variables to the respective values stored in your access key file.
 
 !!! warning
 
@@ -87,7 +84,7 @@ You can use environment variables to dynamically populate Glean configuration fi
 When creating a Build using local files, the CLI will replace placeholders of the form `${ENV_VAR_NAME}` with the corresponding environment variable. For example, if your model file contains:
 
 ```yaml
-glean: '0.1'
+glean: "0.1"
 name: My Data Model
 source:
   connectionName: ${DATABASE_CONNECTION_NAME}
@@ -138,10 +135,11 @@ jobs:
 ```
 
 ## Explore your data
-Not sure where to start? If you already have a database connection set up, you can quickly generate a data model and Preview Build for a table in your database: 
 
-``` bash 
+Not sure where to start? If you already have a database connection set up, you can quickly generate a Data Model and Preview Build for a table in your database:
+
+```bash
 $ glean explore database_connection_name table_name
-``` 
+```
 
-Since this creates a Preview only, the data model won't be persisted. However, a model configuration file will be saved in your local directory, so that you can later `glean deploy` that file. 
+Since this creates a Preview only, the Data Model won't be persisted. However, a model configuration file will be saved in your local directory, so that you can later `glean deploy` that file.
