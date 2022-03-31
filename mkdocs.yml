@@ -1,5 +1,5 @@
 # TODO:
-# 1. highlight selected section similar to tabbed sections 
+# 1. highlight selected section similar to tabbed sections
 # 2. small caps / breadcrumb styling for headings
 site_name: Glean Documentation
 theme:
@@ -29,33 +29,39 @@ markdown_extensions:
 extra_css:
   - assets/stylesheets/extra.css
 nav:
-    - Docs:
+  - Docs:
       - Glean:
-        - Overview: index.md
+          - Overview: index.md
       - Data Models:
-        - Overview: docs/data-modeling/Data-Models-Overview.md
-        - Add a Data Model: docs/data-modeling/add-data-model.md
-        - Caching: docs/data-modeling/Caching.md
-        - Data Modeling Best Practices: guides/data-modeling-best-practices.md
-        - Calculating Metrics: docs/data-modeling/Metrics.md
+          - Overview: docs/data-modeling/Data-Models-Overview.md
+          - Add a Data Model: docs/data-modeling/add-data-model.md
+          - Caching: docs/data-modeling/Caching.md
+          - Data Modeling Best Practices: guides/data-modeling-best-practices.md
+          - Calculating Metrics: docs/data-modeling/Metrics.md
       - Data Explorer:
-        - docs/visualizing-data/Attributes-Tray.md
-        - docs/visualizing-data/Breakout.md
-        - docs/visualizing-data/Calculations.md
-        - docs/visualizing-data/Chart-Interactions.md
-        - docs/visualizing-data/Chart-Menu.md
-        - docs/visualizing-data/Dashboards.md
-        - docs/visualizing-data/Filter.md
-      - DataOps:
-        - Overview: docs/data-ops/index.md
-        - docs/data-ops/Creating-Data-Ops-Builds.md
-        - docs/data-ops/DataOps-Configuration-Schema.md
-        - docs/data-ops/Using-the-Glean-CLI.md
+          - docs/visualizing-data/Attributes-Tray.md
+          - docs/visualizing-data/Breakout.md
+          - docs/visualizing-data/Calculations.md
+          - docs/visualizing-data/Chart-Interactions.md
+          - docs/visualizing-data/Chart-Menu.md
+          - docs/visualizing-data/Filter.md
+      - Dashboards:
+          - docs/dashboards/Overview.md
+          - docs/dashboards/Saved-Views.md
+          - docs/dashboards/Metrics.md
+          - docs/dashboards/Text.md
+          - docs/dashboards/Filters.md
+      - Data Ops:
+          - Overview: docs/data-ops/index.md
+          - docs/data-ops/Creating-Data-Ops-Builds.md
+          - docs/data-ops/DataOps-Configuration-Schema.md
+          - docs/data-ops/Using-the-Glean-CLI.md
       - Guides:
-        - Create Retention Curves: guides/create-retention-curves/index.md
-      - Settings: 
-        - Users and Permissions: docs/users-and-permissions.md
-        - Database Connections: docs/database-connections.md
+          - Create Retention Curves: guides/create-retention-curves/index.md
+      - Project Management:
+          - Users and Permissions: docs/project-management/users-and-permissions.md
+          - Database Connections: docs/project-management/database-connections.md
+          - Organize Content with Collections: docs/project-management/collections.md
       - Support:
-        - Get in Touch: contact-us.md
-    - Quickstart: guides/quickstart/index.md
+          - Get in Touch: contact-us.md
+  - Quickstart: guides/quickstart/index.md
