@@ -1,53 +1,49 @@
 The Glean CLI is a [DataOps](index.md) feature that allows you to create Preview and Deploy Builds directly from your terminal or continuous integration system.
 
-- Quickstart
+## Quickstart
 
-  ```bash
-  # 1. Create your access key file:  https://glean.io/app/p/access-keys
-  mkdir ~/.glean
-  mv ~/Downloads/glean_access_key.json ~/.glean/ # or wherever you downloaded the file
+### 1. Create an Access Key
 
-  # 2. Create virtual env and install the Glean CLI
-  python3 -m venv venv
-  source venv/bin/activate
-  pip3 install glean-cli
+To use the CLI with your Glean project, you need an **Access Key**. An Access Key is used by Glean to identify who you are and what resources you have access to. You should use a separate access key for each distinct user or service using the CLI.
 
-  # 3. Preview your configuration files (you can export a configuration file for any glean resource into this folder):
-  cd ~/code/my_project/
-  glean preview .
-  ```
+1.  Go to the [`Settings`](https://glean.io/app/p/settings#access_keys){:target="\_blank"} page using the link on the navigation side bar
+2.  Click on `Access Keys`
+3.  Click `+ New Access Key` in the top right and follow the instructions. Your Access Key file will be downloaded automatically.
+4.  Move your Access Key to the default location CLI will look for it
 
-To use the CLI, you must have Python version 3.7 or greater installed in your environment.
+    ```bash
+    $ mkdir ~/.glean
+    $ mv ~/Downloads/glean_access_key.json ~/.glean/
+    ```
 
-- Checking your Python version
+    !!! warning
 
-  To check if Python 3 is installed, run the following command in your terminal:
+        Once you navigate away from the page, you will not be able to re-download your Access Key. If you lose your Access Key, you will need to delete it and then create a new one.
 
-  ```bash
-  python3 --version
-  ```
+### 2. Install Glean CLI
 
-  If the command fails or your version is less than 3.7, you can download and install by following the instructions here: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+1. Confirm [Python 3](https://www.python.org/downloads/) is installed
+   ```bash
+   $ python3 --version
+   ```
+2. Install Glean CLI into a virtual environment
+   ```bash
+   $ python3 -m venv venv
+   $ source venv/bin/activate
+   $ pip3 install glean-cli
+   ```
+3. confirm sucessful installation
+   ```bash
+   $ glean
+   Usage: glean [OPTIONS] COMMAND [ARGS]...
 
-To install the CLI, run the following command in your terminal:
+     A command-line interface for interacting with Glean.
 
-```bash
-pip3 install glean-cli
-```
+   Options:
+   ...
+   ```
 
-You can run the `glean` command to validate that it is installed successfully and see documentation about how to use it:
-
-```bash
-$ glean
-Usage: glean [OPTIONS] COMMAND [ARGS]...
-
-  A command-line interface for interacting with Glean.
-
-Options:
-...
-```
-
-You can use the `--help` flag to see documentation about a specific command. For example:
+Use the `--help` flag to see documentation about a specific command. For example:
 
 ```bash
 $ glean preview --help
@@ -59,23 +55,23 @@ Options:
 ...
 ```
 
-## Creating an Access Key
+## Explore your data
 
-To use the CLI with your Glean project, you need an **Access Key**. An Access Key is used by Glean to identify who you are and what resources you have access to. You should use a separate access key for each distinct user or service using the CLI.
+Not sure where to start? If you already have a database connection set up, you can quickly generate a Data Model and Preview Build for a table in your database:
 
-To create an Access Key:
+```bash
+$ glean explore database_connection_name table_name
+```
 
-1. Go to the `Settings` page using the link on the navigation side bar
-2. Click on `Access Keys`
-3. Click `+ Create Access Key` in the top right and follow the instructions. Your Access Key file will be downloaded automatically.
-4. After downloading, move your Access Key file to a permanent and secure location on your workstation. By default, the CLI expects your access key to be located at `~/.glean/glean_access_key.json`. You can override this by:
-   - Setting the `GLEAN_CREDENTIALS_FILEPATH` environment variable to a different filepath
-   - Using the `--credentials-filepath` command-line option to use a different filepath
-   - Setting the `GLEAN_PROJECT_ID`, `GLEAN_ACCESS_KEY_ID`, and `GLEAN_SECRET_ACCESS_KEY_TOKEN` environment variables to the respective values stored in your access key file.
+Since this creates a Preview only, the Data Model won't be persisted. However, a model configuration file will be saved in your local directory, so that you can later `glean deploy` that file.
 
-!!! warning
+## Moving your access key
 
-    Once you navigate away from the page, you will not be able to re-download your Access Key. If you lose your Access Key, you will need to delete it and then create a new one.
+By default, the CLI expects your access key to be located at `~/.glean/glean_access_key.json`. You can override this by:
+
+- Setting the `GLEAN_CREDENTIALS_FILEPATH` environment variable to a different filepath
+- Using the `--credentials-filepath` command-line option to use a different filepath
+- Setting the `GLEAN_PROJECT_ID`, `GLEAN_ACCESS_KEY_ID`, and `GLEAN_SECRET_ACCESS_KEY_TOKEN` environment variables to the respective values stored in your access key file.
 
 ## Using environment variables
 
@@ -133,13 +129,3 @@ jobs:
       GLEAN_ACCESS_KEY_ID: ${{ secrets.GLEAN_ACCESS_KEY_ID_PROD }}
       GLEAN_SECRET_ACCESS_KEY_TOKEN: ${{ secrets.GLEAN_SECRET_ACCESS_KEY_TOKEN_PROD }}
 ```
-
-## Explore your data
-
-Not sure where to start? If you already have a database connection set up, you can quickly generate a Data Model and Preview Build for a table in your database:
-
-```bash
-$ glean explore database_connection_name table_name
-```
-
-Since this creates a Preview only, the Data Model won't be persisted. However, a model configuration file will be saved in your local directory, so that you can later `glean deploy` that file.
