@@ -1,56 +1,49 @@
+The Glean CLI is a [DataOps](index.md) feature that allows you to create Preview and Deploy Builds directly from your terminal or continuous integration system.
 
-The Glean CLI is a [DataOps](index.md)  feature that allows you to create Preview and Deploy builds directly from your terminal or continuous integration system.
+## Quickstart
 
-- Quickstart
+### 1. Create an Access Key
 
-    ```bash
-    # 1. Create your access key file:  https://glean.io/app/p/access-keys
-    mkdir ~/.glean
-    mv ~/Downloads/glean_access_key.json ~/.glean/ # or wherever you downloaded the file
+To use the CLI with your Glean project, you need an **Access Key**. An Access Key is used by Glean to identify who you are and what resources you have access to. You should use a separate access key for each distinct user or service using the CLI.
 
-    # 2. Create virtual env and install the Glean CLI
-    python3 -m venv venv
-    source venv/bin/activate
-    pip3 install glean-cli
-
-    # 3. Explore data (can export any resource from glean into this repo):
-    cd ~/code/my_project/
-    glean preview .
-    ```
-
-
-To use the CLI, you must have Python version 3.7 or greater installed in your environment.
-
-- Checking your Python version
-
-    To check if Python 3 is installed, run the following command in your terminal:
+1.  Go to the [`Settings`](https://glean.io/app/p/settings#access_keys){:target="\_blank"} page using the link on the navigation side bar
+2.  Click on `Access Keys`
+3.  Click `+ New Access Key` in the top right and follow the instructions. Your Access Key file will be downloaded automatically.
+4.  Move your Access Key to the default location CLI will look for it
 
     ```bash
-    python3 --version
+    $ mkdir ~/.glean
+    $ mv ~/Downloads/glean_access_key.json ~/.glean/
     ```
 
-    If the command fails or your version is less than 3.7, you can download and install by following the instructions here: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+    !!! warning
 
+        Once you navigate away from the page, you will not be able to re-download your Access Key. If you lose your Access Key, you will need to delete it and then create a new one.
 
-To install the CLI, run the following command in your terminal:
+### 2. Install Glean CLI
 
-```bash
-pip3 install glean-cli
-```
+1. Confirm [Python 3](https://www.python.org/downloads/) is installed
+   ```bash
+   $ python3 --version
+   ```
+2. Install Glean CLI into a virtual environment
+   ```bash
+   $ python3 -m venv venv
+   $ source venv/bin/activate
+   $ pip3 install glean-cli
+   ```
+3. confirm sucessful installation
+   ```bash
+   $ glean
+   Usage: glean [OPTIONS] COMMAND [ARGS]...
 
-You can run the `glean` command to validate that it is installed successfully and see documentation about how to use it:
+     A command-line interface for interacting with Glean.
 
-```bash
-$ glean
-Usage: glean [OPTIONS] COMMAND [ARGS]...
+   Options:
+   ...
+   ```
 
-  A command-line interface for interacting with Glean.
-
-Options:
-...
-```
-
-You can use the `--help` flag to see documentation about a specific command. For example:
+Use the `--help` flag to see documentation about a specific command. For example:
 
 ```bash
 $ glean preview --help
@@ -62,23 +55,23 @@ Options:
 ...
 ```
 
-## Creating an Access Key
+## Explore your data
 
-To use the CLI with your Glean project, you need an **Access Key**. An Access Key is used by Glean to identify who you are and what resources you have access to. You should use a separate access key for each distinct user or service using the CLI.
+Not sure where to start? If you already have a database connection set up, you can quickly generate a Data Model and Preview Build for a table in your database:
 
-To create an Access Key:
+```bash
+$ glean explore database_connection_name table_name
+```
 
-1. Go to the `Settings` page using the link on the navigation side bar
-2. Click on `Access Keys`
-3. Click `+ Create Access Key` in the top right and follow the instructions. Your Access Key file will be downloaded automatically.
-4. After downloading, move your Access Key file to a permanent and secure location on your workstation. By default, the CLI expects your access key to be located at `~/.glean/glean_access_key.json`. You can override this by:
-    - Setting the `GLEAN_CREDENTIALS_FILEPATH` environment variable to a different filepath
-    - Using the `--credentials-filepath` command-line option to use a different filepath
-    - Setting the `GLEAN_PROJECT_ID`, `GLEAN_ACCESS_KEY_ID`, and `GLEAN_SECRET_ACCESS_KEY_TOKEN` environment variables to the respective values stored in your access key file.
+Since this creates a Preview only, the Data Model won't be persisted. However, a model configuration file will be saved in your local directory, so that you can later `glean deploy` that file.
 
-!!! warning
+## Moving your access key
 
-    Once you navigate away from the page, you will not be able to re-download your Access Key. If you lose your Access Key, you will need to delete it and then create a new one.
+By default, the CLI expects your access key to be located at `~/.glean/glean_access_key.json`. You can override this by:
+
+- Setting the `GLEAN_CREDENTIALS_FILEPATH` environment variable to a different filepath
+- Using the `--credentials-filepath` command-line option to use a different filepath
+- Setting the `GLEAN_PROJECT_ID`, `GLEAN_ACCESS_KEY_ID`, and `GLEAN_SECRET_ACCESS_KEY_TOKEN` environment variables to the respective values stored in your access key file.
 
 ## Using environment variables
 
@@ -87,7 +80,7 @@ You can use environment variables to dynamically populate Glean configuration fi
 When creating a Build using local files, the CLI will replace placeholders of the form `${ENV_VAR_NAME}` with the corresponding environment variable. For example, if your model file contains:
 
 ```yaml
-glean: '0.1'
+glean: "0.1"
 name: My Data Model
 source:
   connectionName: ${DATABASE_CONNECTION_NAME}

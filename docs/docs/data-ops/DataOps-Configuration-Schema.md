@@ -26,8 +26,8 @@
   ```
 - Properties
   - **`glean`** *(string)*: The Glean file format version.
-  - **`id`** *(string)*: The persistent identifier for this data model.
-  - **`name`** *(string)*: The user-facing name for this data model.
+  - **`id`** *(string)*: The persistent identifier for this Data Model.
+  - **`name`** *(string)*: The user-facing name for this Data Model.
   - **`type`** *(string)*: The type of this resource, which in this case should always be `model`.
   - **`source`** *(object)*: The data source to read from. This object can be either of these formats:
     - _Table source_: a source that fetches data from an existing table.
@@ -39,7 +39,7 @@
       - **`connectionName`** \*(string)**\*:** The name of a database connection, as displayed in the Glean UI. (Not required if `connectionId` is specified.)
       - **`connectionId`** *(string)*: The connection ID of a database connection, as displayed in the Glean UI. (Not required if `connectionName` is specified.)
       - **`sql`** *(string)*: The SQL statement used to fetch data for this model.
-  - **`cols`** *(array)*: The columns (metrics, attributes, dates) of the data model. Each item in the array is an object in one of the following formats:
+  - **`cols`** *(array)*: The columns (metrics, attributes, dates) of the Data Model. Each item in the array is an object in one of the following formats:
     - _Date column_: Specifies a date column.
       - **`id`** *(string)*: The persistent identifier for the column.
       - **`type`** *(string)*: The type of this column, which in this case should always be `'datetime'`.
@@ -103,7 +103,7 @@
   - **`id`** *(string)*: The persistent identifier of this saved view.
   - **`name`** *(string)*: The user-visible name of this saved view.
   - **`type`** *(string)*: The type of this resource, which in this case should always be `saved_view`.
-  - **`model`** *(string)*: The file path to the data model definition.
+  - **`model`** *(string)*: The file path to the Data Model definition.
   - **`hidden`** *(array)*: A list of attribute column identifiers to hide in this view. Each item is of type `string`.
   - **`visualization`** *(object)*: Information about the visualization of the saved view. This object has the following properties:
     - **`chartType`** *(string)*: The chart type. Must be one of: `['area', 'bar', 'line', 'table', 'pivot', 'horizontal bar']`.
