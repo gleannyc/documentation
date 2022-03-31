@@ -10,16 +10,13 @@ You can invite members to your project in Glean to allow them to query and explo
 2. Select `Users`
 3. Select `+ Add User`
 4. Fill out the form and select the submit button: `Add User`
+    - **Email:** Email to send the invite to. Projects can be setup to only allow
+    email addresses on your domain (eg. only emails ending in `@yourcompany.com`).
+    - **Full Name:** User's display name. They can change this themselves at any time.
+    - **Role:** the user's level (see below)
 
-   Email: the Google account and email address
-
-   Full Name
-
-   Role: the user's level see below
-
-5. The invited user will receive an email with an invite link. The user can then either create a username and password or use Google authentication to login.
-
-   Projects can be setup to only allow email addresses on your domain (eg. only emails ending in `@yourcompany.com`).
+5. The invited user will receive an email with an invite link.
+The user can then either create a username and password or use Google authentication to login.
 
 ## Default system roles
 

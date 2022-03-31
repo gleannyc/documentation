@@ -69,10 +69,3 @@ We currently support the following SQL dialects, but can relatively easily suppo
   grant SELECT on all tables in database identifier($database_name) to role identifier($glean_role);
   grant SELECT on future tables in database identifier($database_name) to role identifier($glean_role);
   ```
-
-**On the Roadmap:**
-
-- [Roadmap 🚧] HiveQL
-- [Roadmap 🚧] Trino
-- [Roadmap 🚧] Druid
-- [Roadmap 🚧] MySQL

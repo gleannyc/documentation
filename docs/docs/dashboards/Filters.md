@@ -16,13 +16,17 @@ any value set here will become the default value for the filter when viewers
 load the dashboard.
 
 ## Filter Hierarchy
-Filters exist at three levels. Global filters, section filters, and filters
-defined directly within the saved views or metrics.
+Filters exist at three levels. When filters from different levels overlap,
+they are prioritized as such:
 
-<!-- this concept is confusing and this _probably_
-isn't the clearest way to explain it -->
-Section filters take precedence over global filters. Section and global filters
-both take precendence over saved view or metric filters.
+1. Section Filters
+2. Global Filters
+3. Saved View / Metric Filters
+
+![Filter Hierarchy](imgs/filter-hierarchy.png)
+
+Note that filter rules do not combine together - a more permissive filter will
+take precedence and override less permissive ones.
 
 ## Filter Synchronization
 Dashboard filters are automatically synchronized based on name. For example, if
