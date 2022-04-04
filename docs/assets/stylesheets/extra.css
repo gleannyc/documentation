@@ -30,12 +30,16 @@
 
 .md-content {
   margin-top: 1rem;
+  margin-bottom: 8rem; /* overscroll */
 }
 
 .md-content__inner {
-  margin-top: 1rem;
   /* limit content width */
   max-width: 40rem;
+}
+
+.md-header__title {
+  margin-left: 0 !important;
 }
 
 .md-sidebar.md-sidebar--secondary {
@@ -44,7 +48,6 @@
 }
 
 /* Moves the sidebar to the left and adds a boarder */
-
 .md-grid {
   margin-left: 1.5rem;
   margin-right: 0;
@@ -52,8 +55,15 @@
   /* move toc to right */
 }
 
-.md-sidebar.md-sidebar--primary .md-sidebar__scrollwrap {
-  border-right: 1px solid #cbcbcb;
+@media screen and (max-width: 60em){
+  .md-content {
+    margin-top: 0;
+  }
+
+  .md-grid {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 [data-md-color-scheme="glean"] label.md-nav__link {
