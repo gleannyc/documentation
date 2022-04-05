@@ -1,6 +1,6 @@
 # Glean Overview
 
-Glean is an interactive data exploration tool that enables anyone in your organization to discover actionable insights.  If you have feedback about the product or this documentaiton, please reach out to [product@glean.io](mailto:product@glean.io).
+Glean is an interactive data exploration tool that enables anyone in your organization to discover actionable insights.  If you have feedback about the product or this documentation, please reach out to [product@glean.io](mailto:product@glean.io).
 
 !!! info "New to Glean?"
 
