@@ -12,6 +12,14 @@
   background-color: #3a3134;
 }
 
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb:hover {
+  background-color: var(--md-default-fg-color--light);
+}
+
+.md-sidebar__scrollwrap:hover {
+  scrollbar-color: var(--md-default-fg-color--light) transparent;
+}
+
 .md-sidebar {
   padding: 0;
 }
