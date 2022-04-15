@@ -54,8 +54,12 @@ nav:
       - Data Ops:
           - Overview: docs/data-ops/index.md
           - docs/data-ops/Creating-Data-Ops-Builds.md
-          - docs/data-ops/DataOps-Configuration-Schema.md
           - docs/data-ops/Using-the-Glean-CLI.md
+          - Configuration Schemas:
+            - Overview: docs/data-ops/config-schema/index.md
+            - docs/data-ops/config-schema/Data-Model.md
+            - docs/data-ops/config-schema/Saved-View.md
+            - docs/data-ops/config-schema/Dashboard.md
       - Guides:
           - Create Retention Curves: guides/create-retention-curves/index.md
       - Project Management:

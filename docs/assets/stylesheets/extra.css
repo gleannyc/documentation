@@ -47,6 +47,10 @@
   padding-top: 1.5rem;
 }
 
+.md-nav__item--nested .md-nav__item--nested .md-nav__item--nested .md-nav__link {
+  text-transform: none;
+}
+
 /* Moves the sidebar to the left and adds a boarder */
 .md-grid {
   margin-left: 1.5rem;

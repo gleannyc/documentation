@@ -36,14 +36,16 @@ An easy way to get started building a configuration file is to export it from an
 
 - Data Models: Navigate to the [Data Models](https://glean.io/app/p/data-models) page, click the Edit icon for one of your Data Models, and then click the `View DataOps Config File` button.
 - Saved Views: On any Explore page, click the three dots in the top-right corner of the chart area, and then click `Export Saved View Config File`.
+- Dashboards: On any Dashboard page, click the three dots in the top-right corner, and then click `View DataOps Config File`.
 
 You will likely want to adjust some values in the configuration files after exporting to match your team's preferences and local environment, such as column names and paths to other resources.
 
 ### Glean model configuration files
 
-Glean files are intended to map to the options available in the Data Model user interface (see [Data Models Overview](../data-modeling/Data-Models-Overview.md)). Full documentation of the model configuration file can be found [here](DataOps-Configuration-Schema.md).
+Glean files are intended to map to the options available in the Data Model user interface (see [Data Models Overview](../data-modeling/Data-Models-Overview.md)). Full documentation of the model configuration file can be found [here](./config-schema/index.md).
 
-The following is an example of a Data Model `my_model.yml`:
+The following is an example of a Data Model `my_model.yml`.
+Full documentation of the data model configuration files can be found [here](./config-schema/Data-Model.md):
 
 ```yaml
 glean: "1.0"
@@ -88,7 +90,7 @@ cols:
 
 ### Glean saved view configuration files
 
-Full documentation of the saved view configuration files can be found [here](DataOps-Configuration-Schema.md).
+Full documentation of the saved view configuration files can be found [here](./config-schema/Saved-View.md).
 
 The following is an example of a saved view `my_saved_view.yml`
 
@@ -186,3 +188,7 @@ data:
         index: 1
         color: rgb(68, 78, 134)
 ```
+
+### Glean dashboard configuration files
+
+Full documentation of the dashboard configuration files can be found [here](./config-schema/Dashboard.md).
