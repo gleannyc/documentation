@@ -57,7 +57,6 @@
   ```
 ## Properties
 - **`glean`** *(string - required)*: The Glean file format version.
-- **`id`** *(string - required)*: The persistent identifier of this dashboard.
 - **`type`** *(string - required)*: The type of this resource. For dashboards, this is always `"dashboard"`.
 - **`name`** *(string - required)*: The user-facing name of this dashboard.
 - **`sections`** *(array - required)*: One or more **Section** objects.
