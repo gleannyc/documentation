@@ -109,10 +109,9 @@ All blocks have the following properties:
 - **`type`** *(\*string*): The type of this block. One of `“savedView”`, `“metric”`, `“markdown”`, or `“empty”`.
   Dependent on the type of the block, more properties may be required.
 - **`width`** *(number)*: A number which defines the width of the block in its row.
-    - The minimum width is `2`. The max total amount of width in a single row is `12`.
-    - If omitted, blocks will default to splitting up avaliable space in a row equally.
-    - Glean may adjust the width of a block to correctly fit its contents or scale better
-      on different device sizes.
+    - The minimum width is `2`. The total width of entire row is `12` units.
+    - If width is omitted, blocks will default to splitting up avaliable space in a row equally.
+    - Glean may adjust the width of a block to correctly fit its contents on different device sizes.
 
 #### Saved View Blocks - **`“savedView”`**
 
@@ -131,15 +130,15 @@ Saved View Blocks display a visualization of data and require the following prop
 - **`axisLabels`** *(string)*: Set whether the axis of the chart are displayed.
   One of "show”, "hide”, or “inherit”.
     - A value of “inherit” will set the axis labels to match what the saved view has set.
-    - If omitted, this will default to “inherit”.
+    - If axisLabels are omitted, this will default to “inherit”.
 
 #### Metric Blocks - **`“metric”`**
 
 Metric Blocks display a single numeric result of evaluating a metric with a set of filters.
 
 - **`dataModel`** *(\*string*): Path to a data-ops file containing a data model.
-- **`dataModelMetricId`** *(\*string*): The ID of the metric column to evaluate.
-  This metric must be defined on the associated `dataModel`’s `col` field.
+- **`dataModelMetricId`** *(\*string*): The ID of the metric to evaluate on the associated `dataModel`.
+  You can find the metric column id to reference under the `dataModel`'s `col` field in its data-ops file.
 - **`filters`** *(array)*: List of **Filters** applied when evaluating this metric.
     - When defining filters for a metric block, omit `dataModel`.
 - **`label`** *(string)*: The label to show for this metric.
