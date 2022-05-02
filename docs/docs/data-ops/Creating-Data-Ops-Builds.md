@@ -26,9 +26,15 @@ If there is an error while deploying a Data Model, the build process will revert
 
 Glean supports configuration files written in YAML or JSON. A Glean Build will attempt to validate every file in the specified path with a `.yml` or `.json` extension.
 
+Full documentation of all configuration files can be found for each resource type:
+
+- [Data Models](./config-schema/Data-Model.md)
+- [Saved Views](./config-schema/Saved-View.md)
+- [Dashboards](./config-schema/Dashboard.md)
+
 !!! warning
 
-    While this feature is in beta, it is possible we may need to introduce breaking changes to the Glean configuration file format. In these cases we will give advanced warning and  assist beta partners with any necessary migrations.
+    While this feature is in beta, it is possible we may need to introduce breaking changes to the Glean configuration file format. In these cases we will give advanced warning and assist beta partners with any necessary migrations.
 
 ### Exporting configuration files
 
@@ -39,156 +45,3 @@ An easy way to get started building a configuration file is to export it from an
 - Dashboards: On any Dashboard page, click the three dots in the top-right corner, and then click `View DataOps Config File`.
 
 You will likely want to adjust some values in the configuration files after exporting to match your team's preferences and local environment, such as column names and paths to other resources.
-
-### Glean model configuration files
-
-Glean files are intended to map to the options available in the Data Model user interface (see [Data Models Overview](../data-modeling/Data-Models-Overview.md)). Full documentation of the model configuration file can be found [here](./config-schema/index.md).
-
-The following is an example of a Data Model `my_model.yml`.
-Full documentation of the data model configuration files can be found [here](./config-schema/Data-Model.md):
-
-```yaml
-glean: "1.0"
-name: My Data Model
-source:
-  connectionName: Production BigQuery
-  physicalName: test_table
-cols:
-  - id: metric_sum
-    type: metric
-    physicalName: value1
-    name: SUM VALUE
-    aggregate: sum
-  - id: label1
-    type: attribute
-    physicalName: label1
-  - id: secondary_event_date
-    type: datetime
-    physicalName: secondary_event_date
-    primaryDate: true
-```
-
-The following Data Model uses a sql statement instead of an underlying table. It also uses sql to build a custom metric, daily_active_users:
-
-```yaml
-glean: "1.0"
-name: My Data Model
-source:
-  connectionName: Production BigQuery
-  sql: select * from test_table
-cols:
-  - id: metric_sum
-    type: metric
-    physicalName: value1
-    name: SUM VALUE
-    aggregate: sum
-  - id: daily_active_users
-    type: metric
-    name: Daily Active Users
-    sql: COUNT(DISTINCT user_id) / COUNT(DISTINCT login_date)
-```
-
-### Glean saved view configuration files
-
-Full documentation of the saved view configuration files can be found [here](./config-schema/Saved-View.md).
-
-The following is an example of a saved view `my_saved_view.yml`
-
-```yaml
-glean: "1.0"
-id: my-saved-view
-type: saved_view
-name: My Saved View
-model: "../my_model.yml"
-visualization:
-  chartType: bar
-data:
-  x:
-    columnId: secondary_event_date
-    granularity: day
-  y:
-    columnId: metric_sum
-  filters:
-    - columnId: secondary_event_date
-      range:
-        - "2014-01-01"
-        - "2017-01-01"
-  breakout:
-    columnId: location
-    groups:
-      - key: Street/Sidewalk
-        index: 0
-        color: rgb(0, 63, 92)
-      - key: Residential Building/House
-        index: 1
-        color: rgb(68, 78, 134)
-```
-
-Here are a few other Saved View examples to help get you started:
-
-```yaml
-glean: "1.0"
-id: my-saved-view
-type: saved_view
-name: My Saved View
-model: "../my_model.yml"
-visualization:
-  chartType: bar
-data:
-  x:
-    columnId: numeric_column
-    bins:
-      binWidth: 0.2
-  y:
-    columnId: metric_sum
-  filters:
-    - columnId: secondary_event_date
-      range:
-        - "2014-01-01"
-        - "2017-01-01"
-  breakout:
-    columnId: location
-    groups:
-      - key: Street/Sidewalk
-        index: 0
-        color: rgb(0, 63, 92)
-      - key: Residential Building/House
-        index: 1
-        color: rgb(68, 78, 134)
-```
-
-```yaml
-glean: "1.0"
-id: my-saved-view
-type: saved_view
-name: My Saved View
-model: "../my_model.yml"
-visualization:
-  chartType: table
-data:
-  x:
-    columnId: numeric_column
-    bins:
-      binWidth: 0.2
-  y:
-    - columnId: metric_sum
-    - columnId: metric_avg
-  filters:
-    - columnId: secondary_event_date
-      range:
-        - "2014-01-01"
-        - "2017-01-01"
-  breakout:
-    columnId: location
-    groups:
-      - key: Street/Sidewalk
-        index: 0
-        color: rgb(0, 63, 92)
-      - key: Residential Building/House
-        index: 1
-        color: rgb(68, 78, 134)
-```
-
-### Glean dashboard configuration files
-
-Full documentation of the dashboard configuration files can be found [here](./config-schema/Dashboard.md).
