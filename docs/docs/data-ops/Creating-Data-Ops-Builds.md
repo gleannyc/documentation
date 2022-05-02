@@ -26,7 +26,11 @@ If there is an error while deploying a Data Model, the build process will revert
 
 Glean supports configuration files written in YAML or JSON. A Glean Build will attempt to validate every file in the specified path with a `.yml` or `.json` extension.
 
-Full documentation of all configuration files can be found [here](./config-schema/index.md).
+Full documentation of all configuration files can be found for each resource type:
+
+- [Data Models](./config-schema/Data-Model.md)
+- [Saved Views](./config-schema/Saved-View.md)
+- [Dashboards](./config-schema/Dashboard.md)
 
 !!! warning
 
