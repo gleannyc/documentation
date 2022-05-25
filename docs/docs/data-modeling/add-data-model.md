@@ -11,6 +11,6 @@ When possible, you should try to modify or extend an existing data model instead
 3. Select either an existing table or click `SQL Editor` to use a custom query
 4. Click `Build Model` to create the initial data model (All date fields and a row count metric are added by default)
 5. Edit the name of the data model at the top of the page
-6. Add additional metrics and attributes by clicking `Add metric` and `Add Attribute` next to the name of the field or by dragging the field over
+6. Add additional metrics and attributes by clicking `Add metric` and `Add Attribute` next to the name of the field
 7. Create a SQL based custom metric by clicking `+ Add Custom Metric` (see [Metrics](Metrics.md) for more details)
 8. Click `Save Model` then click `Open in Explore` to start exploring the data
