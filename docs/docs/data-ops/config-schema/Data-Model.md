@@ -1,4 +1,4 @@
-Glean data model files are intended to map to the options available in the Data Model user interface (see [Data Models Overview](../data-modeling/Data-Models-Overview.md)).
+Glean data model files are intended to map to the options available in the Data Model user interface (see [Data Models Overview](../../data-modeling/Data-Models-Overview.md)).
 
 ## Examples
 The following is an example of a Data Model `my_model.yml` which loads `test_table` and defines some simple attributes.
