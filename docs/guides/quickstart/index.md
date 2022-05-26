@@ -29,6 +29,7 @@ Also see [database connections](../../docs/project-management/database-connectio
 ## 2. Define a data model
 
 Every chart and analysis is based on a Glean data model. A data model is a table (or virtual table).
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/16445a878e2d4e12af36241ce581345d?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ![modal to add data model](../quickstart/create-data-model.png){: style="max-width:75%"}
 

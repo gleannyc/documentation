@@ -1,5 +1,7 @@
 # DataOps
 
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/c7000e042e134a96a501d825dd1eaea9?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 DataOps in Glean allows you to represent your resources as configuration files, which can be stored in a Git repository and deployed to your Glean project as part of a change management workflow.
 
 Using DataOps, you can:
