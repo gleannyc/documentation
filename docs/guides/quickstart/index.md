@@ -28,12 +28,12 @@ Also see [database connections](../../docs/project-management/database-connectio
 
 ## 2. Define a data model
 
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/16445a878e2d4e12af36241ce581345d?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 Every chart and analysis is based on a Glean data model. A data model is a table (or virtual table).
 
-![modal to add data model](../quickstart/create-data-model.png){: style="max-width:75%"}
-
 1.  [Go to your `project homepage`](https://glean.io/app/) and click `New Data Model`
-2.  Select a database connection, table, and click `Create Model`
+2.  Select a database connection, click on a table name, and click `Build Model`
 
     !!! info "Using a SQL Query"
 
@@ -41,13 +41,11 @@ Every chart and analysis is based on a Glean data model. A data model is a table
 
 3.  Define the data model
 
-    1. Edit the name of the data model by clicking the edit button `✏️` next to the name
-    2. Click `>` to add a source column to the data model
-       1. Add a dates to your data model
-       2. Add attributes to your data model)
-    3. Add metrics to your data model (see [`Metrics`](../../docs/data-modeling/Metrics))
+    1. Edit the name of the data model at the top of the page
+    2. Add additional metrics and attributes by clicking `Add metric` and `Add Attribute` next to the name of the field
+    3. Create a SQL based custom metric by clicking `+ Add Custom Metric` (see [Metrics](../../docs/data-modeling/Metrics.md) for more details)
 
-4.  Click `Publish`. Glean will send you into your data explorer
+4. Click `Save Model` then click `Open in Explore` to start exploring the data
 
 ## 3. Start interacting with your data
 

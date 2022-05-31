@@ -1,3 +1,5 @@
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/16445a878e2d4e12af36241ce581345d?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 When possible, you should try to modify or extend an existing data model instead of adding new data models for each new analysis. This section shows you how to quickly add data if you're getting started, you should also check out [Data Models Overview](Data-Models-Overview.md) and [Data Modeling Best Practices](../../guides/data-modeling-best-practices.md)
 
 !!! info "Preparing Data for Glean"
