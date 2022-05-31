@@ -43,8 +43,8 @@ An easy way to get started building a configuration file is to export it from an
 - Data Models:
     1. Navigate to the [Data Models](https://glean.io/app/p/data-models){:target="_blank"} page
     2. Click `Edit` for one of your Data Models
-    3. Click the `⋮` in the top-right corner,
-    4. Click the `View DataOps Config File` button
+    3. Click the `⋮` in the top-right corner
+    4. Click `DataOps Config`
 - Saved Views: On any Explore page, click the `⋮` in the top-right corner of the chart area, and then click `Export Saved View Config File`.
 - Dashboards: On any Dashboard page, click the `⋮` in the top-right corner, and then click `View DataOps Config File`.
 
