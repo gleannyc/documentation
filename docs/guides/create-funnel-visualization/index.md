@@ -4,7 +4,7 @@
 
 Funnel charts are used to understand how far users progress through a conversion funnel, a series of pre-defined steps leading up to a conversion event.
 
-Since each step preceeds the next, the user count is highest at the beginning and tapers down to the number of users who convert, creating a funnel shape.
+Since each step precedes the next, the user count is highest at the beginning and tapers down to the number of users who convert, creating a funnel shape.
 
 Like [retention curves](../create-retention-curves/index.md), including user-level attributes, such as experiments and other cohorts, can be useful to compare effects on the conversion funnel.
 
@@ -12,7 +12,7 @@ For this walk-through, we're going to look at the user engagement on the tech ne
 
 ## Prepare data
 
-As with all tools you build in Glean, conversion funnels will be as powerful as the data model you produce for them. For large user tables, it probably makes sense to prepare this data in your data warehouse, but it's also possible to measure funnels on the fly using a SQL-based data model. See [Add Data Model](../../docs/data-modeling/add-data-model.md)
+As with all tools you build in Glean, conversion funnels will be as powerful as the data model you produce for them. For large user tables, it probably makes sense to prepare this data in your data warehouse, but it's also possible to measure funnels on the fly using a SQL-based data model.
 
 To prepare our funnel, we will define a set of steps in a funnel and then check whether a user made it to each stage.
 
@@ -64,7 +64,7 @@ where cohort_year>extract(YEAR from current_date()) - 5
 
 A few notes on the resulting columns:
 
-- **username** - self-explanatory, this is string representing our user
+- **username** - this is a string representing our user
 - **cohort_year** - this is the year a user first commented
 - **cohort_nameLength** - whether a username is longer than 10 characters
 - **comment_count** - the total number of comments by a user
@@ -73,16 +73,17 @@ A few notes on the resulting columns:
 
 ## Create the data model in Glean
 
-1. From the data exploration page, click [Add Data Model](Add-Data-Model)
-2. Either select your prepared retention table from your data warehouse or click `SQL Query` and enter a SQL query similar to the one above as the basis for your model. Click `Create Model`
-3. Setup your data model in Glean:
+1. From the Glean homepage, click [Add Data Model](<[Add-Data-Model](https://glean.io/app/mb)>){:target="\_blank"}
+   1. see [Add Data Model](../../docs/data-modeling/add-data-model.md) for documentation on adding a data model
+2. Either select your prepared retention table from your data warehouse or enter a SQL query similar to the one above as the basis for your model.
+3. Add attributes and metrics for your funnel's model in Glean:
    - Add `cohort_year`, `cohort_nameLength`, and `comment_count` as attributes along with any experimental cohort attributes you prepared in your data.
    - Add **User Count** as a custom metric, this will be the metric used in the visualizations
      ```sql
      COUNT(DISTINCT IF(in_stage = 1, username, null))
      ```
-4. Click `Publish`
-5. Click `Explore`
+4. Click `Save Model`
+5. Click `Open in Explore`
 
 ## Create funnel view
 
@@ -96,8 +97,7 @@ A few notes on the resulting columns:
 4. Click into the `control` tab on the right-hand side
 
    1. Select `Show Bar Labels`
-   2. WIP Select `Show percentage of max`
-   3. Sort rows by `user count` descending
+   2. Sort rows by `user count` descending
 
 5. Select `Breakout` or `Filter` on a cohort attribute to see how different cohorts progress through the funnel.
 
@@ -110,11 +110,11 @@ The table view allows you to calculate and display additional metrics for your f
 1. Change the chart type to `Table`
 2. Select `stage_name` as the rows
 3. Select `user count` as your metric
-4. WIP Select `Add a Calculation` in the metric dropdown
-   1. rolling diff to add the absolute number of users not making it to the next stage
-   2. rolling delta to see the percentage
-5. Click into the `control` tab on the right-hand side
-   1. Add a visualization with type `Bar`
+4. Select `Add a Calculation` in the metric dropdown
+   1. Add a metric with a `Difference` calculation to see the drop off at each stage
+   2. Add a metric with a `Percent Change` calculation to see the drop off at each stage
+5. Click into the `Controls` tab on the right-hand side
+   1. Add a visualization with type `Bar` to the `user count` field
    2. Sort rows by `user count` descending
 
 ### Create funnel pivot table
@@ -130,8 +130,3 @@ The pivot table view allows you to see funnels broken out by attribute, in paral
    1. Add a visualization with type `Bar`
    2. Sort rows by `user count` descending
 5. Select `Columns` or `Filter` on a cohort attribute to see how different cohorts progress through the funnel.
-
-## enhancements required
-
-- [add rolling diff, rolling delta to Table calculations](https://github.com/gleannyc/glean/issues/3275)
-- [add option to display "percentage of max" alongside alongside metric](https://github.com/gleannyc/glean/issues/3274)
