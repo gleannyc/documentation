@@ -49,7 +49,7 @@ If you would like to start excluding items (instead of including them), you can 
 2. Choose the `Filter All` button to select every item
 3. Now click items to start excluding them
 
-<img src="/assets/Screen_Shot_2020-08-20_at_11.43.11_AM.png" alt="Attributes Tray" width="400" />
+![attribute filter](../../assets/attribute-filter.png){: style="max-width:50%"}
 
 ## Attribute Breakout
 
