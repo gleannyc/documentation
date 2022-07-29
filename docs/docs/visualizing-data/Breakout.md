@@ -1,6 +1,6 @@
 Breaking out an attribute in Glean splits the visualization by the categories in that attribute. In a timeseries bar chart for example, you can map color to an attribute.
 
-![Breaking out an attribute](/assets/breakout4.gif)
+![Breaking out an attribute](../../assets/breakout4.gif)
 
 ## Adding and removing a breakout
 
@@ -24,7 +24,7 @@ Breaking out into multiple charts allows you to create a trellis chart, a series
 
 A trellis chart makes it easy to compare different slices of your data. This can be particularly effective when combined with a color breakout or multiple metrics.
 
-![Breaking out into multiple charts to create a trellis](/assets/breakout-trellis.gif){: style="max-width:75%"}
+![breaking out a chart into a trellis](../../assets/breakout-trellis.gif){: style="max-width:75%"}
 
 In the attribute panel, click on the Breakout split button to break out into multiple charts.
 
