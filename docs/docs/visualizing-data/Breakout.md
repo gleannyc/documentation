@@ -26,7 +26,7 @@ A trellis chart makes it easy to compare different slices of your data. This can
 
 ![breaking out a chart into a trellis](../../assets/breakout-trellis.gif){: style="max-width:75%"}
 
-In the attribute panel, click on the Breakout split button to break out into multiple charts.
+In the attribute panel, click the arrow on the right side of the Breakout button to break out into multiple charts.
 
 ## Hiding the `Other` category
 
