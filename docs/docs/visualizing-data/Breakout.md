@@ -18,7 +18,7 @@ Colors for your series are selected automatically by Glean with a range of color
 
 Glean does not yet support customizing chart colors.
 
-## Trellis Breakout: break out into multiple charts
+## Break out into multiple charts (trellis charts)
 
 Breaking out into multiple charts allows you to create a trellis chart, a series of separate sub-charts for each category in the attribute. This type of breakout is known as faceting, a trellis plot, or small multiples.
 
