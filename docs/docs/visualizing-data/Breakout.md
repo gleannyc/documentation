@@ -22,7 +22,9 @@ Glean does not yet support customizing chart colors.
 
 Breaking out into multiple charts allows you to create a trellis chart, a series of separate sub-charts for each category in the attribute. This type of breakout is known as faceting, a trellis plot, or small multiples.
 
-A trellis chart makes it easy to compare different slices of your data. This can be particularly effective when combined with a color breakout or multiple metrics.
+A trellis chart makes it easy to compare different slices of your data side-by-side, which can be easier to interpret than a chart like a stacked bar chart.
+
+Trellis charts can be particularly effective when combined with a color breakout or multiple metrics.
 
 ![breaking out a chart into a trellis](../../assets/breakout-trellis.gif){: style="max-width:75%"}
 
