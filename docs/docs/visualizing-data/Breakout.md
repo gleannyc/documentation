@@ -30,4 +30,4 @@ In the attribute panel, click on the Breakout split button to break out into mul
 
 ## Hiding the `Other` category
 
-Sometimes you might want to hide the other category to make the comparison between items more clear. To hide the other category click the `hide other` button at the bottom of the attribute tray.
+Sometimes you might want to hide the other category to make the comparison between items more clear. To hide the other category click the `hide other` button at the bottom of the attribute tray or in the control panel.
