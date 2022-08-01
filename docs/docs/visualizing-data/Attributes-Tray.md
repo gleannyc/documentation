@@ -10,7 +10,7 @@ There is also some type specific behavior for attributes.
 
 Some data models have many different attributes and before saving or sharing a view, you may want to tailor which attributes are saved into the view.  For this, you will want to hide attributes.  To hide an attribute:
 
-1. From the right hand menu in the visualization page select the `Model` tab at the top
+1. From the right-hand menu in the visualization page select the `Model` tab at the top
 2. From the `Attributes` list you can select an eye icon to hide or reveal an attribute
 
 ## Attribute Filters

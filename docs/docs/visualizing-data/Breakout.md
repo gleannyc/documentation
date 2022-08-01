@@ -6,7 +6,7 @@ Breaking out an attribute in Glean splits the visualization by the categories in
 
 - **From the Attribute Panel:** The easiest way to break out by an attribute is to select the Breakout button from any attribute panel in the [Attributes tray](Attributes-Tray.md).
 - **From the top Control Bar:** You can quickly view or remove a breakout from the top control bar just about your chart.
-- **From the Controls Panel:** As with other data configurations, you can always view and remove a breakout by clicking the `Controls` tab on the right hand panel.
+- **From the Controls Panel:** As with other data configurations, you can always view and remove a breakout by clicking the `Controls` tab on the right-hand panel.
 
 ## Adding breakout items
 
