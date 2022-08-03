@@ -12,7 +12,7 @@ See [Add Data Model](add-data-model.md) to see how to setup your first data mode
 
 **Editing a data model**
 
-1. Select the [More](../visualizing-data/Chart-Menu.md) button on the top right hand of the chart.
+1. Select the [More](../visualizing-data/Chart-Menu.md) button on the top right-hand of the chart.
 2. Select `Edit Data Model`
 
 ## Why use Data Models?

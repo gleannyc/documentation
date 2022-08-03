@@ -10,7 +10,7 @@ There is also some type specific behavior for attributes.
 
 Some data models have many different attributes and before saving or sharing a view, you may want to tailor which attributes are saved into the view.  For this, you will want to hide attributes.  To hide an attribute:
 
-1. From the right hand menu in the visualization page select the `Model` tab at the top
+1. From the right-hand menu in the visualization page select the `Model` tab at the top
 2. From the `Attributes` list you can select an eye icon to hide or reveal an attribute
 
 ## Attribute Filters
@@ -49,7 +49,7 @@ If you would like to start excluding items (instead of including them), you can 
 2. Choose the `Filter All` button to select every item
 3. Now click items to start excluding them
 
-<img src="/assets/Screen_Shot_2020-08-20_at_11.43.11_AM.png" alt="Attributes Tray" width="400" />
+![attribute filter](../../assets/attribute-filter.png){: style="max-width:50%"}
 
 ## Attribute Breakout
 
