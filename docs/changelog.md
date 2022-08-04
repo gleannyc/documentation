@@ -5,6 +5,7 @@ hide:
 
 # Changelog
 
+It's been a hot Glean summer over here in NYC as we’ve been working hard to ship features, big and small. Here are some highlights of what we’ve been up to.
 
 ## August 4th, 2022
 
