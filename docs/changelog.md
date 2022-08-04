@@ -8,6 +8,8 @@ hide:
 
 ## August 4th, 2022
 
+It's been a hot Glean summer over here in NYC as we’ve been working hard to ship features, big and small. Here are some highlights of what we’ve been up to.
+
 ### Multiple Chart Breakout 🎉
 ![image](/assets/product_updates/220803_trellis.gif){alt="Animation of chicago taxi rides being broken out into multiple color series and then into multiple charts"}
 We are beyond excited to share our newest analytics tool to answer deeper data questions. We’ve added a second way to break out your data, multiple chart breakout. (aka small multiples, trellis charts, or faceting)
