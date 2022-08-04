@@ -41,11 +41,9 @@ Extra credit: Send Glean reports to a Slack channel using their [native email in
 
 We’ve also implemented a bunch of small but powerful improvements that will hopefully make your life a tad easier.
 
-Sort tables in dashboards without editing the dashboard or saved view
-
-Model builder now supports previewing charts with breakout, multiple chart types, and multiple metrics.
-
-Filters in the explorer and dashboard have been updated to show more information and are easier to use.
+* Sort tables in dashboards without editing the dashboard or saved view.
+* Model builder now supports previewing charts with breakout, multiple chart types, and multiple metrics.
+* Filters in the explorer and dashboard have been updated to show more information and are easier to use.
 
 ---
 
@@ -53,7 +51,7 @@ Filters in the explorer and dashboard have been updated to show more information
 
 Glean had previously gone through a SOC 2 type I audit and recently went through the type II audit. We received our SOC 2 Type II report with zero exceptions!
 
-![image](/assets/product_updates/220803_soc2.png){style="border: 0"}
+![image](/assets/product_updates/220803_soc2.png){alt="SOC 2 Type II logo" style="border: 0"}
 
 ---
 
