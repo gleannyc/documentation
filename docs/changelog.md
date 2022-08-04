@@ -8,8 +8,6 @@ hide:
 
 ## August 4th, 2022
 
-Last month, we released some updates to your Glean homepage that makes it easier to find what you are looking for and see what’s most active in your organization.
-
 ### Multiple Chart Breakout 🎉
 ![image](/assets/product_updates/220803_trellis.gif){alt="Animation of chicago taxi rides being broken out into multiple color series and then into multiple charts"}
 We are beyond excited to share our newest analytics tool to answer deeper data questions. We’ve added a second way to break out your data, multiple chart breakout. (aka small multiples, trellis charts, or faceting)
@@ -20,9 +18,9 @@ Combine color and multiple chart breakouts to visually compare metrics by two at
 
 ### Your homepage just got more useful
 ![image](/assets/product_updates/220803_homepage.png){alt="New Glean homepage featureing starred resources and a list of most viewed resources"}
-Last month, we released some updates to your Glean homepage that makes it easier to find what you are looking for and see what’s most active in your organization.
-- You can sort a list of all items in your project that are private to you, recently edited, or our favorite: most viewed.
-- We’ve added visual previews of your data from recent activity.
+Last month, we released some updates to your Glean homepage that make it easier to find what you are looking for and see what’s most active in your organization.
+* You can sort a list of all items in your project that are private to you, recently edited, or our favorite: most viewed.
+* We’ve added visual previews of your data from recent activity.
 
 ---
 
