@@ -68,3 +68,4 @@ nav:
       - Support:
           - Get in Touch: contact-us.md
   - Quickstart: guides/quickstart/index.md
+  - Changelog: changelog.md
