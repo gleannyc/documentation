@@ -58,6 +58,9 @@ Glean had previously gone through a SOC 2 type I audit and recently went through
 
 Glean is looking for our next [Product Designer](https://glean.io/open-roles/product-designer) and our first [Account Executive](https://glean.io/open-roles/account-executive)!
 
+<br />
+<br />
+<br />
 
 ## June 20th, 2022
 
@@ -69,14 +72,21 @@ It’s been a minute since we’ve sent out an update! We’ve been busy buildin
 ### New Data Model Workbench
 
 ![image](/assets/product_updates/220620_model_workbench.png){alt="Screenshot of the new model workbench highlighting sql editor"}
+
 We’ve rebuilt our model builder from the ground up. Now, you can preview your data while writing SQL or customizing attributes and metrics.
+
+---
 
 ### Reorder your attributes
 
 ![image](/assets/product_updates/220620_reorder_attributes.png){alt="The glean user interface with an attribute tile being moved with drag and drop"}
+
 You can now reorder the attributes in the Explorer! Just click-and-drag to bring the most important attributes to the beginning of the list.
+
+---
 
 ### Undo-Redo
 
 ![image](/assets/product_updates/220622_undo_redo.png){alt="Glean interface with undo and redo buttons highlighted"}
+
 We’ve added undo-redo buttons in the Explorer to make it easier to test changes. The browser back button now takes you back to the previous page.
