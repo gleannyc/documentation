@@ -55,7 +55,10 @@
   padding-top: 1.5rem;
 }
 
-.md-nav__item--nested .md-nav__item--nested .md-nav__item--nested .md-nav__link {
+.md-nav__item--nested
+  .md-nav__item--nested
+  .md-nav__item--nested
+  .md-nav__link {
   text-transform: none;
 }
 
@@ -67,7 +70,7 @@
   /* move toc to right */
 }
 
-@media screen and (max-width: 60em){
+@media screen and (max-width: 60em) {
   .md-content {
     margin-top: 0;
   }
@@ -120,8 +123,14 @@
 
 @font-face {
   font-family: "Sharp Sans";
-  color: #3a3134;
-  src: url("/assets/SharpSans-Medium.woff2") format("woff2");
+  src: url("/assets/SharpSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Sharp Sans";
+  src: url("/assets/SharpSans-Bold.woff2") format("woff2");
+  font-weight: normal;
 }
 
 .md-header__title,
@@ -130,6 +139,11 @@ h2,
 h3,
 h4 {
   font-family: "Sharp Sans";
+}
+
+h1,
+h2 {
+  font-weight: bold !important;
 }
 
 .md-footer-meta {
