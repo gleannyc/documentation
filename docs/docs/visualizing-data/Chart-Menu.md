@@ -20,10 +20,6 @@ To get to actionable insights, you usually need to get down to the underlying da
 
 Every chart you generate with Glean is based on an underlying SQL Query. You can view this underlying query by selecting the View SQL Query option.
 
-!!! info
-
-This option will be disabled for flatfile data models, since SQL is not how we process or aggregate data in flatfiles.
-
 ## Edit Data Model
 
 Editing a data model allows you to modify the metrics and attributes that define how you visualize data. You must have at least an `Editor` role - see [Users and Permissions](../project-management/users-and-permissions.md).
