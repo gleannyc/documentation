@@ -14,17 +14,17 @@ Once you add a database connection, it will be made available from the [Add Data
 6. Click the antenna icon to test your connection `🗼`
 7. Click `Add` to complete the process
 
-!!! bastion "SSH tunnel beta"
-
-    Currently in beta, Glean supports connecting to a Postgres or Redshift database via a bastion host. A bastion host is a server which you control that has access to your database but is not the database host itself. This may be useful when handling especially sensitive data. To join the beta, [contact us](mailto:support@glean.io?subject=SSH tunnel beta).
-
-    To use a bastion host, toggle on `Use SSH tunnel` when creating a Postgres database connection. Fill out the additional credentials according to your bastion host set up. Download Glean's public ssh key and set it as an authorized key on your server under the bastion host user that you specify in the data connection.
-
-    Fill out the remaining credentials as they'll be accessed by your bastion host, e.g. for `Port` specify the port on which your bastion host connects to the database.
-
 !!! schemas "Specifying schemas"
 
     For most database types, you can optionally specify a schema.  If you specify a schema in Glean, only tables from that schema will be made available in the [Add Data Model](../data-modeling/add-data-model.md)  workflow
+
+## SSH tunneling beta 
+
+Currently in beta, Glean supports connecting to a Postgres or Redshift database via a bastion host. A bastion host is a server which you control that has access to your database but is not the database host itself. This may be useful when handling especially sensitive data. To join the beta, [contact us](mailto:support@glean.io?subject=SSH tunnel beta).
+
+To use a bastion host, toggle on `Use SSH tunnel` when creating a Postgres database connection. Fill out the additional credentials according to your bastion host set up. Download Glean's public ssh key and set it as an authorized key on your server under the bastion host user that you specify in the data connection.
+
+Fill out the remaining credentials as they'll be accessed by your bastion host, e.g. for `Port` specify the port on which your bastion host connects to the database.
 
 ## SQL Dialects
 
