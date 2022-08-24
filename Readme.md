@@ -6,7 +6,7 @@ User facing documentation for Glean
 
 ```bash
 # install python dependencies to a virtual environment
-$ pip install requirements.txt
+$ pip install -r requirements.txt
 
 # start a local server
 $ mkdocs serve
