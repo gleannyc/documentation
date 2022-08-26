@@ -12,17 +12,13 @@ Downloading chart data allows you to download the aggregated data from a chart t
 Glean differentiates between chart data and underlying data:
 
 - **Chart Data**: chart data is the aggregated data that results from running a database query or processing and aggregating spreadsheet data.
-- **Underlying Data**: underlying data is the raw data in a spreadsheet or database before it is aggregated or processed in anyway.
+- **Underlying Data**: underlying data is the raw data in a spreadsheet or database before it is aggregated or processed in anyway. Downloading this data is limited to 100k rows.
 
 To get to actionable insights, you usually need to get down to the underlying data: a specific patient, a specific order, or a specific ticket.
 
 ## View SQL Query
 
 Every chart you generate with Glean is based on an underlying SQL Query. You can view this underlying query by selecting the View SQL Query option.
-
-!!! info
-
-This option will be disabled for flatfile data models, since SQL is not how we process or aggregate data in flatfiles.
 
 ## Edit Data Model
 
