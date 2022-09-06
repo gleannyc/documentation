@@ -52,6 +52,8 @@ cols:
 - **`type`** *(string - required)*: The type of this resource. For data models, this is always `"model"`.
 - **`name`** *(string - required)*: The user-facing name for this Data Model.
 - **`source`** *(object - required)*: A **Data Source** object.
+- **`grn`** *(string)*: If specified, this config will update the resource with the provided [GRN](../GRNs.md),
+  instead of managing a new Data Model.
 - **`cols`** *(array - required)*: A list of **Columns** defining the metrics and attributes on this data model.
 
 ---

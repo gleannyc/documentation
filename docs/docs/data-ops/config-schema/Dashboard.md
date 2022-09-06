@@ -59,6 +59,8 @@
 - **`glean`** *(string - required)*: The Glean file format version.
 - **`type`** *(string - required)*: The type of this resource. For dashboards, this is always `"dashboard"`.
 - **`name`** *(string - required)*: The user-facing name of this dashboard.
+- **`grn`** *(string)*: If specified, this config will update the resource with the provided [GRN](../GRNs.md),
+  instead of managing a new Dashboard.
 - **`sections`** *(array - required)*: One or more **Section** objects.
 - **`globalFilters`** *(array)*: List of **Filters** applied to all sections.
 
@@ -68,7 +70,7 @@
 Filters on dashboards work exactly like filters in saved views, but must include
 the additional properties:
 
-- **`dataModel`** *(string - required)*: Path to a data-ops file containing a data model.
+- **`dataModel`** *(string - required)*: A file path to a Data Model, or a [GRN](../GRNs.md) which references a Data Model.
 - **`columnId`** *(string - required)*: The column identifier of the column used for filtering.
 
 Dashboards also support empty filters, where only `dataModel` and `columnId` are defined.
@@ -116,7 +118,7 @@ All blocks have the following properties:
 
 Saved View Blocks display a visualization of data and require the following properties:
 
-- **`savedView`** *(string - required)*: Path to a data-ops file containing a saved view.
+- **`savedView`** *(string - required)*: A file path to a Saved View, or a [GRN](../GRNs.md) which references a Saved View.
 - **`label`** *(string)*: The label to display above this chart.
     - If omitted, this will default to the name of the saved view.
 - **`ignoreDashboardFilters`** *(boolean)*: If true, this chart will not use filters
@@ -135,7 +137,7 @@ Saved View Blocks display a visualization of data and require the following prop
 
 Metric Blocks display a single numeric result of evaluating a metric with a set of filters.
 
-- **`dataModel`** *(string - required)*: Path to a data-ops file containing a data model.
+- **`dataModel`** *(string - required)*: A file path to a Data Model, or a [GRN](../GRNs.md) which references a Data Model.
 - **`dataModelMetricId`** *(string - required)*: The ID of the metric to evaluate on the associated `dataModel`.
   You can find the metric column id to reference under the `dataModel`'s `col` field in its data-ops file.
 - **`filters`** *(array)*: List of **Filters** applied when evaluating this metric.
