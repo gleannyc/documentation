@@ -100,11 +100,12 @@ data:
 ```
 
 ## Properties
-- **`glean`** *(string - string)*: The Glean file format version.
-- **`id`** *(string - string)*: The persistent identifier of this saved view.
-- **`name`** *(string - string)*: The user-visible name of this saved view.
-- **`type`** *(string - string)*: The type of this resource, which in this case should always be `saved_view`.
-- **`model`** *(string - string)*: The file path to the Data Model definition.
+- **`glean`** *(string - required)*: The Glean file format version.
+- **`name`** *(string - required)*: The user-visible name of this saved view.
+- **`type`** *(string - required)*: The type of this resource, which in this case should always be `saved_view`.
+- **`grn`** *(string)*: If specified, this config will update the resource with the provided [GRN](../GRNs.md),
+  instead of managing a new Saved View.
+- **`model`** *(string - required)*: A file path to a Data Model, or a [GRN](../GRNs.md) which references a Data Model.
 - **`visualization`** *(object - required)*: A **Visualization** object configuring how the view appears.
 - **`data`** *(object - required)*: A **Data Config** object configuring what data is collected for this view.
 - **`hidden`** *(array)*: A list of attribute column identifiers to hide in this view.

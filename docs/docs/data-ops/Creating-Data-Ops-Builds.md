@@ -48,4 +48,12 @@ An easy way to get started building a configuration file is to export it from an
 - Saved Views: On any Explore page, click the `⋮` in the top-right corner of the chart area, and then click `Export Saved View Config File`.
 - Dashboards: On any Dashboard page, click the `⋮` in the top-right corner, and then click `View DataOps Config File`.
 
-You will likely want to adjust some values in the configuration files after exporting to match your team's preferences and local environment, such as column names and paths to other resources.
+### Migrating Existing Resources into DataOps
+
+If you have existing content built in the UI and want to move it into DataOps,
+you can specify the `grn` property on the resource. This will cause the config to
+update an existing resource with that [GRN](./GRNs.md), instead of creating a
+new resource.
+
+This can also be used to avoid recreating resources when renaming or refactoring
+the file structure of your project.
