@@ -58,9 +58,9 @@
 ## Properties
 - **`glean`** *(string - required)*: The Glean file format version.
 - **`type`** *(string - required)*: The type of this resource. For dashboards, this is always `"dashboard"`.
-- **`name`** *(string - required)*: The user-facing name of this dashboard.
-- **`grn`** *(string)*: If specified, this config will update the resource with the provided [GRN](../GRNs.md),
+- **`grn`** *(string)*: If specified, this config will be applied to an existing resource with the matching [GRN](../GRNs.md),
   instead of managing a new Dashboard.
+- **`name`** *(string - required)*: The user-facing name of this dashboard.
 - **`sections`** *(array - required)*: One or more **Section** objects.
 - **`globalFilters`** *(array)*: List of **Filters** applied to all sections.
 
