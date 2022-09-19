@@ -25,4 +25,4 @@ $ mkdocs serve
 
 Run `mkdocs serve` in strict mode to test for broken links
 
-- `$ mkdocs serve -s`
+- `$ mkdocs serve -s --dev-addr localhost:2185`
