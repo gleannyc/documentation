@@ -69,4 +69,8 @@ nav:
       - Support:
           - Get in Touch: contact-us.md
   - Quickstart: guides/quickstart/index.md
-  - Changelog: changelog.md
+  - Changelog:
+    - Changelog:
+      - changelog/2022_09_19.md
+      - changelog/2022_08_04.md
+      - changelog/2022_06_20.md

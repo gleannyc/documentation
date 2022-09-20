@@ -95,7 +95,8 @@
   padding: 0;
 }
 
-[for="__nav_1"] {
+[for="__nav_1"],
+[for="__nav_3"] {
   display: none;
 }
 
