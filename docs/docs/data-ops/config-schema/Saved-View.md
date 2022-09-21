@@ -160,8 +160,8 @@ Information about the data of the saved view.
     - **`filters`** *(array)*: An optional list of **Filters** to apply to data.
     - **`sort`** *(array)*: A list of columns to sort by. Each item in the array is an object with the following properties:
         - **`order`** *(string - required)*:  The direction to sort by. Must be one of: `['asc', 'desc']`
-        - **`columnId`** *(string)*: The column identifier of the column to sort by.
-        - **`metricFormulaName`** *(string)*: The name of the calculated metric to sort by.
+        - **`columnId`** *(string)*: The column identifier of the column to sort by. One of this or `metricFormulaName` must be specified.
+        - **`metricFormulaName`** *(string)*: The name of the calculated metric to sort by. One of this or `columnId` must be specified.
 
 ### Breakout
 
