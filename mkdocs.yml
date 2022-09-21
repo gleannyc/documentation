@@ -45,6 +45,7 @@ nav:
           - docs/visualizing-data/Chart-Interactions.md
           - docs/visualizing-data/Chart-Menu.md
           - docs/visualizing-data/Filter.md
+          - docs/visualizing-data/Explorations.md
       - Dashboards:
           - docs/dashboards/Overview.md
           - docs/dashboards/Saved-Views.md
@@ -57,9 +58,9 @@ nav:
           - docs/data-ops/Using-the-Glean-CLI.md
           - docs/data-ops/GRNs.md
           - Configuration Schemas:
-            - docs/data-ops/config-schema/Data-Model.md
-            - docs/data-ops/config-schema/Saved-View.md
-            - docs/data-ops/config-schema/Dashboard.md
+              - docs/data-ops/config-schema/Data-Model.md
+              - docs/data-ops/config-schema/Saved-View.md
+              - docs/data-ops/config-schema/Dashboard.md
       - Guides:
           - Create Retention Curves: guides/create-retention-curves/index.md
       - Project Management:
@@ -70,7 +71,7 @@ nav:
           - Get in Touch: contact-us.md
   - Quickstart: guides/quickstart/index.md
   - Changelog:
-    - Changelog:
-      - changelog/2022_09_19.md
-      - changelog/2022_08_04.md
-      - changelog/2022_06_20.md
+      - Changelog:
+          - changelog/2022_09_19.md
+          - changelog/2022_08_04.md
+          - changelog/2022_06_20.md
