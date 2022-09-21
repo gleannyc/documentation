@@ -155,8 +155,13 @@ Information about the data of the saved view.
           - **`binWidth`** *(number)*: The bin width for grouping data from this column.
     - **`y`**: One or more columns to use as the value for the main axis in a cartesian visualization, or the values in tables. Each item in in the array is an `object` with the following properties:
           - **`columnId`** *(string - required)*: The column identifier of the column.
-    - **`breakout`** *(object)*: An optional **Breakout** object.
+    - **`breakout`** *(object)*: An optional **Breakout** object, specifying how the data should be broken out by color.
+    - **`trellis`** *(object)*: An optional **Breakout** object, specifying how data should be broken out into separate charts.
     - **`filters`** *(array)*: An optional list of **Filters** to apply to data.
+    - **`sort`** *(array)*: A list of columns to sort by. Each item in the array is an object with the following properties:
+        - **`order`** *(string - required)*:  The direction to sort by. Must be one of: `['asc', 'desc']`
+        - **`columnId`** *(string)*: The column identifier of the column to sort by. One of this or `metricFormulaName` must be specified.
+        - **`metricFormulaName`** *(string)*: The name of the calculated metric to sort by. One of this or `columnId` must be specified.
 
 ### Breakout
 
