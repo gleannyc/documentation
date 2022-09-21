@@ -44,8 +44,8 @@ nav:
           - docs/visualizing-data/Calculations.md
           - docs/visualizing-data/Chart-Interactions.md
           - docs/visualizing-data/Chart-Menu.md
-          - docs/visualizing-data/Explorations.md
           - docs/visualizing-data/Filter.md
+          - docs/visualizing-data/Explorations.md
       - Dashboards:
           - docs/dashboards/Overview.md
           - docs/dashboards/Saved-Views.md
