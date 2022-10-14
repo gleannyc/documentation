@@ -72,6 +72,7 @@ nav:
   - Quickstart: guides/quickstart/index.md
   - Changelog:
       - Changelog:
-          - changelog/2022_09_19.md
-          - changelog/2022_08_04.md
-          - changelog/2022_06_20.md
+          - ./changelog/2022_10_17.md
+          - ./changelog/2022_09_19.md
+          - ./changelog/2022_08_04.md
+          - ./changelog/2022_06_20.md
