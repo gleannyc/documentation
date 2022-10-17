@@ -49,6 +49,10 @@ To add an attribute as a breakout:
 
 By default, string attributes are sorted by a metric in descending order. To change the order, click the attribute tile's title, then click the sorting icon to see sorting options.
 
+Breakouts can be reordered manually by dragging the attribute items.
+
+![attribute reordering](../../assets/attribute-reorder.png){: style="max-width:50%"}
+
 Some notes on sorting attributes:
 
 - If there are a lot of unique items in your list, only the first subset of items are retrieved from the database. Changing the sort order may trigger an additional database query to retrieve the new top of the list.
