@@ -56,7 +56,7 @@ Breakouts can be reordered manually by dragging the attribute items.
 Some notes on sorting attributes:
 
 - If there are a lot of unique items in your list, only the first subset of items are retrieved from the database. Changing the sort order may trigger an additional database query to retrieve the new top of the list.
-- If there are a lot of items in your list, it is possible to scroll all the way down and Glean will automatically pull additional items into the attribute pane as you keep scrolling. This means that while we only fetch a subset of data at any given time, it will feel like you have access to every attribute.
+- Even if there are a lot of items in your list, you can keep scrolling and Glean will automatically pull additional items into the attribute pane as you keep scrolling. 
 - `NULL` values are sorted at the end of a list in descending order (and the top of a list in ascending order).
 - Behavior of numeric fields is different than strings, see below.
 
