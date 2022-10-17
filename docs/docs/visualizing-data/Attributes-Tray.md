@@ -14,7 +14,7 @@ You can choose which attributes are visible in the attribute tray. There are few
 
 1. From the right-hand drawer, select the `Model` tab, and click the eye icons to hide and show tiles.
 2. From top right of the `Attributes` tray, click the `+`, and click the eye icons to hide and show tiles.
-3. Click the title of a tile or the `⃛` next to the title and click the eye to hide the tile.
+3. Click the title of a tile or the three-dot icon next to the title and click the eye to hide the tile.
 
 ## Attribute Filters
 
@@ -56,7 +56,7 @@ Breakouts can be reordered manually by dragging the attribute items.
 Some notes on sorting attributes:
 
 - If there are a lot of unique items in your list, only the first subset of items are retrieved from the database. Changing the sort order may trigger an additional database query to retrieve the new top of the list.
-- Even if there are a lot of items in your list, you can keep scrolling and Glean will automatically pull additional items into the attribute pane as you keep scrolling. 
+- Even if there are a lot of items in your list, you can keep scrolling and Glean will automatically pull additional items into the attribute pane as you keep scrolling.
 - `NULL` values are sorted at the end of a list in descending order (and the top of a list in ascending order).
 - Behavior of numeric fields is different than strings, see below.
 
@@ -66,7 +66,7 @@ Numeric attributes have a few distinct features and differences from the default
 
 ### Numeric Binning
 
-Attributes are grouped into numeric buckets if binning is turned on for the attribute. The beginning of the range is inclusive and the end value of the range is exclusive. For example, a bucket that is `20 - 25` represents all items that are equal to or greater than twenty and less than twenty-five, or `[20, 25)`. You can filter binned numeric data just like you would filter any other attributes-- values in buckets are filtered (or excluded) as you would expect.
+Attributes are grouped into numeric buckets if binning is turned on for the attribute. The beginning of the range is inclusive and the end value of the range is exclusive. For example, a bucket that is `20 - 25` represents all items that are equal to or greater than twenty and less than twenty-five. You can filter binned numeric data just like you would filter any other attributes-- values in buckets are filtered (or excluded) as you would expect.
 
 The bin size is adjustable via the attribute tile title menu.
 
