@@ -66,7 +66,7 @@ Numeric attributes have a few distinct features and differences from the default
 
 ### Numeric Binning
 
-Attributes are grouped into numeric buckets if binning is turned on for the attribute. The beginning of the range is inclusive and the end value of the range is exclusive. For example for a bucket that is `20 - 25` the bucket represents all items that are equal to or greater than twenty and less than twenty-five. You can filter binned numeric data just like you would filter all other attributes and all values in buckets are filtered (or excluded) as you would expect.
+Attributes are grouped into numeric buckets if binning is turned on for the attribute. The beginning of the range is inclusive and the end value of the range is exclusive. For example, a bucket that is `20 - 25` represents all items that are equal to or greater than twenty and less than twenty-five, or `[20, 25)`. You can filter binned numeric data just like you would filter any other attributes-- values in buckets are filtered (or excluded) as you would expect.
 
 The bin size is adjustable via the attribute tile title menu.
 
