@@ -10,7 +10,7 @@ By default, there is one tile for each attribute in your data model in your attr
 
 ## Hiding and Unhiding Attribute Tiles
 
-You may want to tailor which attributes are visible in a view since some attributes many be irrelevant to the view. There are few different ways to do this:
+You can choose which attributes are visible in the attribute tray. There are few different ways to do this:
 
 1. From the right-hand drawer, select the `Model` tab, and click the eye icons to hide and show tiles.
 2. From top right of the `Attributes` tray, click the `+`, and click the eye icons to hide and show tiles.
