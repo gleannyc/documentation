@@ -72,7 +72,7 @@ The bin size is adjustable via the attribute tile title menu.
 
 ### Sorting
 
-Unlike string, numeric attributes are sorted by their numeric values. This lets you easily see the numeric distribution of the attribute.
+Unlike string attributes, numeric attributes are by default sorted by their numeric values. This lets you easily see the numeric distribution of the attribute.
 
 ### Range Filters
 
