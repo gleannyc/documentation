@@ -22,7 +22,7 @@ Attribute filters are applied across the entire explorer - filtering every other
 
 ### Filtering
 
-The default state for an attribute tile is the filtering mode. Checkboxes next to each attribute item indicates where the item is included or excluded.
+The default state for an attribute tile is the filtering mode. Checkboxes next to each attribute item indicates whether the item is included (shown in the view) or excluded (filtered out).
 
 1. Hover over an attribute item
 1. To exclude the item, click the item
