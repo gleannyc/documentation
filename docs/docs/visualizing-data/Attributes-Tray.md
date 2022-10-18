@@ -16,17 +16,15 @@ You can choose which attributes are visible in the attribute tray. There are few
 2. From top right of the `Attributes` tray, click the `+`, and click the eye icons to hide and show tiles.
 3. Click the title of a tile or the three-dot icon next to the title and click the eye to hide the tile.
 
-## Attribute Filters
+## Filtering from the Attribute Tray
 
-Attribute filters are applied across the entire explorer - filtering every other attribute, the numeric total, and the chart for the values selected in the attribute pane.
-
-### Filtering
+Filters created in the attribute tray are applied across the entire page - filtering every other attribute, the numeric total, and the chart for the values selected in the attribute pane.
 
 The default state for an attribute tile is the filtering mode. Checkboxes next to each attribute item indicates whether the item is included (shown in the view) or excluded (filtered out).
 
 1. Hover over an attribute item
-1. To exclude the item, click the item
-1. To include just that item, click the icon at the base of the item's metric bar
+2. To exclude the item, click the item
+3. To include just that item, click the icon at the base of the item's metric bar
 
 ### Include vs. Exclude filter
 
@@ -44,6 +42,8 @@ To add an attribute as a breakout:
 1. Hover over any attribute panel
 2. Select the breakout button on the bottom of the panel [Breakout](Breakout.md)
 3. To add and remove broken out items, just click on a row
+
+Breakouts sets are pinned. They do not update when filters or the underlying data changes. If the data has changed significantly, it can be helpful to remove and recreate the breakout.
 
 ## Sorting Attributes
 
