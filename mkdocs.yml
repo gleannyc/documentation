@@ -62,6 +62,7 @@ nav:
               - docs/data-ops/config-schema/Saved-View.md
               - docs/data-ops/config-schema/Dashboard.md
       - Guides:
+          - Create Conversion Funnel: guides/create-funnel-visualization/index.md
           - Create Retention Curves: guides/create-retention-curves/index.md
       - Project Management:
           - Users and Permissions: docs/project-management/users-and-permissions.md
