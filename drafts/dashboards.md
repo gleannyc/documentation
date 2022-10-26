@@ -1,6 +1,6 @@
 - Example
   ```yaml
-  glean: '0.1'
+  glean: '1.0'
   id: my-saved-view
   type: dashboard
   sections:

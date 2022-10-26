@@ -80,7 +80,7 @@ You can use environment variables to dynamically populate Glean configuration fi
 When creating a Build using local files, the CLI will replace placeholders of the form `${ENV_VAR_NAME}` with the corresponding environment variable. For example, if your model file contains:
 
 ```yaml
-glean: "0.1"
+glean: "1.0"
 name: My Data Model
 source:
   connectionName: ${DATABASE_CONNECTION_NAME}
