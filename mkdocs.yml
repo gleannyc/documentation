@@ -61,6 +61,7 @@ nav:
               - docs/data-ops/config-schema/Data-Model.md
               - docs/data-ops/config-schema/Saved-View.md
               - docs/data-ops/config-schema/Dashboard.md
+              - ./docs/data-ops/config-schema/Color-Palette.md
       - Guides:
           - Create Retention Curves: guides/create-retention-curves/index.md
       - Project Management:
