@@ -39,6 +39,7 @@ To configure your Git credentials:
 1. Navigate to the `Settings` page using the link on the navigation side bar
 2. Click on `Version Control`
 3. Enter your connection settings for the git repository
+    - To configure your credentials, provide an authorization token *or* a username and password. 
     - We recommend you use an access token to restrict access to just appropriate resources:
         - [Access Tokens in Github](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
         - [Access Tokens in Gitlab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
