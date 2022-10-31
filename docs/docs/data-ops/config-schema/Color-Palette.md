@@ -5,7 +5,9 @@ glean: "1.0"
 type: color_palette
 name: "Papaya"
 options:
-additionalColorGeneration: "interpolate"
+  additionalColorGeneration: "interpolate"
+defaultColor:
+  - color: "chocolate"
 colors:
   - color: "papayawhip"
   - color: "rgb(99, 191, 94)"
@@ -19,6 +21,7 @@ colors:
 - **`grn`** *(string)*: If specified, this config will be applied to an existing resource with the matching [GRN](../GRNs.md),
   instead of managing a new color palette.
 - **`name`** _(string - required)_: The user-facing name of this color palette.
+- **`defaultColor`** _(object - required)_: A [color object](#colors) describing the default color for a chart
 - **[`colors`](#colors)** _(array - required)_: A list of objects describing the colors in the palette
 
 ### Colors

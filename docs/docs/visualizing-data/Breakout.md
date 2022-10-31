@@ -14,7 +14,11 @@ Glean visualizes the top six items in your attribute by default, the rest of the
 
 ## Color Breakout
 
-Colors for your series are selected automatically by Glean with a range of colors that is designed to vary by hue and luminosity so that it's easy to tell groups apart. The color scale is not optimized for more than six groups, although we'll try to do something reasonable with any number of groups.
+Colors for your series are selected by Glean based on a palette.
+
+with a range of colors that is designed to vary by hue and luminosity so that it's easy to tell groups apart.
+
+The color scale is not optimized for more than six groups, although we'll try to do something reasonable with any number of groups.
 
 Glean does not yet support customizing chart colors.
 
