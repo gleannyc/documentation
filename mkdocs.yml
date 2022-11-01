@@ -70,7 +70,7 @@ nav:
       - Support:
           - Get in Touch: contact-us.md
   - Quickstart: guides/quickstart/index.md
-  - Public Roadmap: ./public_roadmap/public_roadmap.md
+  - Public Roadmap: ./public-roadmap/public-roadmap.md
   - Changelog:
       - Changelog:
           - ./changelog/2022_10_17.md
