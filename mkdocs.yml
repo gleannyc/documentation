@@ -65,10 +65,11 @@ nav:
       - Guides:
           - Create Retention Curves: guides/create-retention-curves/index.md
       - Project Management:
-          - Users and Permissions: docs/project-management/users-and-permissions.md
+          - Custom Styles: ./docs/project-management/custom-styles.md
           - Database Connections: docs/project-management/database-connections.md
           - Organize Content with Collections: docs/project-management/collections.md
-          - Custom Styles: ./docs/project-management/custom-styles.md
+          - Project Invite Links: docs/project-management/invite-links.md
+          - Users and Permissions: docs/project-management/users-and-permissions.md
       - Support:
           - Get in Touch: contact-us.md
   - Quickstart: guides/quickstart/index.md
