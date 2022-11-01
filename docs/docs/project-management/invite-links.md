@@ -1,4 +1,4 @@
-Project invite links make it allow people to join your project.
+Project invite links make it easy to allow your team to join your project.
 
 Simply turn on `Project Invite Links` on the [Settings](https://glean.io/app/p/settings){:target="\_blank"} page and share the generated URL with the invite token.
 
