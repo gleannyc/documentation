@@ -8,31 +8,31 @@ hide:
 
 ## In Progress
 
-- Create separate Partner Projects
 - Custom color palettes
 - Embedding (beta)
 - Metric filters
 - Project invite links
 - Resource archive
+- Self-service project provisioning for sharing data with partners
 
 ## Up Next
 
-We're thinking about building these next
+We're thinking about building these next:
 
 - Collections in DataOps
 - Custom fields
 - Custom filters
 - Demo projects
+- Enhanced table capabilities
 - Pivot tables
 - Public links
 - Slack integration
 - Spreadsheet datasets
 - SSO
-- Table usability features
 
 ## On the Horizon
 
-We will build these eventually
+Future features under consideration:
 
-- annotations
-- real time collaboration
+- Enhanced real-time collaboration
+- Inline annotations
