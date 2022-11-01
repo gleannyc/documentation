@@ -21,10 +21,10 @@ type:id:alias
 -->
 
 - `type` identifies the resource type
-  - `dsb`: dashboard
-  - `m`: model
-  - `palette`: color palette
-  - `sv`: saved view
+    - `dsb`: dashboard
+    - `m`: model
+    - `palette`: color palette
+    - `sv`: saved view
 - `id` is an globally unique identifier first assigned when the resource
   is created. The ID appears in the URL bar when viewing a resource.
 
