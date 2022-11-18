@@ -73,6 +73,7 @@ nav:
       - Support:
           - Get in Touch: contact-us.md
   - Quickstart: guides/quickstart/index.md
+  - Product Roadmap: ./product-roadmap/product-roadmap.md
   - Changelog:
       - Changelog:
           - ./changelog/2022_10_17.md
