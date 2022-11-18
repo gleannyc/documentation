@@ -8,26 +8,23 @@ hide:
 
 ## In Progress
 
-- Custom color palettes
-- Embedding (beta)
-- Metric filters
-- Project invite links
-- Resource archive
-- Self-service project provisioning for sharing data with partners
+- Demo projects
+- Metric Filters
+- Restore and Delete
+- Slack integration
+- Upload a dataset
+- Web editor for DataOps
 
 ## Up Next
 
 We're thinking about building these next:
 
 - Collections in DataOps
-- Custom fields
 - Custom filters
-- Demo projects
+- Dynamic Breakouts
 - Enhanced table capabilities
 - Pivot tables
 - Public links
-- Slack integration
-- Spreadsheet datasets
 - SSO
 
 ## On the Horizon
@@ -36,3 +33,4 @@ Future features under consideration:
 
 - Enhanced real-time collaboration
 - Inline annotations
+- Self service sign up
