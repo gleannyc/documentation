@@ -8,16 +8,18 @@ hide:
 
 ## In Progress
 
-- Demo projects
+In the next six weeks:
+
+- Demo projects and templates
 - Metric Filters
-- Restore and Delete
+- Delete and Restore
 - Slack integration
-- Upload a dataset
+- Upload a dataset / DuckDB
 - Web editor for DataOps
 
 ## Up Next
 
-We're thinking about building these next:
+In the next few months:
 
 - Collections in DataOps
 - Custom filters
