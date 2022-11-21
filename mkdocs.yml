@@ -52,7 +52,7 @@ nav:
           - docs/dashboards/Metrics.md
           - docs/dashboards/Text.md
           - docs/dashboards/Filters.md
-      - Data Ops:
+      - DataOps:
           - Overview: docs/data-ops/index.md
           - docs/data-ops/Creating-Data-Ops-Builds.md
           - docs/data-ops/Using-the-Glean-CLI.md
@@ -76,6 +76,7 @@ nav:
   - Product Roadmap: ./product-roadmap/product-roadmap.md
   - Changelog:
       - Changelog:
+          - ./changelog/2022_11_21.md
           - ./changelog/2022_10_17.md
           - ./changelog/2022_09_19.md
           - ./changelog/2022_08_04.md
