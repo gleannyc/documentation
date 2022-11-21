@@ -52,7 +52,7 @@ nav:
           - docs/dashboards/Metrics.md
           - docs/dashboards/Text.md
           - docs/dashboards/Filters.md
-      - Data Ops:
+      - DataOps:
           - Overview: docs/data-ops/index.md
           - docs/data-ops/Creating-Data-Ops-Builds.md
           - docs/data-ops/Using-the-Glean-CLI.md
