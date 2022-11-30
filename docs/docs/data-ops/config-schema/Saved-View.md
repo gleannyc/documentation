@@ -100,6 +100,42 @@ data:
         color: rgb(68, 78, 134)
 ```
 
+This example shows a table with an attribute and a metric filter:
+
+```yaml
+glean: "1.0"
+id: my-saved-view
+type: saved_view
+name: My Saved View
+model: "../my_model.yml"
+visualization:
+  chartType: table
+data:
+  x:
+    columnId: numeric_column
+    bins:
+      binWidth: 0.2
+  y:
+    - columnId: metric_sum
+    - columnId: metric_avg
+  filters:
+    - columnId: secondary_event_date
+      range:
+        - "2014-01-01"
+        - "2017-01-01"
+    - columnId: metric_sum
+      lt: 50000
+  breakout:
+    columnId: location
+    groups:
+      - key: Street/Sidewalk
+        index: 0
+        color: rgb(0, 63, 92)
+      - key: Residential Building/House
+        index: 1
+        color: rgb(68, 78, 134)
+```
+
 ## Properties
 
 - **`glean`** *(string - required)*: The Glean file format version.
