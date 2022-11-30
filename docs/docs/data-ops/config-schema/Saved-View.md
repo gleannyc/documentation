@@ -194,4 +194,8 @@ You can use one of the following properties on the filter to define the filterin
 When filtering string attributes, use string values. For numeric attributes, use number values.
 For date attributes, you can specify a date in the format `'YYYY-MM-DD'`, or define a relative date
 with an array of the shape `[offset, unit]`. For example, a relative date of 1 year before now would
-look like `[-1, 'year']`.
+look like `[-1, 'year']`. 
+
+Glean now also supports filtering by numeric metrics in table visualizations. When using metric 
+filters ensure that `chartType` is set to `table`, `columnId` points to a metric column, and filter values are numbers. 
+Metric filters cannot be applied to calculated metrics. 
