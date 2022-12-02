@@ -69,6 +69,7 @@ nav:
           - Database Connections: docs/project-management/database-connections.md
           - Organize Content with Collections: docs/project-management/collections.md
           - Project Invite Links: docs/project-management/invite-links.md
+          - Get Access Domains: docs/project-management/get-access-domains.md
           - Users and Permissions: docs/project-management/users-and-permissions.md
       - Support:
           - Get in Touch: contact-us.md
