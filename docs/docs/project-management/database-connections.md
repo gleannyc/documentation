@@ -53,7 +53,7 @@ We currently support the following SQL dialects, but can relatively easily suppo
 - BigQuery
   BigQuery connections in Glean use service accounts to connect to your database. You will need to copy and paste the entire contents of a service account JSON key file into this field.
   > [Google documentation on authenticating with service accounts](https://cloud.google.com/bigquery/docs/authentication/service-account-file)
-  > The account will require three roles to be added in the IAM configuration: `BigQuery Data Viewer` , `BigQuery Job User` and `BigQuery Metadata Viewer`
+  > The account will require three roles to be added in the IAM configuration: `BigQuery User`, `BigQuery Data Viewer` , `BigQuery Job User`, `BigQuery Metadata Viewer`
 - PostgresSQL
 - Snowflake
   The following needs to be granted to your glean user:
