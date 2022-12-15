@@ -12,6 +12,12 @@ $ pip install -r requirements.txt
 $ mkdocs serve
 ```
 
+If you want to run in watch mode you can do
+```
+$ mkdocs serve -w .
+```
+
+
 ## Contribution Guidelines
 
 - Use relative links to markdown files so mkdocs can detect broken links
