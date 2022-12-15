@@ -7,7 +7,7 @@ The approach is very similar to the general approach to data modeling: you'll pr
 For retention curves, it's oftentimes useful to add experiments as attributes: did you try something in the product to retain users more effectively?  Maybe a new onboarding flow, a new user flow?
 
 <div>
-    <iframe width="100%" height="500px" src="https://demo.glean.io/app/sv/c5120fe8-b0a0-36e3-bc56-a795c081722e?viewMode=embed"></iframe>
+    <iframe width="100%" height="500px" frameborder=0 src="https://demo.glean.io/app/sv/c5120fe8-b0a0-36e3-bc56-a795c081722e?viewMode=embed"></iframe>
 </div>
 
 
@@ -106,7 +106,7 @@ A few notes on the resulting columns:
 ## Create retention curves
 
 <div>
-    <iframe width="100%" height="500px" src="https://demo.glean.io/app/sv/c5120fe8-b0a0-36e3-bc56-a795c081722e?viewMode=embed"></iframe>
+    <iframe width="100%" height="500px" frameborder=0 src="https://demo.glean.io/app/sv/c5120fe8-b0a0-36e3-bc56-a795c081722e?viewMode=embed"></iframe>
 </div>
 
 1. Change the chart type to a `line`
@@ -121,7 +121,7 @@ A few notes on the resulting columns:
 ## Create retention table
 
 <div>
-    <iframe width="100%" height="500px" src="https://demo.glean.io/app/sv/07fdf78d-0f43-3320-b3dc-612a57fdfedc?viewMode=embed"></iframe>
+    <iframe width="100%" height="500px" frameborder=0 src="https://demo.glean.io/app/sv/07fdf78d-0f43-3320-b3dc-612a57fdfedc?viewMode=embed"></iframe>
 </div>
 
 1. Make sure you add the Active Users metric specified above.
