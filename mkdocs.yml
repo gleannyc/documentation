@@ -66,7 +66,13 @@ nav:
           - Create Retention Curves: guides/create-retention-curves/index.md
       - Project Management:
           - Custom Styles: ./docs/project-management/custom-styles.md
-          - Database Connections: docs/project-management/database-connections.md
+          - Add a Data Warehouse: ./docs/project-management/database-connections.md
+          - Data Warehouses:
+              - ./docs/project-management/database-connections/snowflake.md
+              - ./docs/project-management/database-connections/bigquery.md
+              - ./docs/project-management/database-connections/redshift.md
+              - ./docs/project-management/database-connections/mysql.md
+              - ./docs/project-management/database-connections/athena.md
           - Organize Content with Collections: docs/project-management/collections.md
           - Project Invite Links: docs/project-management/invite-links.md
           - Get Access Domains: docs/project-management/get-access-domains.md
@@ -77,6 +83,7 @@ nav:
   - Product Roadmap: ./product-roadmap/product-roadmap.md
   - Changelog:
       - Changelog:
+          - ./changelog/2022_12_27.md
           - ./changelog/2022_11_21.md
           - ./changelog/2022_10_17.md
           - ./changelog/2022_09_19.md
