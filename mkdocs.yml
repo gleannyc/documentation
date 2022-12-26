@@ -66,13 +66,7 @@ nav:
           - Create Retention Curves: guides/create-retention-curves/index.md
       - Project Management:
           - Custom Styles: ./docs/project-management/custom-styles.md
-          - Add a Data Warehouse: ./docs/project-management/database-connections.md
-          - Data Warehouses:
-              - ./docs/project-management/database-connections/snowflake.md
-              - ./docs/project-management/database-connections/bigquery.md
-              - ./docs/project-management/database-connections/redshift.md
-              - ./docs/project-management/database-connections/mysql.md
-              - ./docs/project-management/database-connections/athena.md
+          - Database Connections: docs/project-management/database-connections.md
           - Organize Content with Collections: docs/project-management/collections.md
           - Project Invite Links: docs/project-management/invite-links.md
           - Get Access Domains: docs/project-management/get-access-domains.md
