@@ -32,6 +32,48 @@ We currently support the following SQL dialects, but can relatively easily suppo
 
 - Amazon Redshift
 - Amazon Athena
+  Your service user requires access to a few AWS services for all features in Glean to work correctly. The service user needs access to S3 to store the output of queries and to access the source data as well as Glue access to be able to explore database metadata.
+  The service user should have the following permissions for the relevant resources:
+  ```
+  "athena:Batch*",
+  "athena:CreateNamedQuery",
+  "athena:DeleteNamedQuery",
+  "athena:Get*",
+  "athena:List*",
+  "athena:StartQueryExecution",
+  "athena:StopQueryExecution",
+  "glue:Get*",
+  "glue:List*",
+  "s3:CreateBucket",
+  "s3:Get*"
+  "s3:Head*",
+  "s3:List*",
+  "s3:Put*"
+  ```
 - BigQuery
+  BigQuery connections in Glean use service accounts to connect to your database. You will need to copy and paste the entire contents of a service account JSON key file into this field.
+  > [Google documentation on authenticating with service accounts](https://cloud.google.com/bigquery/docs/authentication/service-account-file)
+  > The account will require four roles to be added in the IAM configuration: `BigQuery User`, `BigQuery Data Viewer` , `BigQuery Job User` and `BigQuery Metadata Viewer`
 - PostgresSQL
 - Snowflake
+  The following needs to be granted to your glean user:
+
+  ```sql
+  set database_name = 'YOUR DATABASE NAME';
+  set warehouse_name = 'YOUR WAREHOUSE NAME';
+  set glean_user = 'YOUR GLEAN USER';
+  set glean_role = 'GLEAN_ROLE';
+
+  create role if not exists identifier($glean_role);
+  grant role identifier($glean_role) to user identifier($glean_user);
+
+  -- grant Glean role access to warehouse
+  grant USAGE on warehouse identifier($warehouse_name)
+  to role identifier($glean_role);
+
+  -- grant Glean access to database
+  grant MONITOR, USAGE  on database identifier($database_name) to role identifier($glean_role);
+  grant USAGE on all schemas in database identifier($database_name) to role identifier($glean_role);
+  grant SELECT on all tables in database identifier($database_name) to role identifier($glean_role);
+  grant SELECT on future tables in database identifier($database_name) to role identifier($glean_role);
+  ```
