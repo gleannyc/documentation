@@ -9,7 +9,7 @@ Once you add a database connection, it will be made available from the [Add Data
 1. Go to the `Settings` page using the link on the navigation side bar
 2. Select `Database Connections`
 3. Click `+ Add Database Connection`
-4. Select the type of database; either Athena, Snowflake, Postgres, Redshift or BigQuery  
+4. Select the type of database; either Athena, Snowflake, Postgres, Redshift or BigQuery
 5. Fill out the credentials according to your type of database
 6. Click the antenna icon to test your connection `🗼`
 7. Click `Add` to complete the process
@@ -18,7 +18,7 @@ Once you add a database connection, it will be made available from the [Add Data
 
     For most database types, you can optionally specify a schema.  If you specify a schema in Glean, only tables from that schema will be made available in the [Add Data Model](../data-modeling/add-data-model.md)  workflow
 
-## SSH tunneling beta 
+## SSH tunneling beta
 
 Currently in beta, Glean supports connecting to a Postgres or Redshift database via a bastion host. A bastion host is a server which you control that has access to your database but is not the database host itself. This may be useful when handling especially sensitive data. To join the beta, [contact us](mailto:support@glean.io?subject=SSH tunnel beta).
 
@@ -54,6 +54,7 @@ We currently support the following SQL dialects, but can relatively easily suppo
   BigQuery connections in Glean use service accounts to connect to your database. You will need to copy and paste the entire contents of a service account JSON key file into this field.
   > [Google documentation on authenticating with service accounts](https://cloud.google.com/bigquery/docs/authentication/service-account-file)
   > The account will require four roles to be added in the IAM configuration: `BigQuery User`, `BigQuery Data Viewer` , `BigQuery Job User` and `BigQuery Metadata Viewer`
+- MySQL / MariaDB
 - PostgresSQL
 - Snowflake
   The following needs to be granted to your glean user:
