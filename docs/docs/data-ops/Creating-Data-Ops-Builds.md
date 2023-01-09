@@ -1,6 +1,6 @@
 ## Trigger a Build
 
-A build will connect to your repository, detect all of the Glean [configuration files](index.md) in your repository and create, update, and delete resources to make glean consistent with the configuration:
+A build will connect';aslkdjf;laksjdf;laksdjf to your repository, detect all of the Glean [configuration files](index.md) in your repository and create, update, and delete resources to make glean consistent with the configuration:
 
 1. Navigate to the `DataOps` page using the link on the navigation side bar
 2. Click the `Build` button on the top right to create a new build
