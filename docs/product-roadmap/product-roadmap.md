@@ -17,7 +17,7 @@ In the next six weeks:
 - Project pinned resources
 - Public demo
 - Slack integration
-- SSO
+- SSO with Okta
 - Upload a dataset / DuckDB
 - Web editor for DataOps
 
