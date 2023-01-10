@@ -35,7 +35,7 @@ Also see [database connections](../../docs/project-management/database-connectio
 
 <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/16445a878e2d4e12af36241ce581345d?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-Every chart and analysis is based on a Glean data model. A data model is a table (or virtual table).
+Every chart and analysis is based on a Glean data model.
 
 1.  [Go to your `project homepage`](https://glean.io/app/) and click `New Data Model`
 2.  Select a database connection, click on a table name, and click `Build Model`
