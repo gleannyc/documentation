@@ -15,7 +15,12 @@ Also see [database connections](../../docs/project-management/database-connectio
 
 !!! warning "Firewall Configuration"
 
-    Your database must be accessible from our systems at `18.210.29.198`
+    If you use a firewall to restrict access to your database, you'll need to allowlist Glean's IPs. <br/>
+    Glean will always connect to your database from one of these IP addresses.
+    ```
+    18.210.29.198
+    34.230.230.9
+    ```
 
 ![modal to add database connection](../quickstart/db-conn-modal.png){: style="max-width:75%"}
 
@@ -45,7 +50,7 @@ Every chart and analysis is based on a Glean data model. A data model is a table
     2. Add additional metrics and attributes by clicking `Add metric` and `Add Attribute` next to the name of the field
     3. Create a SQL based custom metric by clicking `+ Add Custom Metric` (see [Metrics](../../docs/data-modeling/Metrics.md) for more details)
 
-4. Click `Save Model` then click `Open in Explore` to start exploring the data
+4.  Click `Save Model` then click `Open in Explore` to start exploring the data
 
 ## 3. Start interacting with your data
 

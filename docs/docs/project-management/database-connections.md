@@ -1,8 +1,13 @@
 Once you add a database connection, it will be made available from the [Add Data Model](../data-modeling/add-data-model.md) workflow and you'll be able to specify tables or SQL queries to start visualizing in Glean.
 
-!!! info "firewall configuration"
+!!! info "Firewall Configuration"
 
-    Your database must be accessible from our systems at `18.210.29.198`
+    If you use a firewall to restrict access to your database, you'll need to allowlist Glean's IPs. <br/>
+    Glean will always connect to your database from one of these IP addresses.
+    ```
+    18.210.29.198
+    34.230.230.9
+    ```
 
 ## Create a database connection
 
