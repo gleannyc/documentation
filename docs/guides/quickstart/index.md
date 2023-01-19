@@ -24,7 +24,7 @@ Also see [database connections](../../docs/project-management/database-connectio
 
 ![modal to add database connection](../quickstart/db-conn-modal.png){: style="max-width:75%"}
 
-1. [Go to the `Settings` page](https://glean.io/app/p/settings){:target="\_blank"}
+1. [Go to the `Settings` page]({{ glean_url }}/app/p/settings){:target="\_blank"}
 2. Click `+ New Database Connection`
 3. Select the type of database; either Athena, BigQuery, Snowflake, Postgres or Redshift
 4. Enter the credentials according to your type of database
@@ -37,7 +37,7 @@ Also see [database connections](../../docs/project-management/database-connectio
 
 Every chart and analysis is based on a Glean data model.
 
-1.  [Go to your `project homepage`](https://glean.io/app/) and click `New Data Model`
+1.  [Go to your `project homepage`]({{ glean_url }}/app/) and click `New Data Model`
 2.  Select a database connection, click on a table name, and click `Build Model`
 
     !!! info "Using a SQL Query"
@@ -56,7 +56,7 @@ Every chart and analysis is based on a Glean data model.
 
 ![data explorer view](../quickstart/explore.png){: style="max-width:75%"}
 
-1. [Go to the `Data Models` page](https://glean.io/app/p/data-models){:target="\_blank"}
+1. [Go to the `Data Models` page]({{ glean_url }}/app/p/data-models){:target="\_blank"}
 2. Click on the name of the data model we just created
 
 !!! success "Congratulations"
