@@ -84,3 +84,4 @@ nav:
           - ./changelog/2022_09_19.md
           - ./changelog/2022_08_04.md
           - ./changelog/2022_06_20.md
+dev_addr: 127.0.0.1:8005
