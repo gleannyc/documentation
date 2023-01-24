@@ -23,7 +23,7 @@ The simplest type of metric.  See table above for which functions you can run on
 
 To add a column aggregating metric:
 
-1. Goto the [Add Data Model](add-data-model.md) workflow by creating a new data model or editing an existing model
+1. Go to the [Add Data Model](add-data-model.md) workflow by creating a new data model or editing an existing model
 2. In the list of fields, click `Add metric` next to the name of the field you'd like to aggregate
 3. Click on the new item in the Metric list to expand the and select the aggregation type.
 
@@ -31,6 +31,6 @@ To add a column aggregating metric:
 
 Custom SQL metrics allow you to have more involved custom aggregations in Glean like weighted averages or proportions and other formulas.  You can define a custom metric as any [aggregating function](https://www.datacamp.com/community/tutorials/aggregate-functions-sql){:target="\_blank"} that results in a numeric value.  To add a custom metric:
 
-1. Goto the [Add Data Model](add-data-model.md) workflow by creating a new data model or editing an existing model
+1. Go to the [Add Data Model](add-data-model.md) workflow by creating a new data model or editing an existing model
 2. Under the Metrics section click the `+ Add Custom Metric` button
 3. Enter your aggregation and click the 🔄 button to test the SQL

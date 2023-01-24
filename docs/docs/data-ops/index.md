@@ -26,7 +26,7 @@ Using a set of configuration files, you create a **Build**. There are two differ
 - A **Preview Build** validates your configuration files and, if successful, provides a URL that will show you what your Glean Project will look like if your pending changes are applied.
 - A **Deploy Build** validates your configuration files and, if successful, publishes those changes to your Glean Project.
 
-You can create a Build using the Glean command-line interface (CLI), or through the Glean web application. Glean integrates with Git and can create Builds using specific Git branches or revisions that have been pushed to your repository.
+You can create a Build using the [Glean command-line interface (CLI)](./Using-the-Glean-CLI.md), or through the Glean web application. Glean integrates with Git and can create Builds using specific Git branches or revisions that have been pushed to your repository.
 
 ## Getting Started
 
@@ -39,7 +39,7 @@ To configure your Git credentials:
 1. Navigate to the `Settings` page using the link on the navigation side bar
 2. Click on `Version Control`
 3. Enter your connection settings for the git repository
-    - To configure your credentials, provide an authorization token *or* a username and password. 
+    - To configure your credentials, provide an authorization token *or* a username and password.
     - We recommend you use an access token to restrict access to just appropriate resources:
         - [Access Tokens in Github](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
         - [Access Tokens in Gitlab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
