@@ -74,9 +74,10 @@ nav:
       - Project Management:
           - Custom Styles: ./docs/project-management/custom-styles.md
           - Database Connections: docs/project-management/database-connections.md
+          - Get Access Domains: docs/project-management/get-access-domains.md
           - Organize Content with Collections: docs/project-management/collections.md
           - Project Invite Links: docs/project-management/invite-links.md
-          - Get Access Domains: docs/project-management/get-access-domains.md
+          - Slack Integration: docs/project-management/slack-integration.md
           - Users and Permissions: docs/project-management/users-and-permissions.md
       - Support:
           - Get in Touch: contact-us.md
