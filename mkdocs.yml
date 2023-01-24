@@ -38,6 +38,7 @@ nav:
           - Caching: docs/data-modeling/Caching.md
           - Data Modeling Best Practices: guides/data-modeling-best-practices.md
           - Calculating Metrics: docs/data-modeling/Metrics.md
+          - Modeling with Uploaded Files: docs/data-modeling/query-data-files.md
       - Data Explorer:
           - docs/visualizing-data/Attributes-Tray.md
           - docs/visualizing-data/Breakout.md

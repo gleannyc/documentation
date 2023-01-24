@@ -9,7 +9,7 @@ When possible, you should try to modify or extend an existing data model instead
     If your data isn't quite in the right format in your database, it's possible to specify an underlying data query that will run as you explore data.
 
 1. From your [project homepage](https://glean.io/app/){:target="\_blank"}, click `New Model`
-2. Select the data connection you'd like to use
+2. Select the data connection you'd like to use or "Uploads" if you want to use [a file from your computer](./query-data-files.md)
 3. Select either an existing table or click `SQL Editor` to use a custom query
 4. Click `Build Model` to create the initial data model (All date fields and a row count metric are added by default)
 5. Edit the name of the data model at the top of the page
