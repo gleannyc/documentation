@@ -8,13 +8,31 @@ If you leave the TTL configuration blank, we will default the TTL for this data 
 
 If you set this to 1, then the cache will effectively be disabled (data will only be retained for one second).
 
+!!! info "Local cache"
+    Glean keeps a copy of cached data in your web browser while you are logged in so that exploring data feels incredibly fast.  The above caching rules also apply to this local browser cache.  If you make make the caching Time To Live very short, it may make normal operations like filtering and removing a filter feel slow.
+
 ## Changing caching Time To Live (TTL)
 
-1. Goto the [data models page](https://glean.io/app/p/data-models)
+1. Go to the [data models page](https://glean.io/app/p/data-models)
 2. Click the edit button for the data model you want to update.
-3. Click on the `⚙️ Configuration` tab on the data model.
-4. Change the `Cache TTL` 
+3. Open `⚙️ Advanced Settings` via the `...` menu in the top right.
+4. Change the `Cache TTL`
 
-## Local cache
+## Manually clearing the cache
 
-Glean is able to keep a copy of cached data in your web browser while you are logged in so that exploring data feels incredibly fast.  The above caching rules also apply to this local browser cache.  If you make make the caching Time To Live very short, it may make normal operations like filtering and removing a filter feel slow.
+Sometimes, you may know that the data a model uses has changed before Glean does. For example, after running an updated DBT pipeline.
+While you could just wait for the cache to expire (based on the TTL setting above), you can also immediately clear the cache for a given model.
+
+You can reset the model's cache using the [Glean CLI](../data-ops/Using-the-Glean-CLI.md):
+```
+glean cache clear m:MODEL_ID
+```
+
+Alternatively, you can reset the model's cache in the UI:
+
+1. Go to the [data models page](https://glean.io/app/p/data-models)
+2. Click the edit button for the data model you want to update.
+3. Open `⚙️ Advanced Settings` via the `...` menu in the top right.
+4. Click the `remove all cached queries` button beside the TTL input.
+
+
