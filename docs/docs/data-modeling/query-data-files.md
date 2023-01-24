@@ -1,9 +1,6 @@
 Glean can directly use CSVs and other common data files for small or adhoc
 analysis, without needing to set up a traditional database.
 
-!!! warning ""
-    This feature is not currently available on demo versions of Glean.
-
 ## Uploading Files
 
 From [the model builder page](https://glean.io/app/mb){:target="\_blank"},
