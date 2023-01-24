@@ -2,7 +2,7 @@
 
 A build will connect to your repository, detect all of the Glean [configuration files](index.md) in your repository and create, update, and delete resources to make glean consistent with the configuration:
 
-1. Navigate to the `DataOps` page using the link on the navigation side bar
+1. Navigate to the `DataOps` page using the link in the project dropdown
 2. Click the `Build` button on the top right to create a new build
 3. Configure your build and click Build. If any fields are left empty, Glean will use the default values specified on the `Version Control` settings page.
 4. You can view the summary of errors, warnings and changes by clicking the build from the build list.

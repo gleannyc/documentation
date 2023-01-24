@@ -6,7 +6,7 @@ The Glean CLI is a [DataOps](index.md) feature that allows you to create Preview
 
 To use the CLI with your Glean project, you need an **Access Key**. An Access Key is used by Glean to identify who you are and what resources you have access to. You should use a separate access key for each distinct user or service using the CLI.
 
-1.  Go to the [`Settings`]({{ glean_url }}/app/p/settings#access_keys){:target="\_blank"} page using the link on the navigation side bar
+1.  Go to the [`Settings`]({{ glean_url }}/app/p/settings#access_keys){:target="\_blank"} page using the link in the project dropdown
 2.  Click on `Access Keys`
 3.  Click `+ New Access Key` in the top right and follow the instructions. Your Access Key file will be downloaded automatically.
 4.  Move your Access Key to the default location CLI will look for it

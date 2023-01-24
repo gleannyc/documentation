@@ -11,7 +11,7 @@ Once you add a database connection, it will be made available from the [Add Data
 
 ## Create a database connection
 
-1. Go to the `Settings` page using the link on the navigation side bar
+1. Go to the `Settings` page using the link in the project dropdown
 2. Select `Database Connections`
 3. Click `+ Add Database Connection`
 4. Select the type of database; either Athena, Snowflake, Postgres, Redshift or BigQuery
