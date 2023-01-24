@@ -13,7 +13,7 @@ If you set this to 1, then the cache will effectively be disabled (data will onl
 
 ## Changing caching Time To Live (TTL)
 
-1. Go to the [data models page](https://glean.io/app/p/data-models)
+1. Go to the [data models page](https://glean.io/app/p/data-models){:target="_blank"}
 2. Click the edit button for the data model you want to update.
 3. Open `⚙️ Advanced Settings` via the `...` menu in the top right.
 4. Change the `Cache TTL`
@@ -30,7 +30,7 @@ glean cache clear m:MODEL_ID
 
 Alternatively, you can reset the model's cache in the UI:
 
-1. Go to the [data models page](https://glean.io/app/p/data-models)
+1. Go to the [data models page](https://glean.io/app/p/data-models){:target="_blank"}
 2. Click the edit button for the data model you want to update.
 3. Open `⚙️ Advanced Settings` via the `...` menu in the top right.
 4. Click the `remove all cached queries` button beside the TTL input.
