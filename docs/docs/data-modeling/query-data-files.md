@@ -3,7 +3,7 @@ analysis, without needing to set up a traditional database.
 
 ## Uploading Files
 
-From [the model builder page](https://glean.io/app/mb){:target="\_blank"},
+From [the model builder page]({{ glean_url }}/app/mb){:target="\_blank"},
 select "Uploads" as the data connection. You can then either click the "Upload"
 button or drag a file from your computer into the tables list. This will upload
 the file to Glean and make it available as if it were a table in a databse.

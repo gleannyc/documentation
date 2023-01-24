@@ -8,7 +8,7 @@ more configurability.
 
 ## Building Dashboards
 
-From the [dashboards page](https://glean.io/app/p/dashboards), click
+From the [dashboards page]({{ glean_url }}/app/p/dashboards), click
 **New Dashboard**.
 
 This will open a new, blank dashboard for editing. You can change the title by
@@ -30,7 +30,7 @@ or metrics at once.
 ## Viewing a dashboard
 
 Dashboards have unique URLs that can be shared with other team members, or
-they can find them listed on the [dashboards page](https://glean.io/app/p/dashboards).
+they can find them listed on the [dashboards page]({{ glean_url }}/app/p/dashboards).
 
 Dashboards can also be placed in [collections](/docs/project-management/collections)
 for organization.

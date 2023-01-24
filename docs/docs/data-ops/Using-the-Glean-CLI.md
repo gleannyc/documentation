@@ -6,7 +6,7 @@ The Glean CLI is a [DataOps](index.md) feature that allows you to create Preview
 
 To use the CLI with your Glean project, you need an **Access Key**. An Access Key is used by Glean to identify who you are and what resources you have access to. You should use a separate access key for each distinct user or service using the CLI.
 
-1.  Go to the [`Settings`](https://glean.io/app/p/settings#access_keys){:target="\_blank"} page using the link on the navigation side bar
+1.  Go to the [`Settings`]({{ glean_url }}/app/p/settings#access_keys){:target="\_blank"} page using the link on the navigation side bar
 2.  Click on `Access Keys`
 3.  Click `+ New Access Key` in the top right and follow the instructions. Your Access Key file will be downloaded automatically.
 4.  Move your Access Key to the default location CLI will look for it
@@ -33,6 +33,7 @@ To use the CLI with your Glean project, you need an **Access Key**. An Access Ke
    $ pip3 install glean-cli
    ```
 3. confirm sucessful installation
+
    ```bash
    $ glean
    Usage: glean [OPTIONS] COMMAND [ARGS]...
@@ -114,6 +115,8 @@ You can invoke the glean CLI in a continuous integration system to automatically
 
 For example, if you use GitHub, the following GitHub action will generate a Build Preview of the local `glean` directory whenever you send a pull request:
 
+{% raw -%}
+
 ```yaml
 name: glean-preview
 on: [pull_request]
@@ -129,3 +132,5 @@ jobs:
       GLEAN_ACCESS_KEY_ID: ${{ secrets.GLEAN_ACCESS_KEY_ID_PROD }}
       GLEAN_SECRET_ACCESS_KEY_TOKEN: ${{ secrets.GLEAN_SECRET_ACCESS_KEY_TOKEN_PROD }}
 ```
+
+{% endraw %}

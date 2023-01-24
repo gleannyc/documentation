@@ -15,7 +15,13 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.tabs
+plugins:
+  - search
+  - macros:
+      on_error_fail: !ENV [EXIT_ON_MACRO_ERROR, true]
+      module_name: macros
 extra:
+  glean_url: !ENV [GLEAN_BASE_URL, "https://glean.io"]
   analytics:
     provider: segment
     api_key: !ENV SEGMENT_KEY
@@ -84,3 +90,4 @@ nav:
           - ./changelog/2022_09_19.md
           - ./changelog/2022_08_04.md
           - ./changelog/2022_06_20.md
+dev_addr: 127.0.0.1:8005

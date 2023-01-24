@@ -4,19 +4,20 @@ You can invite members to your project in Glean to allow them to query and explo
 
 ## Add a user
 
-[Direct link to your Glean user list](https://glean.io/app/p/people)
+[Direct link to your Glean user list]({{ glean_url }}/app/p/people)
 
 1. Go to the `People` page using the link on the navigation side bar
 2. Select `Users`
 3. Select `+ Add User`
 4. Fill out the form and select the submit button: `Add User`
-    - **Email:** Email to send the invite to. Projects can be setup to only allow
-    email addresses on your domain (eg. only emails ending in `@yourcompany.com`).
-    - **Full Name:** User's display name. They can change this themselves at any time.
-    - **Role:** the user's level (see below)
+
+   - **Email:** Email to send the invite to. Projects can be setup to only allow
+     email addresses on your domain (eg. only emails ending in `@yourcompany.com`).
+   - **Full Name:** User's display name. They can change this themselves at any time.
+   - **Role:** the user's level (see below)
 
 5. The invited user will receive an email with an invite link.
-The user can then either create a username and password or use Google authentication to login.
+   The user can then either create a username and password or use Google authentication to login.
 
 ## Default system roles
 
