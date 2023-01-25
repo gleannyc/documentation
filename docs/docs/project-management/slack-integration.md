@@ -1,4 +1,4 @@
-You can connect your Glean project to a Slack workspace of your choosing. This lets users in your project
+You can connect your Glean project to any Slack workspace. This lets users in your project
 share saved views and dashboards directly to Slack channels with added notes and context. You can also schedule
 automated reports to keep your team up to date with important metrics.
 
