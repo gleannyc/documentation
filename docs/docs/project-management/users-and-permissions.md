@@ -6,7 +6,7 @@ You can invite members to your project in Glean to allow them to query and explo
 
 [Direct link to your Glean user list]({{ glean_url }}/app/p/people)
 
-1. Go to the `People` page using the link in the project dropdown
+1. Go to the [`People`]({{ glean_url }}/app/p/people){:target="\_blank"} page using the link in the project dropdown
 2. Select `Users`
 3. Select `+ Add User`
 4. Fill out the form and select the submit button: `Add User`

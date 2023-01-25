@@ -36,7 +36,7 @@ Glean needs to be granted access to your Git repository in order to create Build
 
 To configure your Git credentials:
 
-1. Navigate to the `Settings` page using the link in the project dropdown
+1. Navigate to the [`Settings`]({{ glean_url }}/app/p/settings#access_keys){:target="\_blank"} page using the link in the project dropdown
 2. Click on `Version Control`
 3. Enter your connection settings for the git repository
    - To configure your credentials, provide an authorization token _or_ a username and password.
