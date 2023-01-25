@@ -5,8 +5,8 @@ automated reports to keep your team up to date with important metrics.
 ## Connect the integration
 
 1. Go to the `Settings` page using the link in the project dropdown
-2. Select `Slack Integration`
-3. Click `Add to Slack`
+2. Select `Integrations`
+3. Under the `Slack` subsection, click `Add to Slack`
 4. Click `Allow` on the next page to authorize the Glean Slack app to access your Slack workspace
 5. Click `Return to Settings` on the next page to return to Glean
 
