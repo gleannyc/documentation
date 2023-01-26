@@ -85,6 +85,7 @@ nav:
   - Product Roadmap: ./product-roadmap/product-roadmap.md
   - Changelog:
       - Changelog: # must be in chronological order, most recent first
+          - ./changelog/2023_01_26.md
           - ./changelog/2022_12_27.md
           - ./changelog/2022_11_21.md
           - ./changelog/2022_10_17.md
