@@ -15,11 +15,11 @@ In the next six weeks:
 - Dashboard metric tile improvements
 - Dynamic breakouts
 - Project pinned resources
-- Public demo
-- Slack integration
+- <del>Public demo</del> <ins>[launched January](../../changelog/2023_01_26/)</ins>
+- <del>Slack integration</del> <ins>[launched January](../../changelog/2023_01_26/)</ins>
 - SSO with Okta
-- Upload a dataset / DuckDB
-- Web editor for DataOps
+- <del>Upload a dataset / DuckDB</del> <ins>[launched January](../../changelog/2023_01_26/)</ins>
+- <del>Web editor for DataOps</del> <ins>[launched January](../../changelog/2023_01_26/)</ins>
 
 ## Up Next
 
