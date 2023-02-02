@@ -68,12 +68,18 @@ nav:
               - docs/data-ops/config-schema/Data-Model.md
               - docs/data-ops/config-schema/Saved-View.md
               - docs/data-ops/config-schema/Dashboard.md
-              - ./docs/data-ops/config-schema/Color-Palette.md
+              - docs/data-ops/config-schema/Color-Palette.md
       - Guides:
           - Create Retention Curves: guides/create-retention-curves/index.md
+      - Database Connections:
+        - docs/database-connections/athena.md
+        - BigQuery: docs/database-connections/bigquery.md
+        - DuckDB: docs/database-connections/duckdb.md
+        - docs/database-connections/mysql.md
+        - docs/database-connections/redshift.md
+        - docs/database-connections/snowflake.md
       - Project Management:
           - Custom Styles: ./docs/project-management/custom-styles.md
-          - Database Connections: docs/project-management/database-connections.md
           - Get Access Domains: docs/project-management/get-access-domains.md
           - Organize Content with Collections: docs/project-management/collections.md
           - Project Invite Links: docs/project-management/invite-links.md
