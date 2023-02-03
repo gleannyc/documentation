@@ -32,7 +32,7 @@ The following needs to be granted to your glean user:
   grant SELECT on future tables in database identifier($database_name) to role identifier($glean_role);
   ```
 
-## Create Snowflake database connection in Glean
+## Create a Snowflake database connection in Glean
 
 1. First, goto your [Glean settings](https://glean.io/app/p/settings#database_connections) page from the project dropdown
 2. Click `+ New Database Connection` and fill out the fields below

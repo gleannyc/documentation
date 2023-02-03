@@ -72,11 +72,11 @@ nav:
       - Guides:
           - Create Retention Curves: guides/create-retention-curves/index.md
       - Database Connections:
-        - docs/database-connections/athena.md
-        - BigQuery: docs/database-connections/bigquery.md
+        - Athena (aws): docs/database-connections/athena.md
+        - BigQuery (gcp): docs/database-connections/bigquery.md
         - DuckDB: docs/database-connections/duckdb.md
         - docs/database-connections/mysql.md
-        - docs/database-connections/redshift.md
+        - Redshift (aws): docs/database-connections/redshift.md
         - docs/database-connections/snowflake.md
       - Project Management:
           - Custom Styles: ./docs/project-management/custom-styles.md

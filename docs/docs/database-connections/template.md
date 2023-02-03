@@ -21,7 +21,6 @@ Explain how to setup a user for Glean, feel free to link to their documentation.
 1. First, goto your [Glean settings](https://glean.io/app/p/settings#database_connections) page from the project dropdown
 2. Click `+ New Database Connection` and fill out the fields below
 
-
 ### Settings
 - **Username:** the username
 - **Password:** the password
