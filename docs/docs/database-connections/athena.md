@@ -1,12 +1,12 @@
 ## Overview
 
-Athena (in Amazon Web Services) is a SQL query engine that allows you to query files stored in S3 (Simple Storage Service).  So it's not really a database, it's more of a way of using SQL with csv and parquet (and other formats) that are stored as objects in the cloud.  The AWS project actually uses Presto (now Trino) under the hood.
+Athena is an Amazon Web Services SQL query engine that allows you to do analytics on files stored in S3 (Simple Storage Service).  So, it's not really a database, it's more of a way of using SQL with csv and parquet files that are stored as objects in the cloud.  Athena runs on a fork of the opensource Presto project (now called Trino) that was developed at Facebook.
 
-In general, Athena can work okay for some usecases, but Glean assumes you have data in a fast data warehouse, and Athena is not a very fast data warehouse.  The advantage is that you can start querying data quickly if it's already stored in S3.  The disadvantages are: 1. reading schemas can be very slow, so development in Glean can be very slow 2. the performance of queries 3. in our experience the query engine is very limited and just doesn't perform that well (no offset queries, for example).
+Because Athena is a naive query engine that can query data in lots of different formats, it can be slow.  Glean assumes you have data in a fast data warehouse for interactive analytics, so Athena doesn't work really well as a primary data warehouse.  The advantage of Athena is that you can start querying data quickly if it's already stored in S3.  The disadvantages are: 1. reading schemas and metadata can be very slow, so development in Glean can be very slow 2. the performance of queries 3. in our experience the query engine is limited and doesn't support as many analytical features as BigQuery, DuckDB or Snowflake (no offset queries, for example).
 
 ** Performance **
 
-Athena performance is highly dependent on how data is stored.  You can store partitioned parquet files and potentially achieve reasonable performance, or store large csv files which probably won't be good for interactive analytics.  Amazon has [a few good articles](https://docs.aws.amazon.com/athena/latest/ug/performance-tuning.html) on tuning performance in Athena.
+Athena performance is highly dependent on how you choose to store your data.  If you store carefully partitioned parquet files you may get reasonable performance.  If you just store data in lots of large csv files it might take minutes to query, which wouldn't be great for interactive exploration, even with Glean's caching.  Amazon has a few good articles on [tuning performance in Athena](https://docs.aws.amazon.com/athena/latest/ug/performance-tuning.html).
 
 !!! warning
 
@@ -45,8 +45,6 @@ Your service user requires access to a few AWS services for all features in Glea
 2. Click `+ New Database Connection` and fill out the fields below
 
 ### Settings
-
-TODO
 
 - **AWS Region**: 
 - **port**: 
