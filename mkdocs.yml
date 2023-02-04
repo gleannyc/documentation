@@ -87,6 +87,8 @@ nav:
           - Project Invite Links: docs/project-management/invite-links.md
           - Slack Integration: docs/project-management/slack-integration.md
           - Users and Permissions: docs/project-management/users-and-permissions.md
+          # we should delete this eventually, just kept for backwards compatability in links to our docs
+          - Database Connections: docs/database-connections/index.md
       - Support:
           - Get in Touch: contact-us.md
   - Quickstart: guides/quickstart/index.md
