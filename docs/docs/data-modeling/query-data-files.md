@@ -15,7 +15,7 @@ new version with the same name.
 
 Glean currently supports the following formats:
 
-- Comma seperated or tab separated values files (`.csv`, `.tsv`)
+- Comma separated or tab separated values files (`.csv`, `.tsv`)
 - JSON files containing a single array of objects. Object keys will
   be used as column names. (`.json`)
 - [Apache Parquet](https://parquet.apache.org/){:target="_blank"}
