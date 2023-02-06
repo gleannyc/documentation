@@ -1,4 +1,4 @@
-Once you add a database connection, it will be made available from the [Add Data Model](../data-modeling/add-data-model.md) workflow and you'll be able to specify tables or SQL queries to start visualizing data visualizing in Glean.
+Once you add a database connection, it will be made available from the [Add Data Model](../data-modeling/add-data-model.md) workflow and you'll be able to specify tables or SQL queries to start visualizing data in Glean.
 
 ## Firewall Configuration
 
