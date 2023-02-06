@@ -18,7 +18,7 @@ Glean currently supports the following formats:
 - Comma seperated or tab separated values files (`.csv`, `.tsv`)
 - JSON files containing a single array of objects. Object keys will
   be used as column names. (`.json`)
-- [Apache Parquet](https://parquet.apache.org/){:target="_blank"}
+- [Apache Parquet](https://parquet.apache.org/){:target="\_blank"}
   files (`.parquet`, `.pqt`)
 
 Glean enforces a max size of 50 MB for uploaded files.
@@ -36,7 +36,7 @@ SELECT * FROM "my_file.csv";
 ```
 
 Glean is compatible with the
-[DuckDB SQL dialect](https://duckdb.org/docs/sql/introduction){:target="_blank"}.
+[DuckDB SQL dialect](https://duckdb.org/docs/sql/introduction){:target="\_blank"}.
 However, side-effects from statements such as `INSERT`, `UPDATE`, and `CREATE`
 will be discarded. The DuckDB instance is re-created and discarded between
 every query.
