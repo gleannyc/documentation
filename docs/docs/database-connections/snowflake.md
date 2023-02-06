@@ -2,13 +2,13 @@
 
 If you have a lot of data and want to keep throwing it into a data warehouse, [Snowflake](https://www.snowflake.com){:target="_blank"} is a tried and tested solution.  They continually push the boundary on sql and analytics features and their data sharing features between organizations are particularly strong for larger enterprisies.
 
-About 50% of Glean's customers use Snowflake, if you're using AWS it is a good solution.  If you don't have much data, using Postgres, Redshift or even DuckDB could be good options.  Compared with Redshift, Snowflake has a more modern architecture with decoupled storage and compute that can scale to larger datasets more easily.  This architecture is also much easier to manage with more flexibility on how much compute you use and fewer decisions on how you are going to layout data.  If Google Cloud is an option, you may also want to consider BigQuery as an alternative to Snowflake.
+About 50% of Glean's customers use Snowflake, if you're using AWS it is a good solution.  If you don't have much data, using Postgres, Redshift or even DuckDB could be good options.  Compared with Redshift, Snowflake has a more modern architecture with decoupled storage and compute that can scale to larger datasets more easily.  This architecture is also much easier to manage with more flexibility on how much compute you use and fewer decisions on how you are going to lay out data.  If Google Cloud is an option, you may also want to consider BigQuery as an alternative to Snowflake.
 
-### How to get setup
+### How to get set up
 
 1. [Signup for a 30 day trial](https://signup.snowflake.com/) on Snowflake if you don't have an account
 2. Create a Snowflake user that Glean can use
-3. Setup a database connection in Glean
+3. Set up a database connection in Glean
 
 ## Create a snowflake user
 

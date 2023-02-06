@@ -13,10 +13,10 @@ Athena performance is highly dependent on how you choose to store your data.  If
 
         For performance reasons we generally recommend using other cloud data warehouses for interactive analytics.  Athena can serve as a useful query layer for looking at raw data in s3, but doesn't serve well as your primary data warehouse unless it's carefully tuned for performance.
 
-### How to get setup
+### How to get set up
 
 1.  Configure an IAM user in AWS and configure permissions
-2.  Setup a connection in Glean
+2.  Set up a connection in Glean
 
 
 ## Create an AWS IAM user for Glean

@@ -1,14 +1,14 @@
 ## Overview
 
-BigQuery is a great cloud data warehouse to get started with: they have a free tier, there are no servers to manage or think about.  They are also good if you need to be HIPAA compliant and don't want to sign onerous enterprise licenses (for US-based healthcare companies).  In short, we recommend using BigQuery if you have moderate amount of data to query and want to setup a cloud data warehouse.  We use BigQuery for Glean's own analytics.
+BigQuery is a great cloud data warehouse to get started with: they have a free tier, there are no servers to manage or think about.  They are also good if you need to be HIPAA compliant and don't want to sign onerous enterprise licenses (for US-based healthcare companies).  In short, we recommend using BigQuery if you have moderate amount of data to query and want to set up a cloud data warehouse.  We use BigQuery for Glean's own analytics.
 
 If you have relatively small data and are very early, using something lightweight like Postgres or uploading csvs or parquet files to our DuckDB integration could also be good options.
 
-### How to get setup:
+### How to get set up:
 
 1. [Sign up for free GCP / BigQuery](https://cloud.google.com/bigquery) account if you don't have one
-2. Setup a Service User Account in Google Cloud
-3. Setup a database connection in Glean
+2. Set up a Service User Account in Google Cloud
+3. Set up a database connection in Glean
 
 ## Create a BigQuery service account
 
