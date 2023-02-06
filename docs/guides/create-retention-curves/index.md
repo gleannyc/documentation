@@ -89,7 +89,7 @@ A few notes on the resulting columns:
 
 1. From the data exploration page, click [Add Data Model](../../docs/data-modeling/add-data-model.md)
 2. Either select your prepared retention table from your data warehouse or click `SQL Query` and enter a SQL query similar to the one above as the basis for your model.  Click `Create Model`
-3. Setup your data model in Glean:
+3. Set up your data model in Glean:
     - Make sure that `month` is selected as your primary date, by selecting the gear next to it.
     - Add `cohort_month_str`, `month_number` as attributes along with any experimental cohort attributes you prepared in your data.
     - Add two columns as metrics:
