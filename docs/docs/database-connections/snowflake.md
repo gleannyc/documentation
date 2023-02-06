@@ -12,7 +12,7 @@ About 50% of Glean's customers use Snowflake, if you're using AWS it is a good s
 
 ## Create a snowflake user
 
-You can run the following script, make sure you fill out your database name, warehouse and a password in the script:
+You can run the following script. Make sure you fill out your database name, warehouse and a password in the script:
 
   ```sql
   use role ACCOUNTADMIN;
