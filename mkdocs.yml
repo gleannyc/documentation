@@ -20,6 +20,9 @@ plugins:
   - macros:
       on_error_fail: !ENV [EXIT_ON_MACRO_ERROR, true]
       module_name: macros
+  - redirects:
+      redirect_maps:
+          'product-roadmap/product-roadmap.md': 'product-roadmap/index.md'
 extra:
   glean_url: !ENV [GLEAN_BASE_URL, "https://glean.io"]
   analytics:
@@ -82,7 +85,7 @@ nav:
       - Support:
           - Get in Touch: contact-us.md
   - Quickstart: guides/quickstart/index.md
-  - Product Roadmap: ./product-roadmap/product-roadmap.md
+  - Product Roadmap: ./product-roadmap/index.md
   - Changelog:
       - Changelog: # must be in chronological order, most recent first
           - ./changelog/2023_01_26.md
