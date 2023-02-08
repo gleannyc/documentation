@@ -1,10 +1,17 @@
 from os import path
-
+from pathlib import Path
 from mkdocs_macros import fix_url
 
 
 def define_env(env):
-    pass
+    @env.macro
+    def place_mdx_from_glean_app(path: str) -> str:
+        js_path = (Path(__file__).parent / "./placeMDXFromGleanApp.js").resolve()
+        with open(js_path, "r") as file:
+            js = file.read()
+
+        return f"""<script>{js};run("{env.variables['glean_url']}", "{path}")</script>"""
+
 
 def on_post_build(env):
     create_redirect_to_latest_changelog(env)
