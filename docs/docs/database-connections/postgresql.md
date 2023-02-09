@@ -1,10 +1,12 @@
+_`Amazon Redshift` redirects here_
+
 ## Overview
 
 Postgres is a great default choice for a database engine. It's a general purpose engine that wasn't designed specifically for analytics purposes, but is often fast enough to start with and can scale surprisingly well, especially if you have someone caring for and tuning your installation.
 
-A benefit of its popularity is that there are easy and cheap providers of server-less instances, such as [Heroku](https://www.heroku.com/postgres){:target="\_blank"} and [Neon](https://neon.tech){:target="\_blank"}.
+A benefit of its popularity is that there are easy and cheap providers of server-less instances, such as [Heroku](https://www.heroku.com/postgres){:target="\_blank"} and [Neon](https://neon.tech){:target="\_blank"}. Additionally, there are other databases that are PostgreSQL compatible, such as Redshift, CockroachDB or Timescale. If you're using one of these databases, you can use our PostgreSQL connection type to connect to your database.
 
-If you're looking to get started and starting with an application database, we have an full write up on how to do exactly that:
+If you're looking to get started an existing application database, querying your production database isn't ideal. We have an full write up on how to get started with a read replica:
 
 - [Set up your data warehouse on Postgres in 30 minutes](https://glean.io/blog-posts/setup-your-data-warehouse-on-postgres-in-30-minutes){:target="\_blank"}
 
@@ -24,6 +26,8 @@ If you're starting off with a copy of your application database, there's a high 
 
 - **Connection Name:** A nickname for your connection. Not used to connect to your database.
 - **Host:** the address of your PostgreSQL database
+- **Port:** the open port of your Postgres host, it is often `5432`
 - **Username:** the username
 - **Password:** the password
-- **Database:** the name of the database to read from
+- **Database:** the name of the [database](https://www.postgresql.org/docs/current/ddl-schemas.html) to read from
+- **Schema:** (_optional_) Specify a schema to limit which tables are available. Otherwise, Glean will make all accessible schemas and tables available
