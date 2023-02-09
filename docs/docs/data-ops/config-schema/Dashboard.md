@@ -1,3 +1,3 @@
 # Dashboard
 
-{{ place_mdx_from_glean_app("publicSpecs.v1.dashboard") }}
+{{ place_mdx_from_glean_app("publicResourceSpecs/Dashboard") }}
