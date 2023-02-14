@@ -22,7 +22,7 @@ plugins:
       module_name: macros
   - redirects:
       redirect_maps:
-          'product-roadmap/product-roadmap.md': 'product-roadmap/index.md'
+        "product-roadmap/product-roadmap.md": "product-roadmap/index.md"
 extra:
   glean_url: !ENV [GLEAN_BASE_URL, "https://glean.io"]
   analytics:
@@ -66,6 +66,7 @@ nav:
           - Overview: docs/data-ops/index.md
           - docs/data-ops/Creating-Data-Ops-Builds.md
           - docs/data-ops/Using-the-Glean-CLI.md
+          - docs/data-ops/Using-the-Glean-Code-Editor.md
           - docs/data-ops/GRNs.md
           - Configuration Schemas:
               - docs/data-ops/config-schema/Data-Model.md
