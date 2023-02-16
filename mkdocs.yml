@@ -72,6 +72,7 @@ nav:
               - docs/data-ops/config-schema/Saved-View.md
               - docs/data-ops/config-schema/Dashboard.md
               - docs/data-ops/config-schema/Color-Palette.md
+              - docs/data-ops/config-schema/Homepage-Launchpad.md
       - Guides:
           - Create Retention Curves: guides/create-retention-curves/index.md
       - Database Connections:
