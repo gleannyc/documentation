@@ -20,6 +20,7 @@ To configure your Git credentials:
 ## Creating builds
 
 After you've configured a Git repository, you can navigate to the [`DataOps`]({{ glean_url }}/app/p/data-ops){:target="\_blank"} page and click `+ New Build` to create a new Build, with the following options:
-- `Branch`: A branch or commit identifier from your repository
-- `Path`: An optional absolute path to a directory in your repository containing your Glean configuration files.
-- `Type`: The type of build to create. For more details on `Preview` and `Deploy` builds, see [Creating DataOps Builds](./Creating-Data-Ops-Builds.md)
+
+-  `Branch`: A branch or commit identifier from your repository
+-  `Path`: An optional absolute path to a directory in your repository containing your Glean configuration files.
+-  `Type`: The type of build to create. For more details on `Preview` and `Deploy` builds, see [DataOps Overview](./index.md)
