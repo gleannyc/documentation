@@ -1,16 +1,3 @@
-## Trigger a Build
-
-A build will connect to your repository, detect all of the Glean [configuration files](index.md) in your repository and create, update, and delete resources to make glean consistent with the configuration:
-
-1. Navigate to the [`DataOps`]({{ glean_url }}/app/p/data-ops){:target="\_blank"} page using the link in the project dropdown
-2. Click the `Build` button on the top right to create a new build
-3. Configure your build and click Build. If any fields are left empty, Glean will use the default values specified on the `Version Control` settings page.
-4. You can view the summary of errors, warnings and changes by clicking the build from the build list.
-
-!!! warning
-
-    We recommend always first creating a Preview Build to see which resources will be affected prior to running a Deploy.  The build process will automatically delete and create resources in Glean to leave your project in a consistent state.  For example, if you delete a column in a model configuration file, all saved views that refer to that column will be automatically deleted (as happens if you delete a column through the user interface).
-
 ## The build process
 
 Here is a high-level description of what actually happens during the build process:
@@ -33,10 +20,6 @@ Full documentation of all configuration files can be found for each resource typ
 - [Dashboards](./config-schema/Dashboard.md)
 - [Color Palettes](./config-schema/Color-Palette.md)
 - [Homepage Launchpad](./config-schema/Homepage-Launchpad.md)
-
-!!! warning
-
-    While this feature is in beta, it is possible we may need to introduce breaking changes to the Glean configuration file format. In these cases we will give advanced warning and assist beta partners with any necessary migrations.
 
 ### Exporting configuration files
 

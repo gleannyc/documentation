@@ -26,4 +26,8 @@ Using a set of configuration files, you create a **Build**. There are two differ
 - A **Preview Build** validates your configuration files and, if successful, provides a URL that will show you what your Glean Project will look like if your pending changes are applied.
 - A **Deploy Build** validates your configuration files and, if successful, publishes those changes to your Glean Project.
 
+!!! warning
+
+    We recommend always first creating a Preview Build to see which resources will be affected prior to running a Deploy.  The build process will automatically delete and create resources in Glean to leave your project in a consistent state.  For example, if you delete a column in a model configuration file, all saved views that refer to that column will be automatically deleted (as happens if you delete a column through the user interface).
+
 You can create a Build using the [Glean command-line interface (CLI)](./Using-the-Glean-CLI.md), or through the Glean web application by connecting your account to a [Git repository](./Git-integration.md).

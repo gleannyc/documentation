@@ -64,7 +64,7 @@ nav:
           - docs/dashboards/Filters.md
       - DataOps:
           - Overview: docs/data-ops/index.md
-          - docs/data-ops/Creating-Data-Ops-Builds.md
+          - docs/data-ops/Managing-Resources-With-Code.md
           - docs/data-ops/Using-the-Glean-CLI.md
           - docs/data-ops/Git-Integration.md
           - docs/data-ops/GRNs.md
