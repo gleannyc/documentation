@@ -26,25 +26,8 @@ Using a set of configuration files, you create a **Build**. There are two differ
 - A **Preview Build** validates your configuration files and, if successful, provides a URL that will show you what your Glean Project will look like if your pending changes are applied.
 - A **Deploy Build** validates your configuration files and, if successful, publishes those changes to your Glean Project.
 
-You can create a Build using the [Glean command-line interface (CLI)](./Using-the-Glean-CLI.md), or through the Glean web application. Glean integrates with Git and can create Builds using specific Git branches or revisions that have been pushed to your repository.
+!!! warning
 
-## Getting Started
+    We recommend always first creating a Preview Build to see which resources will be affected prior to running a Deploy.  The build process will automatically delete and create resources in Glean to leave your project in a consistent state.  For example, if you delete a column in a model configuration file, all saved views that refer to that column will be automatically deleted (as happens if you delete a column through the user interface).
 
-### Configuring Git credentials
-
-Glean needs to be granted access to your Git repository in order to create Builds from specific revisions.
-
-To configure your Git credentials:
-
-1. Navigate to the [`Settings`]({{ glean_url }}/app/p/settings#access_keys){:target="\_blank"} page using the link in the project dropdown
-2. Click on `Version Control`
-3. Enter your connection settings for the git repository
-   - To configure your credentials, provide an authorization token _or_ a username and password.
-   - We recommend you use an access token to restrict access to just appropriate resources:
-     - [Access Tokens in Github](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
-     - [Access Tokens in Gitlab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
-   - The _Name_ field is optional and will just help users identify in plain language what repository you configured for your project, eg: "engineering data pipeline repo"
-   - The default branch will be used as the default for builds, usually "main", "master" or "production"
-   - The default path describes the root of your Glean credentials directory within the repo
-4. Click the `🗼Test` button to test your git credentials
-5. Click `Save Credentials`
+To use DataOps, save the [configuration](./Managing-Resources-With-Code.md) of one or more of your resources to your local environment or a Git repository. Then, you can create a Build using the [Glean command-line interface (CLI)](./Using-the-Glean-CLI.md), or through the Glean web application by connecting your account to a [Git repository](./Git-integration.md).
