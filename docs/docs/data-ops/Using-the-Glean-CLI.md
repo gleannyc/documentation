@@ -1,4 +1,4 @@
-The Glean CLI is a [DataOps](index.md) feature that allows you to create Preview and Deploy Builds directly from your terminal or continuous integration system.
+The Glean CLI allows you to create Preview and Deploy Builds directly from your terminal or continuous integration system.
 
 ## Quickstart
 
