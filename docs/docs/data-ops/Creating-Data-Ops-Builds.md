@@ -31,6 +31,8 @@ Full documentation of all configuration files can be found for each resource typ
 - [Data Models](./config-schema/Data-Model.md)
 - [Saved Views](./config-schema/Saved-View.md)
 - [Dashboards](./config-schema/Dashboard.md)
+- [Color Palettes](./config-schema/Color-Palette.md)
+- [Homepage Launchpad](./config-schema/Homepage-Launchpad.md)
 
 !!! warning
 
