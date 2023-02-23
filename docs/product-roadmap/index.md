@@ -12,25 +12,27 @@ Check out the [changelog](../../changelog/) to see what we've shipped recently.
 
 In the next six weeks:
 
-- Dashboard metric tile improvements
-- Dynamic breakouts
-- Project pinned resources
-- <del>Public demo</del> <ins>[launched January](../../changelog/2023_01_26/)</ins>
-- <del>Slack integration</del> <ins>[launched January](../../changelog/2023_01_26/)</ins>
-- SSO with Okta
-- <del>Upload a dataset / DuckDB</del> <ins>[launched January](../../changelog/2023_01_26/)</ins>
-- <del>Web editor for DataOps</del> <ins>[launched January](../../changelog/2023_01_26/)</ins>
+- <del>Dashboard metric tile improvements</del> <ins>[launched February](../../changelog/2023_01_26/)</ins>
+- <del>Dynamic breakouts</del> <ins>[launched February](../../changelog/2023_01_26/)</ins>
+- <del>Project pinned resources</del> <ins>[launched February](../../changelog/2023_01_26/)</ins>
+- <del> SSO with Okta </del> <ins>[launched February](../../changelog/2023_01_26/)</ins>
+- Redesign of the Explorer control panel
+- Resource descriptions everywhere in Glean
+- Configuration for timezone handling
 
 ## Up Next
 
 In the next few months:
 
 - Collections in DataOps
-- Custom filters
+- Dimensional joins
 - Enhanced pivot tables
 - Enhanced tables
+- New visualization options
 - Production tag
 - Public links
+- Support for array data
+- Synced table field comments
 
 ## On the Horizon
 
