@@ -9,6 +9,10 @@ This guide will take you from defining data models to exploring data and sharing
 
 Once you get access to Glean, you will be invited to login to a project. Users can belong to multiple projects, but data cannot be shared between projects. So users, permissions, database connections, data models and every other resource is isolated in the context of a project. Typically your entire organization can be managed in a single project.
 
+!!! info "Not ready to connect to a database?"
+
+    You can use a [Sandbox demo project](../../docs/project-management/demo-projects.md) to test the functionality of Glean with sample datasets.
+
 ## 1. Add a database connection
 
 Also see [database connections](../../docs/database-connections/index.md) for configurations specific to different database types.
