@@ -93,6 +93,7 @@ nav:
           - Project Invite Links: docs/project-management/invite-links.md
           - Slack Integration: docs/project-management/slack-integration.md
           - Users and Permissions: docs/project-management/users-and-permissions.md
+          - Single Sign-On: docs/project-management/single-sign-on.md
           # we should delete this eventually, just kept for backwards compatability in links to our docs
           - Database Connections: docs/database-connections/index.md
           - Sandbox Demo Projects: docs/project-management/demo-projects.md
