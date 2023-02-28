@@ -12,13 +12,13 @@ Check out the [changelog](../../changelog/) to see what we've shipped recently.
 
 In the next six weeks:
 
-- <del>Dashboard metric tile improvements</del> <ins>[launched February](../../changelog/2023_01_26/)</ins>
-- <del>Dynamic breakouts</del> <ins>[launched February](../../changelog/2023_01_26/)</ins>
-- <del>Project pinned resources</del> <ins>[launched February](../../changelog/2023_01_26/)</ins>
-- <del> SSO with Okta </del> <ins>[launched February](../../changelog/2023_01_26/)</ins>
-- Redesign of the Explorer control panel
-- Resource descriptions everywhere in Glean
+- <del>Project pinned resources</del> <ins>[launched February](../../changelog/2023_02_28.md/)</ins>
+- <del>SSO with Okta </del> <ins>[launched February](../../changelog/2023_02_28.md/)</ins>
 - Configuration for timezone handling
+- Dashboard metric tile improvements
+- Dynamic breakouts
+- Redesigned Explorer control panel
+- Resource descriptions everywhere in Glean
 
 ## Up Next
 
