@@ -5,7 +5,7 @@ role assignments through SCIM (directory sync). This document describes how to i
 !!! note "Contact us"
 
     To initiate setup, contact us at [support@glean.io](mailto:support@glean.io). We'll provide specific
-    instructions and a test environment for setting up Glean with the IdP if your choice.
+    instructions and a test environment for setting up Glean with the IdP of your choice.
 
 ## Setting up single sign-on
 
