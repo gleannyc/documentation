@@ -1,6 +1,11 @@
-Glean supports using an Identity Provider (IdP) to control authentication through single sign-on.
+Glean supports using an Identity Provider (IdP) such as Okta to control authentication through single sign-on.
 It also supports provisioning and deprovisioning Glean users along with managing their custom Glean
-role assignments through SCIM. This document describes how to integrate Glean into your IdP.
+role assignments through SCIM (directory sync). This document describes how to integrate Glean into your IdP.
+
+!!! note "Contact us"
+
+    To initiate setup, contact us at [support@glean.io](mailto:support@glean.io). We'll provide specific
+    instructions and a test environment for setting up Glean with the IdP if your choice.
 
 ## Setting up single sign-on
 
@@ -13,13 +18,16 @@ through SSO. This page asks them to input their email and uses its domain to red
 
 Users will also of course be able to log in directly from your IdP by clicking on the Glean application integration that you set up.
 
-**Note:** It is required that the primary email of each user assigned to Glean in your IdP matches their Glean user’s email.
-If this isn’t the case, they won’t be able to log in to their Glean account.
+!!! caution "Email constraints"
+
+    It is required that the primary email of each user assigned to Glean in your IdP matches their Glean user’s email.
+    If this isn’t the case, they won’t be able to log in to their Glean account.
 
 ## Setting up SCIM
 
 To reap the full power of managing users in your IdP, you can enable SCIM in addition to single sign-on. This will allow you
-to create and delete Glean users directly within your IdP. It will also enable updating your Glean users’ personal information and Glean roles.
+to create and delete Glean users directly within your IdP. It will also enable updating your Glean users’ personal information
+(including their email) and Glean roles.
 
 Like SAML setup, we’ll provide you with a link that will walk you through the necessary steps to perform in your IdP.
 
@@ -34,10 +42,10 @@ If a role is specified that doesn’t exist in all of your Glean projects, SCIM 
 
 Depending on your IdP, you might not be notified when this fails. We recommend working directly with Glean when setting up SCIM to ensure correct configuration.
 
-Additional notes on `roles`:
+!!! info "Additional notes on `roles`"
 
-1. It must be non-empty. SCIM-enabled projects do not have a concept of default roles, as all role assignments must be explicitly managed through your IdP.
-2. We treat these role names as case-insensitive, so feel free to capitalize as you wish.
+    1. It must be non-empty. SCIM-enabled projects do not have a concept of default roles, as all role assignments must be explicitly managed through your IdP.
+    2. We treat these role names as case-insensitive, so feel free to capitalize as you wish.
 
 ### Initial sync
 
@@ -55,4 +63,4 @@ creating, editing, and deleting users in Glean is restricted for SSO-enabled pro
 ### Managing Roles
 
 Creating new Glean roles and editing existing roles must still be done in your Glean project. Glean `Owner`s can do this by default. However, if SSO is enabled for your
-project, they won’t be able to assign users to these roles in Glean. This must be done in your IdP by modifying the roles custom attribute defined for those users.
+project, they won’t be able to assign users to these roles in Glean. This must be done in your IdP by modifying the `roles` custom attribute defined for those users.
