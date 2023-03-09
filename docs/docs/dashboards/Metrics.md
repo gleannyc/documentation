@@ -15,19 +15,23 @@ Metrics can be calculated as either **Simple Metrics** or **Relative Comparison*
 
 ![Setting up a simple metric](imgs/sparkline.gif)
 
-**Metric Value:** Choose a [data model](../data-modeling/Data-Models-Overview.md) to select a metric from, then a metric within that data model to display the value of.
+**Metric Value:** Choose a [data model](../data-modeling/Data-Models-Overview.md) and metric to display.
 
-**Sparkline:** Click the toggle to enable or disable a sparkline visualization of your metric. Select a datetime or numeric attribute to plot the metric value against and adjust the granularity or bin size to see trends week to week, month to month, etc.
+**Sparkline:** Click the toggle to enable or disable a sparkline visualization of your metric. Select a date and granularity to go on the x axis of the sparkline. Although less commonly used, it's also possible to choose a number for the x axis.
 
 #### Relative Metrics
 
+!!! info "Calculating Relative Metrics"
+
+    Relative metrics display a metric value calculated over periods of data (specified as a granularity or range of numbers). As new data comes in this value will change to reflect the last period in your dataset.
+
 ![Setting up a relative metric](imgs/relative.gif)
 
-**Metric Value:** Choose a [data model](../data-modeling/Data-Models-Overview.md) to select a metric from, then a metric within that data model. Then select the datetime or numeric attribute that you want to aggregate the metric over and adjust the granularity or bin size to see values over the most recent week, month, etc of your dataset.
+**Metric Value:** Choose a [data model](../data-modeling/Data-Models-Overview.md) and metric to display. Then select the date or number that you want to aggregate the metric over and adjust the granularity or bin size to see values over the most recent week, month, etc of your dataset.
 
-**Sparkline:** Click the toggle to enable or disable a sparkline visualization of your metric. Values will be plotted over the attribute you've selected to calculate the metric.
+**Sparkline:** Click the toggle to enable or disable a sparkline visualization of your metric. Values will be plotted over the date or number you've selected to calculate the metric.
 
-**Comparison Text:** Click the toggle to enable or disable comparisons. When enabled the tile will display the difference between the value for the most recent period and the prior period in your data. For example, if you have your relative metric set to show user count over a month enabling this feature will show you the difference between users this month and last month.
+**Comparison Text:** When comparisons are enabled the tile will display the difference between the value for the most recent period and the prior period in your data. For example, if you have your relative metric set to show user count over a month enabling this feature will show you the difference between users the last month of data and the prior month.
 
 ### Filters
 
@@ -39,7 +43,5 @@ Metrics can be calculated as either **Simple Metrics** or **Relative Comparison*
 [dashboard filters](Filters.md). When this is set, only the filters specified on the metric will be used.
 
 ## Formatting
-
-![Updating colors](imgs/color.gif)
 
 **Up/Down Colors:** If the metric is a **Relative Comparison** metric with comparison text enabled you'll be able to customize how negative and positive differences are displayed. Simply click into a color and change the values to a new color code. Positive differences will be displayed in the Up color and negative differences will be displayed in the Down color.
