@@ -2,6 +2,8 @@ You can connect your Glean project to any Slack workspace. This lets users in yo
 share saved views and dashboards directly to Slack channels with added notes and context. You can also schedule
 automated reports to keep your team up to date with important metrics.
 
+![slack integration](../../assets/slack-integration.png)
+
 ## Connect the integration
 
 1. Go to the [`Settings`]({{ glean_url }}/app/p/settings#integrations){:target="\_blank"} page using the link in the project dropdown
@@ -27,3 +29,7 @@ To schedule a report, follow steps 1-3 above then continue with the following:
 1. Check `Schedule recurring report` at the bottom of the modal
 2. Click `Set Schedule` and enter the schedule's timing along with whether you'd like to skip sending reports that have no data
 3. Click `Schedule` to submit the schedule
+
+## Privacy Policy
+
+See our [Privacy Policy](https://glean.io/terms) for information on how Glean collects, manages, and stores third-party data.
