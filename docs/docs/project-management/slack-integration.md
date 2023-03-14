@@ -1,4 +1,4 @@
-You can connect your Glean project to any Slack workspace. This lets users in your project
+`Owner`s can connect their Glean project to any Slack workspace. This lets users in your project
 share saved views and dashboards directly to Slack channels with added notes and context. You can also schedule
 automated reports to keep your team up to date with important metrics.
 
@@ -15,7 +15,7 @@ automated reports to keep your team up to date with important metrics.
 ## Sharing to Slack
 
 Once someone in your Glean project has connected the Slack integration, Glean users with appropriate permissions
-can share saved views and dashboards to Slack. By default, this is restricted to owners.
+can share saved views and dashboards to Slack. By default, this is restricted to `Collaborator`s.
 
 1. Open a saved view or dashboard in Glean
 2. Click the `Share` dropdown at the top right corner and select the `Share to Slack` option
