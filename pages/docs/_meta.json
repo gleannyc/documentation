@@ -1,0 +1,21 @@
+{
+  "index": { "title": "Overview" },
+  "quick-start": { "title": "Quick Start" },
+
+  "--": { "title": "Data Modeling", "type": "separator" },
+  "data-modeling": { "title": "Data Models" },
+  "database-connections": { "title": "Database Connections" },
+
+  "---": { "title": "Explore & Share", "type": "separator" },
+  "visualizing-data": { "title": "Data Explorer" },
+  "dashboards": { "title": "Dashboards" },
+
+  "-----": { "title": "DataOps", "type": "separator" },
+  "data-ops": { "display": "children" },
+
+  "----": { "title": "Project Management", "type": "separator" },
+  "project-management": { "display": "children" },
+
+  "------": { "title": "Guides", "type": "separator" },
+  "guides": { "display": "children" }
+}
