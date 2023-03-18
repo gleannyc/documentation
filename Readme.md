@@ -4,19 +4,7 @@ User facing documentation for Glean
 
 ## Dev Setup
 
-```bash
-# install python dependencies to a virtual environment
-$ pip install -r requirements.txt
-
-# start a local server
-$ mkdocs serve
-```
-
-If you want to run in watch mode you can do
-```
-$ mkdocs serve -w .
-```
-
+...
 
 ## Contribution Guidelines
 
@@ -29,6 +17,4 @@ $ mkdocs serve -w .
 
 ### Testing
 
-Run `mkdocs serve` in strict mode to test for broken links
-
-- `$ mkdocs serve -s --dev-addr localhost:2185`
+...
