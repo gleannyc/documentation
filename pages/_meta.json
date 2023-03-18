@@ -1,0 +1,20 @@
+{
+  "docs": {
+    "title": "Documentation",
+    "type": "page"
+  },
+  "support": {
+    "title": "Support",
+    "type": "page"
+  },
+  "get-access": {
+    "title": "Get Access",
+    "href": "https://glean.io/getAccess",
+    "type": "page"
+  },
+  "log-in": {
+    "title": "Log In",
+    "href": "https://glean.io/app",
+    "type": "page"
+  }
+}

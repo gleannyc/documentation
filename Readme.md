@@ -14,7 +14,3 @@ User facing documentation for Glean
 - when linking externally, include a blank target to open in a new tab, and use the `{{ glean_url }}` variable
   - good: `[Go to settings page]({{ glean_url }}/app/p/settings){:target="_blank"}`
   - bad: `[Go to settings page]({{ glean_url }}/app/p/settings)`
-
-### Testing
-
-...
