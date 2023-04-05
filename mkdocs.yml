@@ -103,6 +103,7 @@ nav:
   - Product Roadmap: ./product-roadmap/index.md
   - Changelog:
       - Changelog: # must be in chronological order, most recent first
+          - ./changelog/2023_03_31.md
           - ./changelog/2023_02_28.md
           - ./changelog/2023_01_26.md
           - ./changelog/2022_12_27.md
