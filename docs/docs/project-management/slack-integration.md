@@ -30,6 +30,10 @@ To schedule a report, follow steps 1-3 above then continue with the following:
 2. Click `Set Schedule` and enter the schedule's timing along with whether you'd like to skip sending reports that have no data
 3. Click `Schedule` to submit the schedule
 
+## Support
+
+[Contact us](https://docs.glean.io/contact-us/) if you run into any issues.
+
 ## Privacy Policy
 
 See our [Privacy Policy](https://glean.io/terms) for information on how Glean collects, manages, and stores third-party data.
