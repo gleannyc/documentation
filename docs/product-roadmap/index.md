@@ -15,7 +15,7 @@ In the next six weeks:
 - <del>Dashboard metric tile improvements</del> <ins>[launched March](../changelog/2023_03_31.md#metric-tiles)</ins>
 - <del>Dynamic Breakouts</del> <ins>[launched March](../changelog/2023_03_31.md#dynamic-breakouts)</ins>
 - Configuration for timezone handling
-- New visualization options
+- Multiple y axes
 - Collection workflow improvements
 - Public links
 - Redesigned Explorer control panel
@@ -32,6 +32,7 @@ In the next few months:
 - Enhanced tables
 - Production tag
 - Synced table field comments
+- Multiple chart types together (e.g. bar and line)
 
 ## On the Horizon
 
