@@ -38,6 +38,7 @@ In the next few months:
 
 Future features under consideration:
 
+- More advanced calculations
 - Enhanced real-time collaboration
 - Inline annotations
 - Self service sign up
