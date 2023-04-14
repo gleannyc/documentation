@@ -26,10 +26,10 @@ Full documentation of all configuration files can be found for each resource typ
 An easy way to get started building a configuration file is to export it from an existing Glean resource.
 
 - Data Models:
-    1. Navigate to the [Data Models]({{ glean_url }}/app/p/data-models){:target="\_blank"} page
-    2. Click `Edit` for one of your Data Models
-    3. Click the `⋮` in the top-right corner
-    4. Click `DataOps Config`
+  1. Navigate to the [Data Models]({{ glean_url }}/app/p/data-models){:target="\_blank"} page
+  2. Click `Edit` for one of your Data Models
+  3. Click the `⋮` in the top-right corner
+  4. Click `DataOps Config`
 - Saved Views: On any Explore page, click the `⋮` in the top-right corner of the chart area, and then click `Export Saved View Config File`.
 - Dashboards: On any Dashboard page, click the `⋮` in the top-right corner, and then click `View DataOps Config File`.
 
@@ -42,3 +42,7 @@ new resource.
 
 This can also be used to avoid recreating resources when renaming or refactoring
 the file structure of your project.
+
+### Ensuring resource consistency
+
+If you'd like to maintain certain resources via DataOps and ensure that they won't be modified outside of changes to your repo, you can add the `preventUpdatesFromUI` flag to any config. This prevents users from unintentionally updating critical resources from the Glean web application and gives your team greater control over valuable long lived resources that are core to your business needs.
