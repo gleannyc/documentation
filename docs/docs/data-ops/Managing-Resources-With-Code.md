@@ -45,4 +45,4 @@ the file structure of your project.
 
 ### Ensuring resource consistency
 
-If you'd like to maintain certain resources via DataOps and ensure that they won't be modified outside of changes to your repo you can add the `preventUpdatesFromUI` flag to any config. This prevents users from unintentionally updating critical resources from the Glean web application and gives your team greater control over valuable long lived resources that are core to your business needs.
+If you'd like to maintain certain resources via DataOps and ensure that they won't be modified outside of changes to your repo, you can add the `preventUpdatesFromUI` flag to any config. This prevents users from unintentionally updating critical resources from the Glean web application and gives your team greater control over valuable long lived resources that are core to your business needs.
