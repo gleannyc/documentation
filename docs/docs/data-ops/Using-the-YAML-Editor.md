@@ -14,10 +14,6 @@ Once the editor is enabled the model preview will switch to the YAML editor. You
 
 ## Enabling the YAML Editor in the Data Explorer
 
-In the Data Explorer, the YAML editor can be enabled by opening the control panel and clicking on the YAML editor icon in the top right corner.
-
-<img src="/assets/code-editor-control-panel.png" alt="click the icon in the upper right corner of the control panel"/>
+In the Data Explorer, the YAML editor can be enabled by opening the control panel and clicking on the YAML editor icon.
 
 The editor will open up to the side of your current data exploration and you will now be able to changes by directly updating the config file or by clicking through the Data Explorer interface as usual. Refer to the [Saved View Config Schema](config-schema/Saved-View.md) for how to format your config files in the YAML editor.
-
-<img src="/assets/code-editor-explore.png" alt="code editor opens to the side"/>
