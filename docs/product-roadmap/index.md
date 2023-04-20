@@ -14,6 +14,7 @@ In the next six weeks:
 
 - <del>Dashboard metric tile improvements</del> <ins>[launched March](../changelog/2023_03_31.md#metric-tiles)</ins>
 - <del>Dynamic Breakouts</del> <ins>[launched March](../changelog/2023_03_31.md#dynamic-breakouts)</ins>
+- <del>Transpose tables</del> <ins>[launched April](../changelog/2023_04_20/#transpose-tables)</ins>
 - Configuration for timezone handling
 - Multiple y axes
 - Collection workflow improvements
