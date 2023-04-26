@@ -26,7 +26,7 @@ Here are a few examples:
     - Midnight `US/Eastern` on the first day of this month.
 
 2. With project timezone set to `UTC`, a weekly granularity will group the data into bins where each bin contains values between:
-    - Midnight `UTC` on the first day of the bins's week, and
+    - Midnight `UTC` on the first day of the bin's week, and
     - Midnight `UTC` on the first day of the next week.
 
 3. With project timezone set to `America/Los_Angeles`, a filter of `Jan 1, 2020 - Jan 8, 2020` will include values between:
@@ -51,7 +51,7 @@ Here are a few examples:
 1. When set to `Monday`, a filter value of "10 weeks ago" with "start of week" selected will be interpreted as the start of the week 10 weeks ago, where weeks begin on Monday.
 
 2. When set to `Saturday`, a weekly granularity will group the data into bins where each bin contains values between:
-    - The start of the first day of the bins's week (Saturday), and
+    - The start of the first day of the bin's week (Saturday), and
     - The start of the first day of the next week (Saturday).
 
 
