@@ -9,11 +9,7 @@ There are several datetime-related settings that can be customized at the projec
 
 ## Project Default Timezone
 
-This determines the timezone that will be used for all resources and for all members of the project.
-
-_At this time, project members cannot override this setting (for example, to view a chart in their local timezone), and this setting cannot be overriden for specific resources._
-
-The timezone setting determines several things:
+This determines the timezone that will be used for all resources and for all members of the project. The timezone setting determines several things:
 
 - The timezone in which datetimes will be displayed
 - The timezone used to determine the start of each bin when using a datetime granularity
@@ -36,12 +32,7 @@ Here are a few examples:
 
 ## Project Default First Day of the Week
 
-This determines which day will be used as the first day of the week for all resources and for all members of the project.
-
-
-_At this time, project members cannot override this setting, and this setting cannot be overriden for specific resources._
-
-The first day of the week is used in two areas:
+This determines which day will be used as the first day of the week for all resources and for all members of the project. The first day of the week is used in two areas:
 
 - The day used for start of week in filters for "N weeks ago" with "start of week" selected
 - The day used for start of week when using weekly granularity
@@ -53,6 +44,11 @@ Here are a few examples:
 2. When set to `Saturday`, a weekly granularity will group the data into bins where each bin contains values between:
     - The start of the first day of the bin's week (Saturday), and
     - The start of the first day of the next week (Saturday).
+
+
+!!! warning "Caveats"
+
+    At this time, project members cannot override these project-level datetime settings, (e.g. to view a chart in their local timezone), and this setting cannot be overriden for specific resources (e.g. to use a different first day of the week for a certain chart).
 
 
 # Column-level datetime settings
@@ -100,4 +96,4 @@ If we display those values in `UTC`, it's easy to see that they've been interpre
 
 !!! info "Note"
 
-    Glean's "underlying data" feature does not interpret tz-naive values, so this setting is not applied when using that feature.
+    Glean's "underlying data" feature does not interpret timezone-naive values, so this setting is not applied when using that feature.
