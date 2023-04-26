@@ -1,6 +1,6 @@
 Create Partner Projects to safely share data with external partners without inviting them into your main project.
 
-You may use Glean to analyze data about how your business partners or customers interact with your product. In some cases, you might want to surface these insights back to them on a consistent basis. Perhaps you'd even like to give them the independent ability to dive deeper into their data. This is where Partner Projects comes in.
+You may use Glean to analyze data about how your business partners or customers interact with your product. In some cases, you might want to surface these insights back to them on a consistent basis. Perhaps you'd even like to provide them the ability to independently explore their data. This is where Partner Projects come in.
 
 !!! note "Contact us"
 
