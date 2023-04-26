@@ -27,8 +27,8 @@ There are four roles in Glean with increasing levels of permissions.
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | Owner        | Owners can manage members in a project and manage data connections and manage data connection credentials.                                     |
 | Editor       | Editors can manage data models, both creating and editing existing data models.                                                                |
-| Collaborator | Collaborators can interact with shared views and share links, query data sources, explore data and even create new saved views and share links |
-| Viewer       | Viewers can interact with shared views and share links, query data sources, explore data and create share links                                |
+| Collaborator | Collaborators can interact with shared views, query data sources, explore data and create new saved views. |
+| Viewer       | Viewers can interact with shared views, query data sources, and explore data.                                |
 
 ## Modifying roles
 

@@ -86,13 +86,15 @@ nav:
           - PostgreSQL: docs/database-connections/postgresql.md
           #- Redshift (aws): docs/database-connections/redshift.md
           - docs/database-connections/snowflake.md
+      - Sharing Data Externally:
+          - Slack Integration: docs/sharing-data-externally/slack-integration.md
+          - iFrame Embedding: docs/sharing-data-externally/iframe-embedding.md
       - Project Management:
           - Custom Styles: ./docs/project-management/custom-styles.md
           - Datetime Settings: ./docs/project-management/datetime-settings.md
           - Get Access Domains: docs/project-management/get-access-domains.md
           - Organize Content with Collections: docs/project-management/collections.md
           - Project Invite Links: docs/project-management/invite-links.md
-          - Slack Integration: docs/project-management/slack-integration.md
           - Users and Permissions: docs/project-management/users-and-permissions.md
           - Single Sign-On: docs/project-management/single-sign-on.md
           # we should delete this eventually, just kept for backwards compatability in links to our docs
