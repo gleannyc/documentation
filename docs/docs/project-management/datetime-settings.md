@@ -9,7 +9,7 @@ There are several datetime-related settings that can be customized at the projec
 
 ## Project Default Timezone
 
-This determines the timezone that will be used for all resources and for all members of this project.
+This determines the timezone that will be used for all resources and for all members of the project.
 
 _At this time, project members cannot override this setting (for example, to view a chart in their local timezone), and this setting cannot be overriden for specific resources._
 
@@ -36,7 +36,7 @@ Here are a few examples:
 
 ## Project Default First Day of the Week
 
-This determines which day will be used as the first day of the week for all resources and for all members of this project.
+This determines which day will be used as the first day of the week for all resources and for all members of the project.
 
 
 _At this time, project members cannot override this setting, and this setting cannot be overriden for specific resources._
@@ -70,33 +70,33 @@ For example, let's say we have a column with timezone-naive datetime values:
 
 |*column values*|
 |---|
-|2020-01-02 03:45:06.789|
-|2020-03-04 05:06:07.890|
-|2023-01-01 00:00:00.000|
+|`2020-01-02 03:45:06.789`|
+|`2020-03-04 05:06:07.890`|
+|`2023-01-01 00:00:00.000`|
 
 If the `timezone` setting for this column is set to `UTC`, they will be interpreted like this:
 
 |*interpreted in `UTC`*|
 |---|
-|2020-01-02 03:45:06.789 UTC|
-|2020-03-04 05:06:07.890 UTC|
-|2023-01-01 00:00:00.000 UTC|
+|`2020-01-02 03:45:06.789 UTC`|
+|`2020-03-04 05:06:07.890 UTC`|
+|`2023-01-01 00:00:00.000 UTC`|
 
 However, if the `timezone` setting for this column is set to `US/Eastern`, they will be interpreted like this:
 
 |*interpreted in `US/Eastern`*|
 |---|
-|2020-01-02 03:45:06.789 US/Eastern|
-|2020-03-04 05:06:07.890 US/Eastern|
-|2023-01-01 00:00:00.000 US/Eastern|
+|`2020-01-02 03:45:06.789 US/Eastern`|
+|`2020-03-04 05:06:07.890 US/Eastern`|
+|`2023-01-01 00:00:00.000 US/Eastern`|
 
 If we display those values in `UTC`, it's easy to see that they've been interpreted as different points in time:
 
 |*interpreted in `UTC`*|*interpreted in `US/Eastern`, displayed in `UTC`*|
 |---|---|
-|2020-01-02 03:45:06.789 UTC|2020-01-02 08:45:06.789 UTC|
-|2020-03-04 05:06:07.890 UTC|2020-03-04 10:06:07.890 UTC|
-|2023-01-01 00:00:00.000 UTC|2023-01-01 05:00:00.000 UTC|
+|`2020-01-02 03:45:06.789 UTC` | `2020-01-02 08:45:06.789 UTC`|
+|`2020-03-04 05:06:07.890 UTC` | `2020-03-04 10:06:07.890 UTC`|
+|`2023-01-01 00:00:00.000 UTC` | `2023-01-01 05:00:00.000 UTC`|
 
 !!! info "Note"
 
