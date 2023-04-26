@@ -59,7 +59,7 @@ Here are a few examples:
 
 There is also a column-level setting for datetime Attributes that are timezone-naive.
 
-When a column is timezone-naive, Glean doesn't klnow which timezone to use to interpret its values. So, for these columns, there's a "Timezone" setting in the attribute settings:
+When a column is timezone-naive, Glean doesn't know which timezone to use to interpret its values. So, for these columns, there's a "Timezone" setting in the attribute settings:
 
 ![attribute timezone setting](../../assets/attribute-timezone-setting.png){: style="max-width:80%"}
 
