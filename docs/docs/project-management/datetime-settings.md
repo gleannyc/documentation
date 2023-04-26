@@ -63,3 +63,41 @@ When a column is timezone-naive, Glean doesn't klnow which timezone to use to in
 
 ![attribute timezone setting](../../assets/attribute-timezone-setting.png){: style="max-width:80%"}
 
+
+This value determines the timezone in which Glean will interpret the column's values.
+
+For example, let's say we have a column with timezone-naive datetime values:
+
+|*column values*|
+|---|
+|2020-01-02 03:45:06.789|
+|2020-03-04 05:06:07.890|
+|2023-01-01 00:00:00.000|
+
+If the `timezone` setting for this column is set to `UTC`, they will be interpreted like this:
+
+|*interpreted in `UTC`*|
+|---|
+|2020-01-02 03:45:06.789 UTC|
+|2020-03-04 05:06:07.890 UTC|
+|2023-01-01 00:00:00.000 UTC|
+
+However, if the `timezone` setting for this column is set to `US/Eastern`, they will be interpreted like this:
+
+|*interpreted in `US/Eastern`*|
+|---|
+|2020-01-02 03:45:06.789 US/Eastern|
+|2020-03-04 05:06:07.890 US/Eastern|
+|2023-01-01 00:00:00.000 US/Eastern|
+
+If we display those values in `UTC`, it's easy to see that they've been interpreted as different points in time:
+
+|*interpreted in `UTC`*|*interpreted in `US/Eastern`, displayed in `UTC`*|
+|---|---|
+|2020-01-02 03:45:06.789 UTC|2020-01-02 08:45:06.789 UTC|
+|2020-03-04 05:06:07.890 UTC|2020-03-04 10:06:07.890 UTC|
+|2023-01-01 00:00:00.000 UTC|2023-01-01 05:00:00.000 UTC|
+
+!!! info "Note"
+
+    Glean's "underlying data" feature does not interpret tz-naive values, so this setting is not applied when using that feature.
