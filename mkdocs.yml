@@ -88,6 +88,7 @@ nav:
           - docs/database-connections/snowflake.md
       - Project Management:
           - Custom Styles: ./docs/project-management/custom-styles.md
+          - Datetime Settings: ./docs/project-management/datetime-settings.md
           - Get Access Domains: docs/project-management/get-access-domains.md
           - Organize Content with Collections: docs/project-management/collections.md
           - Project Invite Links: docs/project-management/invite-links.md

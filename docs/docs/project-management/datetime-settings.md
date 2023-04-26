@@ -1,0 +1,65 @@
+!!! info "Coming soon!"
+
+    This feature is coming soon, and will be gradually rolled out to all users.
+
+# Project-level datetime settings
+
+There are several datetime-related settings that can be customized at the project level.
+
+
+## Project Default Timezone
+
+This determines the timezone that will be used for all resources and for all members of this project.
+
+_At this time, project members cannot override this setting (for example, to view a chart in their local timezone), and this setting cannot be overriden for specific resources._
+
+The timezone setting determines several things:
+
+- The timezone in which datetimes will be displayed
+- The timezone used to determine the start of each bin when using a datetime granularity
+- The timezone used to determine the start of a filter when "start of {granularity}" is selected
+
+Here are a few examples:
+
+1. With project timezone set to `US/Eastern`, a filter for "last month" will include values between:
+    - Midnight `US/Eastern` on the first day of last month, and
+    - Midnight `US/Eastern` on the first day of this month.
+
+2. With project timezone set to `UTC`, a weekly granularity will group the data into bins where each bin contains values between:
+    - Midnight `UTC` on the first day of the bins's week, and
+    - Midnight `UTC` on the first day of the next week.
+
+3. With project timezone set to `America/Los_Angeles`, a filter of `Jan 1, 2020 - Jan 8, 2020` will include values between:
+    - Midnight `America/Los_Angeles` on 2020-01-01, and
+    - Midnight `America/Los_Angeles` on 2020-01-08.
+
+
+## Project Default First Day of the Week
+
+This determines which day will be used as the first day of the week for all resources and for all members of this project.
+
+
+_At this time, project members cannot override this setting, and this setting cannot be overriden for specific resources._
+
+The first day of the week is used in two areas:
+
+- The day used for start of week in filters for "N weeks ago" with "start of week" selected
+- The day used for start of week when using weekly granularity
+
+Here are a few examples:
+
+1. When set to `Monday`, a filter value of "10 weeks ago" with "start of week" selected will be interpreted as the start of the week 10 weeks ago, where weeks begin on Monday.
+
+2. When set to `Saturday`, a weekly granularity will group the data into bins where each bin contains values between:
+    - The start of the first day of the bins's week (Saturday), and
+    - The start of the first day of the next week (Saturday).
+
+
+# Column-level datetime settings
+
+There is also a column-level setting for datetime Attributes that are timezone-naive.
+
+When a column is timezone-naive, Glean doesn't klnow which timezone to use to interpret its values. So, for these columns, there's a "Timezone" setting in the attribute settings:
+
+![attribute timezone setting](../../assets/attribute-timezone-setting.png){: style="max-width:80%"}
+
