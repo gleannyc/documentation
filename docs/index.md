@@ -24,4 +24,4 @@ You can save views of the data that are important to your organization.
 
 ### 3. Share
 
-When you find something interesting, create share links, saved views and dashboards to share insights with your team.
+When you find something interesting, create explorations, saved views and dashboards to share insights with your team.
