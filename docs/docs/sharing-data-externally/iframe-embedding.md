@@ -1,8 +1,8 @@
-Glean supports embedding Models, Saved Views, and Dashboards in external applications via an iframe.
+Glean supports embedding Data Models, Saved Views, and Dashboards in external applications via an iframe.
 
 ## Embedding a Resource
 
-To embed a Glean resource, add `viewMode=embed` to the URL parameters of your Model, Saved View, or Dashboard URL and set that URL to be the `src` of an `iframe` HTML tag.
+To embed a Glean resource, add `viewMode=embed` to the URL parameters of your Data Model, Saved View, or Dashboard URL and set that URL to be the `src` of an `iframe` HTML tag.
 
 For instance, if your Saved View URL is:
 ```
@@ -42,7 +42,7 @@ Embedded resources are also compatible with [Get Access Domains](../project-mana
 
 ## Examples
 
-### Embedded Model
+### Embedded Data Model
 <iframe
   src="https://demo.glean.io/app/m/b76d1af8-69c3-3870-bdd2-46cdb2cc14df?viewMode=embed"
   style="width: 100%; height: 1000px"
