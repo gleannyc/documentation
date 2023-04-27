@@ -38,7 +38,7 @@ Then your self-service embed URL would be:
 https://glean.io/app/sv/Sgf5dLgMfFeWVzie?viewMode=embed&projectInviteToken=p-Ip2Lw8ep6XafEzSo_NF
 ```
 
-Embedded resources are also compatible with [Get Access Domains](../project-management/get-access-domains.md). If enabled, any user with an e-mail address from your organization's domain will be able to create a Glean account via the embedded resource.
+Embedded resources are also compatible with [Get Access Domains](../project-management/get-access-domains.md). If enabled, any user with an email address from your organization's domain will be able to create a Glean account via the embedded resource.
 
 ## Examples
 
