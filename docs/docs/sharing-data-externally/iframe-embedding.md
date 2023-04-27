@@ -53,3 +53,7 @@ Embedded resources are also compatible with [Get Access Domains](../project-mana
   src="https://demo.glean.io/app/dsb/40b45ca1-463d-3380-96c6-10d944738b08?viewMode=embed"
   style="width: 100%; height: 1000px"
 ></iframe>
+
+## Coming soon: Public link sharing
+
+Sharing Glean resources with non-logged-in users is on our [Product Roadmap](../../product-roadmap/index.md). Get in touch if you're interested in early access!
