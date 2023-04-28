@@ -88,7 +88,7 @@ nav:
           - docs/database-connections/snowflake.md
       - Sharing Data Externally:
           - Slack Integration: docs/sharing-data-externally/slack-integration.md
-          - iframe Embedding: docs/sharing-data-externally/iframe-embedding.md
+          - Analytics Embedding: docs/sharing-data-externally/iframe-embedding.md
       - Project Management:
           - Custom Styles: ./docs/project-management/custom-styles.md
           - Datetime Settings: ./docs/project-management/datetime-settings.md
