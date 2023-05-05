@@ -4,7 +4,7 @@ You can invite members to your project in Glean to allow them to query and explo
 
 ## Add a user
 
-[Direct link to your Glean user list]({{ glean_url }}/app/p/people)
+!!! info "[Direct link to your Glean user list]({{ glean_url }}/app/p/people)"
 
 1. Go to the [`People`]({{ glean_url }}/app/p/people){:target="\_blank"} page using the link in the project dropdown
 2. Select `Users`
@@ -23,12 +23,12 @@ You can invite members to your project in Glean to allow them to query and explo
 
 There are four roles in Glean with increasing levels of permissions.
 
-| Role         | Description                                                                                                                                    |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Owner        | Owners can manage members in a project and manage data connections and manage data connection credentials.                                     |
-| Editor       | Editors can manage data models, both creating and editing existing data models.                                                                |
+| Role         | Description                                                                                                |
+| ------------ | ---------------------------------------------------------------------------------------------------------- |
+| Owner        | Owners can manage members in a project and manage data connections and manage data connection credentials. |
+| Editor       | Editors can manage data models, both creating and editing existing data models.                            |
 | Collaborator | Collaborators can interact with shared views, query data sources, explore data and create new saved views. |
-| Viewer       | Viewers can interact with shared views, query data sources, and explore data.                                |
+| Viewer       | Viewers can interact with shared views, query data sources, and explore data.                              |
 
 ## Modifying roles
 

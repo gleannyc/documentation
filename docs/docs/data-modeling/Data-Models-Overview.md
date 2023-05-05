@@ -1,4 +1,4 @@
-[Direct link to your Glean Data Models]({{ glean_url }}/app/p/data-models)
+!!! info "[Direct link to your Glean Data Models]({{ glean_url }}/app/p/data-models)"
 
 Data models in Glean allow you to define how your organization will measure, track and explore data. Defining the logic for your analytics upfront allows your users to dig in and analyze data without writing code or worrying about whether they can trust their results. This declarative workflow allows the analyst and data team to manage how you think about your business and Glean will build a user interface automatically that helps you explore that data.
 
