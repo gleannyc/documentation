@@ -80,6 +80,22 @@ It is possible to apply a numeric range filter to a numeric attribute by draggin
 
 If a range filter is applied, you can see which values are affected in the attribute panel, but it is not possible to change the range filter from the attribute panel. This is because a range is incompatible with the idea of selecting specific range items.
 
+## Array ('Tag') Attributes
+
+Array attributes are a powerful feature that allow you to filter and group data based on array elements, treating them as "tags."
+
+### Array Elements as "Tags"
+
+Instead of treating arrays as single values, you can filter and group data based on individual elements within those arrays. This provides greater flexibility and insights when analyzing data that contains tags or multi-valued attributes.
+
+### Filtering with Arrays
+
+The filtering functionality allows you to refine your data set based on specific array elements, treating them as "tags". When applying filters to array elements, you have the flexibility to narrow down the data while still preserving the entire record in your visualization. This means that if you filter for a specific tag, you will still see other tags associated with the same record if your visualization displays the array attribute.
+
+By retaining the other tags within the visualization, you can gain a comprehensive understanding of how the filtered tag relates to other tags in the dataset. This provides a holistic view of the data, enabling you to analyze the relationships and patterns between different tags.
+
+For example, if you filter for the tag "green" in a dataset of products with an array field called "colors," the visualization will show the products that have "green" as one of the colors. You will still be able to observe the other colors associated with those products, allowing you to identify additional color trends and correlations.
+
 ## String Attributes
 
 String attributes are alphanumeric attributes and can have very high cardinality (say, millions of unique items). String attributes are searchable to make finding specific attributes easy.
