@@ -51,7 +51,7 @@ Here are a few examples:
     At this time, project members cannot override these project-level datetime settings, (e.g. to view a chart in their local timezone), and this setting cannot be overriden for specific resources (e.g. to use a different first day of the week for a certain chart).
 
 
-# Column-level datetime settings
+## Column-level datetime settings
 
 There is also a column-level setting for datetime Attributes that are timezone-naive.
 
@@ -97,3 +97,24 @@ If we display those values in `UTC`, it's easy to see that they've been interpre
 !!! info "Note"
 
     Glean's "underlying data" feature does not interpret timezone-naive values, so this setting is not applied when using that feature.
+
+# Querying a CSV that includes datetime values with timezone offsets
+
+Here's an example of a CSV with some values that have timezone offsets:
+
+| `col` |
+|--------|
+| `2020-01-01 00:00:00.000 -0400` |
+| `2020-01-01 01:00:00.000 -04:00` |
+| `2020-01-01T02:00:00.000-04:00` |
+
+If your CSV includes values like this, Glean may not be able capture the timezone information correctly via DuckDB.
+
+To resolve this issue, use a SQL query in your model and modify that column like this:
+
+```sql
+-- (replace 'col' with that column's name, and 'filename.csv' with your filename) --
+select * REPLACE (col::TIMESTAMPTZ AT TIME ZONE 'UTC' as col) from "filename.csv";
+```
+
+This will ensure that Glean receives the correct values from queries involving this column.
