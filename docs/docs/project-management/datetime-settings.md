@@ -98,7 +98,7 @@ If we display those values in `UTC`, it's easy to see that they've been interpre
 
     Glean's "underlying data" feature does not interpret timezone-naive values, so this setting is not applied when using that feature.
 
-# Querying a CSV that includes datetime values with timezone offsets
+## Querying a CSV that includes datetime values with timezone offsets
 
 Here's an example of a CSV with some values that have timezone offsets:
 
