@@ -23,7 +23,7 @@ While you can use a drag filter to drag to a time range eg. a specific month or 
 
 ## Array filter control
 
-Array filters are used to narrow down data based on specific elements within an array. When applying an array filter, it is done on each individual item in the array before grouping the data. For example, let's say you have a dataset of different fruits, and each fruit has an array field representing its colors. When you filter the array for the color "yellow," you will be able to see all the fruits that include "yellow" as one of their colors. At the same time, you can also see the other colors associated with those fruits.
+Array filters are used to narrow down data based on specific elements within an array. They are applied on the items in the array before grouping the data. For example, let's say you have a dataset of customer contact events, and each event has an array field of all the associated campaigns. When you filter the array for a specific campaign, you will be able to see all the events that include that campaign. If you filter for multiple campaigns, you can choose whether you want to see events associated with *all* of the campaigns or events associated with *any* (at least one) of the campaigns. This means that if you exclude events with *any* of multiple campaigns, rows with some of those campaigns will still appear in your result set.
 
 ## Viewing all filters
 

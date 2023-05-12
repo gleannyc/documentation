@@ -80,15 +80,13 @@ It is possible to apply a numeric range filter to a numeric attribute by draggin
 
 If a range filter is applied, you can see which values are affected in the attribute panel, but it is not possible to change the range filter from the attribute panel. This is because a range is incompatible with the idea of selecting specific range items.
 
-## Array ("Tags") Attributes
+## Array Attributes
 
-Array attributes are a powerful feature that allow you to filter and group data based on array items, treating them as "tags." Instead of treating arrays as single values, you can filter and group data based on individual elements within those arrays. This provides greater flexibility and insights when analyzing data that contains multi-valued attributes.
+Array attributes are a powerful feature that allow you to filter and group on elements within array type fields, such as tags. This usually provides greater flexibility and insight than operating with the entire array.
 
 ### Filtering and Breaking out with Arrays
 
-Filters and breakouts are applied to individual items within the arrays in your dataset. For example, if your dataset contains arrays representing user color combinations, you can use filters to see which users have specific colors in their arrays. By breaking out the data, you can examine the distribution of users across all colors instead of considering all possible color combinations.
-
-When you filter for a value like "yellow," you will see all the users who have included "yellow" in their color combination array. On the other hand, if you perform a breakout analysis, you can observe how users are distributed across the most popular colors.
+Filters and breakouts are applied to individual items within the arrays in your dataset. For example, if your customer contact activity dataset contains arrays representing campaigns, you can use filters to visualize contact activity for a specific campaign only. By breaking out the data, you can examine the distribution of activity across campaigns. Be aware that when using array attributes, Glean unnests the data, which may impact metrics, depending on your specific dataset.
 
 For more detailed information about filtering and breakouts, please refer to [Filter](Filter.md) and [Breakout](Breakout.md) pages.
 

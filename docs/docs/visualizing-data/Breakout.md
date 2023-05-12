@@ -14,7 +14,7 @@ Glean visualizes the top six items in your attribute by default; the rest of the
 
 !!! info
 
-    When breaking out using Array attributes the default visualization depicts the distribution of the items within all the arrays in your dataset
+    When breaking out using Array attributes, Glean unnests your data, so the visualization depicts the distribution of all items within all arrays in your dataset.
 
 ## Color Breakout
 

@@ -44,7 +44,7 @@ The experienced data modeler should be able to deftly navigate one-to-many relat
 
 Let's say in our Call Center each call has a series of tags associated with it. Tags can have values like `customer support`, `international` vs. `domestic` etc. There can be many tags associated with each call. Users may want to see call statistics grouped by tag as an Attributes. While other self-service tools may allow for realtime joining, Glean intentionally forces you to define joins upfront in your denormalized table.
 
-In the case of tags, it may make sense to have two data models: one for exploring call tags and one for exploring calls.
+If your tags are contained in an array type column, Glean should understand them automatically as an array attribute. Otherwise, it may make sense to have two data models: one for exploring call tags and one for exploring calls.
 
 !!! success "Next Steps"
 
