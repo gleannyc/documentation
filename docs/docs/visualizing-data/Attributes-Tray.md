@@ -82,19 +82,15 @@ If a range filter is applied, you can see which values are affected in the attri
 
 ## Array ("Tags") Attributes
 
-Array attributes are a powerful feature that allow you to filter and group data based on array items, treating them as "tags."
+Array attributes are a powerful feature that allow you to filter and group data based on array items, treating them as "tags." Instead of treating arrays as single values, you can filter and group data based on individual elements within those arrays. This provides greater flexibility and insights when analyzing data that contains multi-valued attributes.
 
-### Array Elements as "Tags"
+### Filtering and Breaking out with Arrays
 
-Instead of treating arrays as single values, you can filter and group data based on individual elements within those arrays. This provides greater flexibility and insights when analyzing data that contains tags or multi-valued attributes.
+Filters and breakouts are applied to individual items within the arrays in your dataset. For example, if your dataset contains arrays representing user color combinations, you can use filters to see which users have specific colors in their arrays. By breaking out the data, you can examine the distribution of users across all colors instead of considering all possible color combinations.
 
-### Filtering with Arrays
+When you filter for a value like "yellow," you will see all the users who have included "yellow" in their color combination array. On the other hand, if you perform a breakout analysis, you can observe how users are distributed across the most popular colors.
 
-The filtering functionality allows you to refine your data set based on specific array elements, treating them as "tags". When applying filters to array elements, you have the flexibility to narrow down the data while still preserving the entire record in your visualization. This means that if you filter for a specific tag, you will still see other tags associated with the same record if your visualization displays the array attribute.
-
-By retaining the other tags within the visualization, you can gain a comprehensive understanding of how the filtered tag relates to other tags in the dataset. This provides a holistic view of the data, enabling you to analyze the relationships and patterns between different tags.
-
-For example, if you filter for the tag "green" in a dataset of products with an array field called "colors," the visualization will show the products that have "green" as one of the colors. You will still be able to observe the other colors associated with those products, allowing you to identify additional color trends and correlations.
+For more detailed information about filtering and breakouts, please refer to [Filter](Filter.md) and [Breakout](Breakout.md) pages.
 
 ## String Attributes
 
