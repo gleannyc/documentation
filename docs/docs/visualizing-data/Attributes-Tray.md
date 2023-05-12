@@ -80,9 +80,9 @@ It is possible to apply a numeric range filter to a numeric attribute by draggin
 
 If a range filter is applied, you can see which values are affected in the attribute panel, but it is not possible to change the range filter from the attribute panel. This is because a range is incompatible with the idea of selecting specific range items.
 
-## Array ('Tag') Attributes
+## Array ("Tags") Attributes
 
-Array attributes are a powerful feature that allow you to filter and group data based on array elements, treating them as "tags."
+Array attributes are a powerful feature that allow you to filter and group data based on array items, treating them as "tags."
 
 ### Array Elements as "Tags"
 
