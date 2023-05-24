@@ -25,3 +25,7 @@ To turn off a public link, simply toggle `Public Link` to `OFF` in the `Share as
 
 Once you do this, users will no longer be able to load that public link. If you ever turn the public link back on for that resource,
 we reactivate the old link, so you don't need to worry about resending the link to everyone who already had it.
+
+!!! info "Note"
+
+    Public links are automatically turned off when a resource is trashed (and reactivating if the resource is untrashed), but **not** when a resource is made private.
