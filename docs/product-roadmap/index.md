@@ -18,7 +18,6 @@ In the next six weeks:
 - Configuration for timezone handling
 - Multiple y axes
 - Collection workflow improvements
-- Public links
 - Redesigned Explorer control panel
 - Resource descriptions everywhere in Glean
 - Support for array items as tags
