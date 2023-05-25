@@ -1,4 +1,4 @@
-Public links allows users to share their saved views, dashboards, and collections in Glean with others on the public internet. With a public link, someone can access a view-only version of the given resource without the need to log in to Glean.
+Public links allow users to share their saved views, dashboards, and collections in Glean with others on the public internet. With a public link, someone can access a view-only version of the given resource without the need to log in to Glean.
 
 ## Permissions
 
@@ -28,4 +28,4 @@ we reactivate the old link, so you don't need to worry about resending the link 
 
 !!! info "Note"
 
-    Public links are automatically turned off when a resource is trashed (and reactivating if the resource is untrashed), but **not** when a resource is made private.
+    Public links are automatically turned off when a resource is trashed (and reactivated if the resource is untrashed), but **not** when a resource is made private.
