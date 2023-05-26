@@ -80,16 +80,6 @@ It is possible to apply a numeric range filter to a numeric attribute by draggin
 
 If a range filter is applied, you can see which values are affected in the attribute panel, but it is not possible to change the range filter from the attribute panel. This is because a range is incompatible with the idea of selecting specific range items.
 
-## Array Attributes
-
-Array attributes are a powerful feature that allow you to filter and group on elements within array type fields, such as tags. This usually provides greater flexibility and insight than operating with the entire array.
-
-### Filtering and Breaking out with Arrays
-
-Filters and breakouts are applied to individual items within the arrays in your dataset. For example, if your customer contact activity dataset contains arrays representing campaigns, you can use filters to visualize contact activity for a specific campaign only. By breaking out the data, you can examine the distribution of activity across campaigns. Be aware that when using array attributes, Glean unnests the data, which may impact metrics, depending on your specific dataset.
-
-For more detailed information about filtering and breakouts, please refer to [Filter](Filter.md) and [Breakout](Breakout.md) pages.
-
 ## String Attributes
 
 String attributes are alphanumeric attributes and can have very high cardinality (say, millions of unique items). String attributes are searchable to make finding specific attributes easy.
