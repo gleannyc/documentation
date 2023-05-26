@@ -34,3 +34,9 @@ they can find them listed on the [dashboards page]({{ glean_url }}/app/p/dashboa
 
 Dashboards can also be placed in [collections](/docs/project-management/collections)
 for organization.
+
+## Dashboard Explorations
+
+Viewers can explore a dashboard by changing the [filters](Filters.md) on it. Just
+like [Explorations on the Data Explorer](/docs/visualizing-data/Explorations), Glean
+tracks each of these changes with a unique URL that can also be shared!
