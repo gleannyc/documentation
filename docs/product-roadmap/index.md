@@ -12,27 +12,28 @@ Check out the [changelog](../../changelog/) to see what we've shipped recently.
 
 In the next six weeks:
 
-- <del>Dashboard metric tile improvements</del> <ins>[launched March](../changelog/2023_03_31.md#metric-tiles)</ins>
-- <del>Dynamic Breakouts</del> <ins>[launched March](../changelog/2023_03_31.md#dynamic-breakouts)</ins>
-- <del>Transpose tables</del> <ins>[launched April](../changelog/2023_04_20/#transpose-tables)</ins>
+- <del>Dashboard Exploration Links</del> <ins>[launched May](../changelog/2023_05_30/#dashboard-exploration-links)</ins>
+- <del>Public Share Links</del> <ins>[launched May](../changelog/2023_05_30/#public-link-sharing)</ins>
+- <del>Redesigned Explorer control panel</del> <ins>[launched May](../changelog/2023_05_30/#refreshed-control-panel)</ins>
+- Array attributes
 - Configuration for timezone handling
-- Multiple y axes
-- Collection workflow improvements
-- Redesigned Explorer control panel
-- Resource descriptions everywhere in Glean
-- Support for array items as tags
+- Dual Y-Axis Charts
+- Model Joining
+- Synced table field comments
 
 ## Up Next
 
 In the next few months:
 
 - Collections in DataOps
-- Dimensional joins
+- Data Catalog
+- Derived Metrics and Attributes
 - Enhanced pivot tables
 - Enhanced tables
-- Production tag
-- Synced table field comments
+- Model Hopping
 - Multiple chart types together (e.g. bar and line)
+- Post-Aggregation Joining
+- Production tag
 
 ## On the Horizon
 
