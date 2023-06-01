@@ -12,6 +12,10 @@ Breaking out an attribute in Glean splits the visualization by the categories in
 
 Glean visualizes the top six items in your attribute by default; the rest of the items are bucketed together into an `Other` category. This allows you to visualize the distribution of very high-[cardinality](https://en.wikipedia.org/wiki/Cardinality) columns easily. You can always add more groups if you want in the attribute tile, but generally, you shouldn't visualize too many items at a time - this is why we pick a low number as a default. You can control the number of groups from the attribute tile – see the [Attributes tray](Attributes-Tray.md) page for more details.
 
+!!! info
+
+    When breaking out using Array attributes, Glean unnests your data, so the visualization depicts the distribution of all items within all arrays in your dataset.
+
 ## Color Breakout
 
 Colors for your breakouts are selected based on a color palette. The default palette is named `Twilight` and has been designed with a range of colors to vary by hue and luminosity so that it's easy to tell groups apart.
