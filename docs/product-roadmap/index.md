@@ -16,7 +16,7 @@ In the next six weeks:
 - <del>Public Share Links</del> <ins>[launched May](../changelog/2023_05_30/#public-link-sharing)</ins>
 - <del>Redesigned Explorer control panel</del> <ins>[launched May](../changelog/2023_05_30/#refreshed-control-panel)</ins>
 - <del>Configuration for first day of week</del> launched June
-- Array attributes
+- <del>Array attributes</del> launched June
 - Dual Y-Axis Charts
 - Model Joining
 - Synced table field comments
