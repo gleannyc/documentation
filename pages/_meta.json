@@ -1,10 +1,7 @@
 {
   "docs": {
     "title": "Documentation",
-    "type": "page"
-  },
-  "support": {
-    "title": "Support",
+    "display": "hidden",
     "type": "page"
   },
   "get-access": {

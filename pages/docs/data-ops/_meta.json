@@ -1,9 +1,7 @@
 {
-  "overview": {},
-  "managing-resources-with-code": {},
+  "index": { "title": "Overview" },
   "cli": { "title": "Using the Glean CLI" },
-  "git-integration": {},
   "yaml-editor": { "title": "Using the YAML Editor" },
-  "grns": { "title": "GRNs" },
+  "GRNs": { "title": "GRNs" },
   "config-schema": { "title": "Configuration Schemas" }
 }

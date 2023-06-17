@@ -7,7 +7,7 @@ const nextraDocsConfig = {
 
 const nextJsConfig = {
   redirects: async () => [
-    { source: "/", destination: "/docs", permanent: true },
+    { source: "/", destination: "/docs/getting-started", permanent: false },
     {
       source: "/docs/database-connections/redshift",
       destination: "/docs/database-connections/postgresql",
