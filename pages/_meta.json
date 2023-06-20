@@ -1,7 +1,14 @@
 {
   "docs": {
-    "title": "Documentation",
-    "display": "hidden",
+    "title": "Docs",
+    "type": "page"
+  },
+  "product-roadmap": {
+    "title": "Roadmap",
+    "type": "page"
+  },
+  "changelog": {
+    "title": "Changelog",
     "type": "page"
   },
   "get-access": {
