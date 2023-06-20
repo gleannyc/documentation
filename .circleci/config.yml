@@ -31,11 +31,11 @@ workflows:
 jobs:
   prod_deploy:
     docker:
-      - image: cimg/python:3.9.10
+      - image: cimg/node:16.16.0
     steps:
       - checkout
-      - run: pip install -r requirements.txt
-      - run: SEGMENT_KEY=${PROD_SEGMENT_API_KEY} mkdocs build --strict
+      - run: npm ci
+      - run: SEGMENT_KEY=${PROD_SEGMENT_API_KEY} npm run build
       - aws-s3/sync:
           from: site/
           to: s3://docs.glean.io
@@ -46,13 +46,13 @@ jobs:
 
   stage_deploy:
     docker:
-      - image: cimg/python:3.9.10
+      - image: cimg/node:16.16.0
     steps:
       - checkout
-      - run: pip install -r requirements.txt
-      - run: SEGMENT_KEY=${STAGE_SEGMENT_API_KEY} mkdocs build --strict
+      - run: npm ci
+      - run: SEGMENT_KEY=${PROD_SEGMENT_API_KEY} npm run build
       - aws-s3/sync:
-          from: site/
+          from: build/
           to: s3://docs.glean.io/${CIRCLE_BRANCH}
           aws-access-key-id: USER_AWS_KEY
           aws-secret-access-key: USER_AWS_SECRET
