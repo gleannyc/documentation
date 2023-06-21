@@ -6,6 +6,15 @@ User facing documentation for Glean
 
 ...
 
+## Deployment
+
+Build and run the Dockerfile to execute a standalone server for the docs site.
+
+```
+docker build -t glean_docs_site .
+docker run -p 3000:3000 glean_docs_site
+```
+
 ## Contribution Guidelines
 
 - Use relative links to markdown files so mkdocs can detect broken links

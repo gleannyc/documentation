@@ -1,11 +1,14 @@
 const nextra = require("nextra");
 
+/** @type {import('nextra').NextraConfig} */
 const nextraDocsConfig = {
   theme: "nextra-theme-docs",
   themeConfig: "./theme.config.jsx",
 };
 
+/** @type {import('next').NextConfig} */
 const nextJsConfig = {
+  output: "standalone",
   redirects: async () => [
     { source: "/", destination: "/docs/getting-started", permanent: false },
     {
